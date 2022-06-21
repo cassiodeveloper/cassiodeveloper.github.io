@@ -1,10 +1,10 @@
 entries:
-  - title: info
+  - title: Informação
     entries:
       - title: Foco em Application Security, DevSecOps, S-SDLC e assuntos relativos a software seguro.
-      - title: all urls
+      - title: Meus links
         url: https://linktr.ee/cassiodeveloper
-  - title: cursos
+  - title: Cursos
     entries:
       - title: Gratuitos
         entries:
@@ -37,3 +37,5 @@ entries:
             url: https://linktr.ee/devsecopspodcast
           - title: YouTube Channel
             url: https://www.youtube.com/c/CassioBatistaPereira
+  - title: Palestras já publicadas / apresentadas
+    url: https://onedrive.live.com/?authkey=%21AGGeesW%5FNO1U%2DZc&id=BA3816DBC9706129%2112357&cid=BA3816DBC9706129
