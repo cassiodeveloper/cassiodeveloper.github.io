@@ -4,7 +4,7 @@ email: cassio@cassiobp.com.br # email of site's author
 url: cassiodeveloper.com.br # root address of the site
 baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
-  Cássio Pereura Application Security Engineer - Ensino como construir software seguro
+  Cássio Batista Pereira, a.k.a. @cassiodeveloper, é Desenvolvedor e Arquiteto de Software por formação. Ele atua como Cyber Security Engineer e assim auxilia as empresas e profissionais a construírem soluções mais seguras. Possui duas décadas de experiência no mercado de T.I. e Segurança da Informação nos mais variados segmentos de negócios, onde obteve conhecimento para trabalhar com diferentes tecnologias, linguagens de programação e processos. É evangelista da cultura de Desenvolvimento Seguro.
 
 permalink: /:slug.html
 
