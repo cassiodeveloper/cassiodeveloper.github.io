@@ -27,9 +27,9 @@ entries:
   #     show_more: true
   #     show_more_text: See more posts...
   #     show_more_url: example2-archive.html
-  - title: current projects
+  - title: Projetos
     entries:
-      - title: Commmunity
+      - title: Comunidade
         entries:
           - title: Security BSides Kraków
             url: https://bsideskrakow.pl
