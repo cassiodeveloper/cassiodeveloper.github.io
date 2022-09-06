@@ -33,6 +33,8 @@ entries:
         entries:
           - title: Security BSides Kraków
             url: https://linktr.ee/bsideskrakow
+          - title: DevSecCon Poland Chapter
+            url: https://www.devseccon.com/chapters/dsc-poland            
           - title: DevSecOps Podcast
             url: https://linktr.ee/devsecopspodcast
           - title: YouTube Channel
