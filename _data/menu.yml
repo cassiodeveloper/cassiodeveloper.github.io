@@ -29,6 +29,8 @@ entries:
   #     show_more_url: example2-archive.html
   - title: Projetos
     entries:
+      - title: Livro - Explicando, Application Security
+        url: https://cassiodeveloper.com.br/livro
       - title: Comunidade
         entries:
           - title: Security BSides Kraków
