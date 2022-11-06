@@ -1,4 +1,10 @@
 entries:
+  - title: Quer ler umas bobeiras minhas?
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: Então veja...
+      show_more_url: archive.html
   - title: Informação
     entries:
       - title: Foco em Application Security, DevSecOps, S-SDLC e assuntos relativos a software seguro.
@@ -14,13 +20,6 @@ entries:
         entries:
           - title: Explicando, SAST
             url: https://cassio.kpages.online/explicando-sast
-  # - title: all posts
-  #   post_list:
-  #     limit: 5
-  #     show_more: true
-  #     show_more_text: See archive...
-  #     show_more_url: archive.html
-
   # - title: posts by category
   #   post_list:
   #     category: example2
