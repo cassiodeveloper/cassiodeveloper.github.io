@@ -20,8 +20,8 @@ entries:
     entries:
       - title: Livro - Explicando, Application Security
         url: https://cassiodeveloper.com.br/livro
-      - title: 101 Vulnerabilidades
-        url: https://github.com/cassiodeveloper/101-vulnerabilities  
+      - title: AppSec - Iron Man
+        url: https://cassiodeveloper.com.br/AppSec-IronMan/
       - title: Comunidade
         entries:
           - title: Security BSides Kraków
