@@ -14,6 +14,8 @@ entries:
             url: https://www.youtube.com/playlist?list=PLC2UsZBhySmJlih_ZOPHO6v60u0-NQ6I5
       - title: Pagos
         entries:
+          - title: Explicando, Application Security
+            url: https://cassio.kpages.online/explicando-appsec        
           - title: Explicando, SAST
             url: https://cassio.kpages.online/explicando-sast
   - title: Projetos
@@ -22,6 +24,10 @@ entries:
         url: https://cassiodeveloper.com.br/livro
       - title: AppSec - Iron Man
         url: https://cassiodeveloper.com.br/AppSec-IronMan/
+      - title: Produtos / Ferramentas
+        entries:
+          - title: M.A.R.I.A. - Open Source ASPM
+            url: https://cassiodeveloper.com.br/MARIA-Page/
       - title: Comunidade
         entries:
           - title: Security BSides Kraków
