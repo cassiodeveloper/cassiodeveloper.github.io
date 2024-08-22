@@ -9,77 +9,92 @@
 
 <url>
   <loc>https://cassiodeveloper.com.br/</loc>
-  <lastmod>2023-01-16T17:27:07+00:00</lastmod>
+  <lastmod>2024-06-28T08:33:01+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassiodeveloper.com.br/AppSec-IronMan/</loc>
+  <lastmod>2023-12-22T09:33:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassiodeveloper.com.br/MARIA-Page/</loc>
+  <lastmod>2024-06-26T11:44:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/en/</loc>
-  <lastmod>2023-01-16T17:27:40+00:00</lastmod>
+  <lastmod>2024-06-28T08:33:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/capitulos/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/autor/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/sobre/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/contato/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/capitulos/SCA/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/capitulos/SAST/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/capitulos/DevSecOps/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/capitulos/Threat%20Modeling/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/capitulos/DAST/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/capitulos/IAC/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cassiodeveloper.com.br/AppSec-IronMan/?print-pdf</loc>
+  <lastmod>2023-12-22T09:33:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/capitulos/Monitoramento/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/livro/capitulos/Requisitos/</loc>
-  <lastmod>2022-11-06T10:48:13+00:00</lastmod>
+  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
