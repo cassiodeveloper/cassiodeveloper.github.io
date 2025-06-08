@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cássio Batista Pereira</title>
+    <meta name="description" content="Especialista em Segurança de Aplicações, DevSecOps e Cloud Security com mais de 20 anos de experiência. Transforme seu software em uma fortaleza com práticas modernas e seguras desde o código até a produção." />
+    <meta name="keywords" content="AppSec, DevSecOps, Podcast, CyberSec, Cássio, Pereira, InfoSec, BSides, DevSecCon, Curso, modelagem de ameaças, treinamento, professor, sdlc, desenvolvimento seguro" />
+    <meta name="author" content="Cássio B. Pereira">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:title" content="Cássio Batista Pereira" />
+    <meta property="og:url" content="https://cassiodeveloper.com.br/en"/>
+    <meta property="og:description" content="Especialista em Segurança de Aplicações, DevSecOps e Cloud Security com mais de 20 anos de experiência. Transforme seu software em uma fortaleza com práticas modernas e seguras desde o código até a produção."/>
+    <meta property="og:image" content="https://cassiodeveloper.com.br/images/intro-bg.jpeg"/>
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon.ico" />
+    <link rel="manifest" href="site.webmanifest" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NL5R9VPGV9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NL5R9VPGV9');
+    </script>    
+</head>
+<body id="top">
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="page" class="s-pagewrap">
+        <header class="s-header">
+            <div class="row s-header__inner">
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/Logo.png" alt="Home" />
+                        </a>
+                    </div>
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div>
+                <nav class="s-header__nav">    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about">About me</a></li>
+                        <li><a class="smoothscroll" href="#works">Projects</a></li>
+                        <li><a class="smoothscroll" href="#footer">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="intro" class="s-intro target-section">
+            <div class="row s-intro__content width-sixteen-col">
+                <div class="column lg-12 s-intro__content-inner grid-block grid-16">
+                    <div class="s-intro__content-text">
+                        <div class="s-intro__content-pretitle text-pretitle">Hello :)</div>
+                        <h1 class="s-intro__content-title">I'm Cássio B. Pereira <br />an AppSec expert <br />based in Europe.</h1>                            
+                        <div class="s-intro__content-btns">
+                            <a class="smoothscroll btn" href="#about">More about me</a>
+                            <a class="smoothscroll btn btn--stroke" href="#footer">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="s-intro__social social-list">
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/cassiodeveloperpagina">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                        <span class="u-screen-reader-text">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://x.com/cassiodeveloper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                        <span class="u-screen-reader-text">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://instagram.com/cassiodeveloper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                        <span class="u-screen-reader-text">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/cassiodeveloper/">
+                        <svg fill="#000000" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.959 45.959" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M5.392,0.492C2.268,0.492,0,2.647,0,5.614c0,2.966,2.223,5.119,5.284,5.119c1.588,0,2.956-0.515,3.957-1.489 c0.96-0.935,1.489-2.224,1.488-3.653C10.659,2.589,8.464,0.492,5.392,0.492z M7.847,7.811C7.227,8.414,6.34,8.733,5.284,8.733 C3.351,8.733,2,7.451,2,5.614c0-1.867,1.363-3.122,3.392-3.122c1.983,0,3.293,1.235,3.338,3.123 C8.729,6.477,8.416,7.256,7.847,7.811z"></path> <path d="M0.959,45.467h8.988V12.422H0.959V45.467z M2.959,14.422h4.988v29.044H2.959V14.422z"></path> <path d="M33.648,12.422c-4.168,0-6.72,1.439-8.198,2.792l-0.281-2.792H15v33.044h9.959V28.099c0-0.748,0.303-2.301,0.493-2.711 c1.203-2.591,2.826-2.591,5.284-2.591c2.831,0,5.223,2.655,5.223,5.797v16.874h10v-18.67 C45.959,16.92,39.577,12.422,33.648,12.422z M43.959,43.467h-6V28.593c0-4.227-3.308-7.797-7.223-7.797 c-2.512,0-5.358,0-7.099,3.75c-0.359,0.775-0.679,2.632-0.679,3.553v15.368H17V14.422h6.36l0.408,4.044h1.639l0.293-0.473 c0.667-1.074,2.776-3.572,7.948-3.572c4.966,0,10.311,3.872,10.311,12.374V43.467z"></path> </g> </g> </g></svg>
+                        <span class="u-screen-reader-text">LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://youtube.com/c/CassioBatistaPereira">
+                        <svg fill="#000000" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49 49" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M39.256,6.5H9.744C4.371,6.5,0,10.885,0,16.274v16.451c0,5.39,4.371,9.774,9.744,9.774h29.512 c5.373,0,9.744-4.385,9.744-9.774V16.274C49,10.885,44.629,6.5,39.256,6.5z M47,32.726c0,4.287-3.474,7.774-7.744,7.774H9.744 C5.474,40.5,2,37.012,2,32.726V16.274C2,11.988,5.474,8.5,9.744,8.5h29.512c4.27,0,7.744,3.488,7.744,7.774V32.726z"></path> <path d="M33.36,24.138l-13.855-8.115c-0.308-0.18-0.691-0.183-1.002-0.005S18,16.527,18,16.886v16.229 c0,0.358,0.192,0.69,0.502,0.868c0.154,0.088,0.326,0.132,0.498,0.132c0.175,0,0.349-0.046,0.505-0.137l13.855-8.113 c0.306-0.179,0.495-0.508,0.495-0.863S33.667,24.317,33.36,24.138z M20,31.37V18.63l10.876,6.371L20,31.37z"></path> </g> </g> </g></svg>
+                        <span class="u-screen-reader-text">YouTube</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="s-intro__content-media">                               
+                <img src="images/intro-bg.jpg" srcset="images/intro-bg.jpg 1x, images/intro-bg.jpg 2x" alt="Cássio B. Pereira" />
+            </div>
+            <div class="s-intro__btn-download">
+                <a class="btn btn--stroke" href="/assets/downloads/CassioBatistaPereira.pdf">Get my CV</a>
+            </div>
+            <div class="s-intro__scroll-down">
+                <a href="#about" class="smoothscroll" title="Scroll down">
+                    <div class="scroll-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    </div>
+                    <span class="scroll-text u-screen-reader-text">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+        <section id="about" class="s-about target-section">
+            <div class="row s-about__content">
+                <div class="column xl-12">    
+                    <div class="section-header" data-num="01">
+                        <h2 class="text-display-title">About Me.</h2>
+                    </div>
+                    <p class="attention-getter">Cassio Batista Pereira, a.k.a. @cassiodeveloper, is a Software Developer and Architect by formation. He is currently an #AppSec Expert and thus helps companies, teams and professionals to build safer solutions.</p>
+                    <p class="attention-getter">He has two decades of experience in the IT market and Information Security in the most varied business segments, where he gained knowledge to work with different technologies, programming languages and processes. He is an evangelist for the Secure Development culture.</p>
+                    <div class="grid-list-items s-about__blocks">
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Experience</h4>
+                            <ul class="s-about__list">
+                                <li>StoneX<span>Application Security Evangelist</span></li>
+                                <li>Nova8<span>CTO & Country Director</span></li>
+                                <li>Backbase<span>Application Security Specialist</span></li>
+                                <li>ABB<span>Principal Application Security</span></li>
+                                <li>CVC Corp<span>Principal Application Security</span></li>
+                                <li>Others<span>Writer, Teacher, Community Manager, Podcaster, Speaker...</span></li>
+                            </ul>
+                        </div>
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Certificates</h4>
+                            <ul class="s-about__list">
+                                <li>Forensics Computing<span>Universidade Presbiteriana Mackenzie 2015</span></li>
+                                <li>Software Architect<span>FIAP - 2012</span></li>
+                                <li>Software Developer<span>FIAP - 2009</span></li>
+                            </ul>
+                        </div>
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Skills</h4>
+                            <ul class="s-about__list">
+                                <li>Product Security</li>
+                                <li>Security Architecture</li>
+                                <li>Application Security</li>
+                                <li>S-SDLC</li>                                
+                                <li>Application Security Testing</li>
+                                <li>Cloud Security</li>
+                                <li>DevSecOps</li>
+                                <li>Leadership and training</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="works" class="s-works target-section">
+            <div class="row">
+                <div class="column xl-12">
+                    <div class="section-header" data-num="02">
+                        <h2 class="text-display-title">Projects</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row folio-entries">
+                <div class="column entry">
+                    <a href="images/folio/gallery/g-turban.jpg" class="entry__link glightbox" data-glightbox="title: Codes & Consequences Cap; description: .entry__desc-01">
+                        <div class="entry__thumb">
+                            <img src="images/folio/white_turban.jpg" srcset="images/folio/white_turban.jpg 1x, images/folio/white_turban@2x.jpg 2x" alt="" />
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Codes & Consequences</h4>
+                            <div class="entry__cat">Board Game</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc entry__desc-01">
+                        <p>Codes & Consequences is an educational and strategic game that simulates the real-world challenges of secure software development. Players take on roles within tech teams and face critical decisions between investing in features or security. The journey unfolds through development cycles inspired by agile methodologies, while players encounter real-world vulnerabilities, incidents, unexpected events, and cyber threats. The goal is to deliver a functional and secure system by balancing reputation, resources, and risk.<a href="https://codesandconsequences.com">C&C</a>.</p>
+                    </div>
+                </div>
+                <div class="column entry">
+                    <a href="images/folio/bsides.jpg" class="entry__link glightbox" data-glightbox="title: BSides Kraków; description: .entry__desc-02">
+                        <div class="entry__thumb">
+                            <img src="images/folio//bsides.jpg" srcset="images/folio//bsides.jpg 1x, images/folio/woodcraft@2x.jpg 2x" alt="" />
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">BSides Kraków</h4>
+                            <div class="entry__cat">Cyber Security Conference</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc entry__desc-02">
+                        <p>BSides events combine security expertise from a variety of platforms in search of the “next big thing” in information security. BSides is an open platform that gives security experts and industry professionals the opportunity so share ideas, insights, and develop longstanding relationships with others in the community. It is a rare opportunity to directly connect and create trusted relationships with key members of the community.<a href="https://bsideskrakow.pl">BSides Kraków</a>.</p>
+                    </div>
+                </div>
+                <div class="column entry">
+                    <a href="images/folio/DevSecOpsPodcast.png" class="entry__link glightbox" data-glightbox="title: DevSecOps Podcast; description: .entry__desc-03">
+                        <div class="entry__thumb">
+                            <img src="images/folio/DevSecOpsPodcast.png" srcset="images/folio/DevSecOpsPodcast.png 1x, images/folio/caffeine_and_tulips@2x.jpg 2x" alt="" />
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">DevSecOps Podcast</h4>
+                            <div class="entry__cat">Podcast</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc entry__desc-03">
+                        <p>The DevSecOps Podcast is a space dedicated to the in-depth exploration of Application Security and DevSecOps, bringing objective and relevant discussions about best practices, challenges and trends in the integration of security into software development. With episodes aimed at both experienced professionals and those who are just starting out in the field, the podcast presents technical insights, interviews with experts and analyses of real cases, always focusing on the practical application of security in the development cycle.<a href="https://linktr.ee/devsecopspodcast">DevSecOps Podcast</a>.</p>
+                    </div>
+                </div>
+                <div class="column entry">
+                    <a href="images/folio/devseccon.avif" class="entry__link glightbox" data-glightbox="title: DevSecCon Poland; description: .entry__desc-04">
+                        <div class="entry__thumb">
+                            <img src="images/folio/devseccon.avif" srcset="images/folio/devseccon.avif 1x, images/folio/grayscale@2x.jpg 2x" alt="" />
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">DevSecCon Poland</h4>
+                            <div class="entry__cat">Meetups</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc entry__desc-04">
+                        <p>We are a chapter of the Global DevSecCon Community, an inclusive community that educates and enables developers in application security.  If you’re a security enthusiast & you want to learn more about how to better secure your team, then check out our community & resources.<a href="https://www.meetup.com/pt-BR/devseccon-poland/">DevSecCon Poland</a>.</p>
+                    </div>
+                </div>
+                <div class="column entry">
+                    <a href="images/folio/Cover.png" class="entry__link glightbox" data-glightbox="title: Book - Explained, Application Security; description: .entry__desc-05">
+                        <div class="entry__thumb">
+                            <img src="images/folio/Cover.png" srcset="images/folio/Cover.png 1x, images/folio/lamp@2x.jpg 2x" alt="" />
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Book - Explained, Application Security</h4>
+                            <div class="entry__cat">Book</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc entry__desc-05">
+                        <p>My main goal with this book is to further spread the culture of safe development. It is very rare to find this type of content in Portuguese and even in English, as the market increases the demand every day, there is a lack of professionals to work in this area. Another important point is, our life is controlled by software, they need to be as safe as possible. Therefore, it is important that all involved in the Software Development Cycle (SDL), read and have access to this type of content.<a href="https://cassiodeveloper.com.br/livro">Book</a>.</p>
+                    </div>
+                </div>
+                <div class="column entry">
+                    <a href="images/folio/AppSec Iron Man.jpg" class="entry__link glightbox" data-glightbox="title: Book - Application Security Iron Man; description: .entry__desc-06">
+                        <div class="entry__thumb">
+                            <img src="images/folio/AppSec Iron Man.jpg" srcset="images/folio/AppSec Iron Man.jpg 1x, images/folio/tropical@2x.jpg 2x" alt="" />
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Book - Application Security Iron Man</h4>
+                            <div class="entry__cat">Book</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc entry__desc-06">
+                        <p>My main goal with this book is to further spread the culture of safe development. It is very rare to find this type of content in Portuguese and even in English, as the market increases the demand every day, there is a lack of professionals to work in this area. Another important point is, our life is controlled by software, they need to be as safe as possible. Therefore, it is important that all involved in the Software Development Cycle (SDL), read and have access to this type of content.<a href="https://cassiodeveloper.com.br/en/assets/downloads/AppSec-Iron-Man.pdf">Download</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row s-testimonials">
+                <div class="column xl-12">
+                    <h3 class="s-testimonials__header">As I always say...</h3>
+                    <div class="swiper-container s-testimonials__slider">
+                        <div class="swiper-wrapper">
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/cassio-mini.png" alt="Cássio Pereira" class="s-testimonials__avatar" />
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Cássio Pereira</strong>
+                                        <span>Application Security Expert</span>
+                                    </cite>
+                                </div>
+                                <p>I don’t just fix vulnerabilities — I build digital fortresses.</p>
+                            </div>
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/cassio-mini.png" alt="Cássio Pereira" class="s-testimonials__avatar" />
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Cássio Pereira</strong>
+                                        <span>Application Security Expert</span>
+                                    </cite>
+                                </div>
+                                <p>Security isn’t a feature. It’s a foundation.</p>
+                            </div>
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/cassio-mini.png" alt="Cássio Pereira" class="s-testimonials__avatar" />
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Cássio Pereira</strong>
+                                        <span>Application Security Expert</span>
+                                    </cite>
+                                </div>
+                                <p>From legacy systems to cloud-native stacks — I make them all bulletproof. (I try at least)</p>
+                            </div>
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/cassio-mini.png" alt="Cássio Pereira" class="s-testimonials__avatar" />
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Cássio Pereira</strong>
+                                        <span>Application Security Expert</span>
+                                    </cite>
+                                </div>
+                                <p>Security is everyone's responsibility.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="numbers" class="s-numbers">
+            <div class="row counter-items">
+                <div class="column counter-items__item">
+                    <div class="num">
+                        30
+                        <span>+</span>
+                    </div>
+                    <h5>Happy customers</h5>
+                    <p>Companies, teams and professionals. Happy clients. Decades of building trust through secure code and real results.</p>
+                </div>
+                <div class="column counter-items__item">
+                    <div class="num">
+                        120
+                        <span>+</span>
+                    </div>
+                    <h5>Projects Completed</h5>
+                    <p>From strategy to execution — huge amount of security projects delivered, each one strengthening the digital world.</p>
+                </div>
+                <div class="column counter-items__item">
+                    <div class="num">
+                        ∞
+                        <span>+</span>
+                    </div>
+                    <h5>Lines of Code</h5>
+                    <p>Countless lines of code scanned. Vulnerabilities prevented. Software made safer — one commit at a time.</p>
+                </div>
+                <div class="column counter-items__item">
+                    <div class="num">
+                        10
+                        <span>+</span>
+                    </div>
+                    <h5>Countries</h5>
+                    <p>Securing software across borders — from Brazil to the world.</p>
+                </div>
+            </div>
+        </section>
+        <footer id="footer" class="s-footer target-section">
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="section-header light-on-dark" data-num="03">
+                        <h2 class="text-display-title">Get in touch.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row s-footer__content">
+                <div class="column xl-6 md-12 s-footer__block s-footer__about">                    
+                    <p class="attention-getter">Let’s build secure software together. Get in touch and let’s talk, let me help you build secure software.</p>
+                </div>
+                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                    <div class="row">
+                        <div class="column xl-4 lg-5 md-6 tab-12">
+                            <h5>Follow Me</h5>
+                            <ul class="link-list">
+                                <li><a target="_blank" href="https://www.facebook.com/cassiodeveloperpagina">Facebook</a></li>
+                                <li><a target="_blank" href="https://x.com/cassiodeveloper">Twitter</a></li>
+                                <li><a target="_blank" href="https://instagram.com/cassiodeveloper">Instagram</a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/cassiodeveloper/">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                        <div class="column xl-6 md-6 tab-12">
+                            <h5>Contact Me</h5>
+                            <ul class="link-list">
+                                <li><a href="mailto:cassio@cassiobp.com.br">cassio@cassiobp.com.br</a></li>
+                                <li><a href="tel:+5511999430820">+55 11 999 430 820</a></li>
+                            </ul> 
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="row s-footer__buttons">
+                <div class="column xl-6 tab-12">
+                    <a href="mailto:cassio@cassiobp.com.br" class="btn btn--primary btn--large u-fullwidth">Message me</a>
+                </div>
+                <div class="column xl-6 tab-12">                    
+                    <a href="/assets/downloads/CassioBatistaPereira.pdf" class="btn btn--stroke btn--large u-fullwidth">Get my CV</a>
+                </div>            
+            </div>
+            <div class="row s-footer__bottom">                
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/cassiodeveloperpagina">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                                <span class="u-screen-reader-text">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://x.com/cassiodeveloper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                                <span class="u-screen-reader-text">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://instagram.com/cassiodeveloper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/cassiodeveloper/">
+                                <svg fill="#000000" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.959 45.959" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M5.392,0.492C2.268,0.492,0,2.647,0,5.614c0,2.966,2.223,5.119,5.284,5.119c1.588,0,2.956-0.515,3.957-1.489 c0.96-0.935,1.489-2.224,1.488-3.653C10.659,2.589,8.464,0.492,5.392,0.492z M7.847,7.811C7.227,8.414,6.34,8.733,5.284,8.733 C3.351,8.733,2,7.451,2,5.614c0-1.867,1.363-3.122,3.392-3.122c1.983,0,3.293,1.235,3.338,3.123 C8.729,6.477,8.416,7.256,7.847,7.811z"></path> <path d="M0.959,45.467h8.988V12.422H0.959V45.467z M2.959,14.422h4.988v29.044H2.959V14.422z"></path> <path d="M33.648,12.422c-4.168,0-6.72,1.439-8.198,2.792l-0.281-2.792H15v33.044h9.959V28.099c0-0.748,0.303-2.301,0.493-2.711 c1.203-2.591,2.826-2.591,5.284-2.591c2.831,0,5.223,2.655,5.223,5.797v16.874h10v-18.67 C45.959,16.92,39.577,12.422,33.648,12.422z M43.959,43.467h-6V28.593c0-4.227-3.308-7.797-7.223-7.797 c-2.512,0-5.358,0-7.099,3.75c-0.359,0.775-0.679,2.632-0.679,3.553v15.368H17V14.422h6.36l0.408,4.044h1.639l0.293-0.473 c0.667-1.074,2.776-3.572,7.948-3.572c4.966,0,10.311,3.872,10.311,12.374V43.467z"></path> </g> </g> </g></svg>
+                                <span class="u-screen-reader-text">LinkedIn</span>
+                            </a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span>© Copyright Cássio B. Pereira 2025</span> 
+                        <!-- <span>Design by <a href="https://styleshout.com/">StyleShout</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></span>-->
+                    </p>
+                </div>
+            </div>
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">                 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                </a>                                
+                <span>Back To Top</span>   
+            </div>           
+        </footer>
+    </div>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
