@@ -3137,7 +3137,7 @@ td:last-child {
     list-style: none;
     display   : inline-flex;
     flex-flow : row nowrap;
-    margin    : 0;
+    margin    : -25px;
     padding   : 0;
 }
 
