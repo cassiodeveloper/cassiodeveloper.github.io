@@ -9,22 +9,22 @@
 
 <url>
   <loc>https://cassiodeveloper.com.br/</loc>
-  <lastmod>2025-06-09T08:34:59+00:00</lastmod>
+  <lastmod>2025-11-24T14:23:21+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/index.html</loc>
-  <lastmod>2025-06-09T08:34:59+00:00</lastmod>
+  <lastmod>2025-11-24T14:23:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/en/</loc>
-  <lastmod>2025-06-09T08:21:53+00:00</lastmod>
+  <lastmod>2025-11-21T10:27:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/assets/downloads/CassioBatistaPereira.pdf</loc>
-  <lastmod>2025-06-09T08:34:59+00:00</lastmod>
+  <lastmod>2025-11-24T14:23:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -33,13 +33,28 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://cassiodeveloper.com.br/en/assets/downloads/AppSec-Iron-Man.pdf</loc>
-  <lastmod>2025-06-09T08:21:52+00:00</lastmod>
+  <loc>https://cassiodeveloper.com.br/assets/downloads/AppSec%20-%20Homem%20de%20Ferro.pdf</loc>
+  <lastmod>2025-11-24T14:23:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassiodeveloper.com.br/AppSec-Motherfucker/</loc>
+  <lastmod>2025-11-24T14:24:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassiodeveloper.com.br/TheAnt/</loc>
+  <lastmod>2025-11-24T12:20:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cassiodeveloper.com.br/en/index.html</loc>
-  <lastmod>2025-06-09T08:21:52+00:00</lastmod>
+  <lastmod>2025-11-21T10:27:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cassiodeveloper.com.br/en/assets/downloads/AppSec-Iron-Man.pdf</loc>
+  <lastmod>2025-11-21T10:27:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -90,6 +105,21 @@
 <url>
   <loc>https://cassiodeveloper.com.br/livro/capitulos/IAC/</loc>
   <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cassiodeveloper.com.br/AppSec-Motherfucker/index.html</loc>
+  <lastmod>2025-11-24T14:24:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cassiodeveloper.com.br/AppSec-Motherfucker/en/index.html</loc>
+  <lastmod>2025-11-24T14:24:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cassiodeveloper.com.br/TheAnt/index.html</loc>
+  <lastmod>2025-11-24T12:20:06+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
