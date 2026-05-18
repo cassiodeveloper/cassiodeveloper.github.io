@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Pereira;Cássio;;;
+FN:Cássio B. Pereira
+TITLE:AppSec Specialist
+TEL;TYPE=CELL,VOICE,WORK:+48534320228
+TEL;TYPE=CELL,VOICE,HOME:+5511999430820
+EMAIL:cassio@cassiobp.com.br
+URL:https://cassiodeveloper.com.br
+NOTE:I help you ship secure software.\nEu ajudo você a entregar software seguro.
+END:VCARD
