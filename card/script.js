@@ -57,8 +57,8 @@ function applyTheme(theme) {
   root.dataset.theme = theme;
   localStorage.setItem("cassio-card-theme", theme);
   document.querySelector("[data-i18n='theme']").textContent = theme === "dark"
-    ? i18n[state.lang].theme
-    : state.lang === "pt" ? "Claro" : "Light";
+    ? (state.lang === "pt" ? "Claro" : "Light")
+    : (state.lang === "pt" ? "Escuro" : "Dark");
   document.querySelector("meta[name='theme-color']")
     ?.setAttribute("content", theme === "dark" ? "#11100d" : "#f2eadf");
 }
@@ -85,8 +85,6 @@ function applyLanguage(lang) {
       ? "Cássio Pereira, AppSec Specialist. Eu ajudo você a entregar software seguro."
       : "Cássio Pereira, AppSec Specialist. I help you ship secure software."
     );
-
-  applyTheme(state.theme);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
