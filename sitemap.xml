@@ -1,155 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://cassiodeveloper.com.br/</loc>
-  <lastmod>2025-11-24T14:23:21+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/index.html</loc>
-  <lastmod>2025-11-24T14:23:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/en/</loc>
-  <lastmod>2025-11-21T10:27:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/assets/downloads/CassioBatistaPereira.pdf</loc>
-  <lastmod>2025-11-24T14:23:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/assets/downloads/AppSec%20-%20Homem%20de%20Ferro.pdf</loc>
-  <lastmod>2025-11-24T14:23:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/AppSec-Motherfucker/</loc>
-  <lastmod>2025-11-24T14:24:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/TheAnt/</loc>
-  <lastmod>2025-11-24T12:20:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/en/index.html</loc>
-  <lastmod>2025-11-21T10:27:22+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/en/assets/downloads/AppSec-Iron-Man.pdf</loc>
-  <lastmod>2025-11-21T10:27:22+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/capitulos/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/autor/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/sobre/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/contato/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/capitulos/SCA/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/capitulos/SAST/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/capitulos/DevSecOps/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/capitulos/Threat%20Modeling/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/capitulos/DAST/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/capitulos/IAC/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/AppSec-Motherfucker/index.html</loc>
-  <lastmod>2025-11-24T14:24:46+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/AppSec-Motherfucker/en/index.html</loc>
-  <lastmod>2025-11-24T14:24:46+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/TheAnt/index.html</loc>
-  <lastmod>2025-11-24T12:20:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/IronSoftware/index.html</loc>
-  <lastmod>2025-11-24T12:20:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/capitulos/Monitoramento/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/livro/capitulos/Requisitos/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/yass/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/IronSoftware/</loc>
-  <lastmod>2024-04-22T15:57:10+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://cassiodeveloper.com.br/oincidente/</loc>
-  <lastmod>2026-02-26T15:57:10+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://cassiodeveloper.com.br/</loc>
+    <lastmod>2025-11-24T14:23:21+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/card</loc>
+    <lastmod>2026-05-19T01:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/index.html</loc>
+    <lastmod>2025-11-24T14:23:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/en/</loc>
+    <lastmod>2025-11-21T10:27:22+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/assets/downloads/CassioBatistaPereira.pdf</loc>
+    <lastmod>2025-11-24T14:23:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/assets/downloads/AppSec%20-%20Homem%20de%20Ferro.pdf</loc>
+    <lastmod>2025-11-24T14:23:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/AppSec-Motherfucker/</loc>
+    <lastmod>2025-11-24T14:24:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/TheAnt/</loc>
+    <lastmod>2025-11-24T12:20:06+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/en/index.html</loc>
+    <lastmod>2025-11-21T10:27:22+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/en/assets/downloads/AppSec-Iron-Man.pdf</loc>
+    <lastmod>2025-11-21T10:27:22+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/capitulos/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/autor/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/sobre/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/contato/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/capitulos/SCA/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/capitulos/SAST/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/capitulos/DevSecOps/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/capitulos/Threat%20Modeling/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/capitulos/DAST/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/capitulos/IAC/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/AppSec-Motherfucker/index.html</loc>
+    <lastmod>2025-11-24T14:24:46+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/AppSec-Motherfucker/en/index.html</loc>
+    <lastmod>2025-11-24T14:24:46+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/TheAnt/index.html</loc>
+    <lastmod>2025-11-24T12:20:06+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/IronSoftware/index.html</loc>
+    <lastmod>2025-11-24T12:20:06+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/capitulos/Monitoramento/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/livro/capitulos/Requisitos/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/yass/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/IronSoftware/</loc>
+    <lastmod>2024-04-22T15:57:10+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/oincidente/</loc>
+    <lastmod>2026-02-26T15:57:10+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
 </urlset>
