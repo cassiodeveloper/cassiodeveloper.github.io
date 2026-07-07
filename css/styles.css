@@ -4441,3 +4441,156 @@ td:last-child {
         right: -2rem;
     }
 }
+
+/* ===================================================================
+ * # VITRINE REDESIGN  (2026)
+ * Objetivo: showcase denso e escaneável — tudo identificável numa
+ * olhada, sem scroll infinito. Mantém a identidade visual original
+ * (paleta clara, acento ferrugem, tipografia serifada nos títulos).
+ * Este bloco é intencionalmente o último do arquivo para sobrescrever
+ * as regras anteriores via cascata.
+ * ------------------------------------------------------------------- */
+
+/* --- hero compacto: não ocupa mais a tela inteira --- */
+.s-intro {
+    --content-padding-top   : max(11rem, 12vh);
+    --content-padding-bottom: 5rem;
+    height                  : auto;
+    min-height              : 76vh;
+}
+
+/* --- espaçamentos entre seções reduzidos p/ cortar scroll --- */
+.s-works {
+    padding-top   : var(--vspace-3);
+    padding-bottom: var(--vspace-1);
+}
+
+.s-about {
+    padding-top: var(--vspace-3_5);
+}
+
+.s-numbers {
+    padding-top   : var(--vspace-3);
+    padding-bottom: var(--vspace-3);
+}
+
+.s-testimonials {
+    padding-top   : var(--vspace-2_5);
+    padding-bottom: var(--vspace-2_5);
+}
+
+.section-header {
+    margin-bottom: var(--vspace-2);
+}
+
+.section-header::before {
+    font-size: 6em;
+}
+
+/* --- grade da vitrine: 4 colunas, tiles uniformes --- */
+.folio-entries {
+    --width-grid-max: 1400px;
+    margin-top      : var(--vspace-1);
+}
+
+.folio-entries .entry {
+    width        : 25%;
+    padding      : 0 0.7rem;
+    margin-bottom: var(--vspace-1_5);
+    overflow     : visible;
+}
+
+.folio-entries .entry__link {
+    height: 100%;
+}
+
+/* thumb com proporção fixa: imagens variadas ficam alinhadas */
+.folio-entries .entry__thumb {
+    position        : relative;
+    overflow        : hidden;
+    aspect-ratio    : 16 / 10;
+    border-radius   : var(--border-radius);
+    background-color : var(--color-gray-10);
+}
+
+.folio-entries .entry__link img {
+    width         : 100%;
+    height        : 100%;
+    object-fit    : cover;
+    object-position: center;
+    transition    : transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* desliga o overlay antigo (título só aparecia no hover) */
+.folio-entries .entry__link::before {
+    display: none;
+}
+
+/* legenda SEMPRE visível abaixo do card (não depende de hover) */
+.folio-entries .entry__info {
+    position  : static;
+    transform : none;
+    opacity   : 1;
+    visibility: visible;
+    text-align: left;
+    top       : auto;
+    left      : auto;
+    margin-top: var(--vspace-0_5);
+    padding   : 0 0.2rem;
+}
+
+.folio-entries .entry__title {
+    color        : var(--color-text-dark);
+    font-weight  : 600;
+    font-size    : calc(var(--text-size) * 0.98);
+    line-height  : 1.25;
+    margin-bottom: 0.2rem;
+    transition   : color 0.2s ease-in-out;
+}
+
+.folio-entries .entry__cat {
+    color      : var(--color-text-light);
+    font-size  : calc(var(--text-size) * 0.74);
+    line-height: 1.35;
+}
+
+/* hover: zoom sutil na imagem + título em ferrugem */
+.folio-entries .entry:hover .entry__link img,
+.folio-entries .entry:focus .entry__link img {
+    transform: scale(1.06);
+}
+
+.folio-entries .entry:hover .entry__info,
+.folio-entries .entry:focus .entry__info {
+    transform : none;
+    opacity   : 1;
+    visibility: visible;
+}
+
+.folio-entries .entry:hover .entry__title,
+.folio-entries .entry:focus .entry__title {
+    color: var(--color-1);
+}
+
+/* --- responsivo da vitrine --- */
+@media screen and (max-width: 1200px) {
+    .folio-entries .entry { width: 33.333%; }
+}
+
+@media screen and (max-width: 800px) {
+    .folio-entries .entry { width: 50%; }
+    .folio-entries .entry__title { font-size: calc(var(--text-size) * 0.9); }
+    .folio-entries .entry__cat   { font-size: calc(var(--text-size) * 0.72); }
+}
+
+@media screen and (max-width: 480px) {
+    .folio-entries .entry { width: 100%; }
+}
+
+/* --- reordena as seções: a vitrine sobe para logo após o hero ---
+ * (#page.s-pagewrap já é flex-column; o header é absolute, fora do fluxo) */
+#intro   { order: 1; }
+#works   { order: 2; }
+#about   { order: 3; }
+#numbers { order: 4; }
+#footer  { order: 5; }

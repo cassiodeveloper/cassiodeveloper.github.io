@@ -7,12 +7,62 @@
     <meta name="description" content="Especialista em Segurança de Aplicações, DevSecOps e Cloud Security com mais de 20 anos de experiência. Transforme seu software em uma fortaleza com práticas modernas e seguras desde o código até a produção." />
     <meta name="keywords" content="AppSec, DevSecOps, Podcast, CyberSec, Cássio, Pereira, InfoSec, BSides, DevSecCon, Curso, modelagem de ameaças, treinamento, professor, sdlc, desenvolvimento seguro" />
     <meta name="author" content="Cássio B. Pereira">
-    <meta name="robots" content="index">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta property="og:title" content="Cássio Batista Pereira" />
-    <meta property="og:url" content="https://cassiodeveloper.com.br/en"/>
-    <meta property="og:description" content="Especialista em Segurança de Aplicações, DevSecOps e Cloud Security com mais de 20 anos de experiência. Transforme seu software em uma fortaleza com práticas modernas e seguras desde o código até a produção."/>
-    <meta property="og:image" content="https://cassiodeveloper.com.br/images/intro-bg.jpeg"/>
+    <link rel="canonical" href="https://cassiodeveloper.com.br/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://cassiodeveloper.com.br/" />
+    <link rel="alternate" hreflang="en" href="https://cassiodeveloper.com.br/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://cassiodeveloper.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cássio B. Pereira — Application Security" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:title" content="Cássio Batista Pereira — Especialista em Segurança de Aplicações" />
+    <meta property="og:url" content="https://cassiodeveloper.com.br/" />
+    <meta property="og:description" content="Especialista em Segurança de Aplicações, DevSecOps e Cloud Security com mais de 20 anos de experiência. Transforme seu software em uma fortaleza com práticas modernas e seguras desde o código até a produção." />
+    <meta property="og:image" content="https://cassiodeveloper.com.br/images/intro-bg.jpg" />
+    <meta property="og:image:alt" content="Cássio Batista Pereira, Especialista em Segurança de Aplicações" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@cassiodeveloper" />
+    <meta name="twitter:creator" content="@cassiodeveloper" />
+    <meta name="twitter:title" content="Cássio Batista Pereira — Especialista em Segurança de Aplicações" />
+    <meta name="twitter:description" content="Especialista em Segurança de Aplicações, DevSecOps e Cloud Security com mais de 20 anos de experiência." />
+    <meta name="twitter:image" content="https://cassiodeveloper.com.br/images/intro-bg.jpg" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://cassiodeveloper.com.br/#cassio",
+          "name": "Cássio Batista Pereira",
+          "alternateName": "cassiodeveloper",
+          "url": "https://cassiodeveloper.com.br/",
+          "image": "https://cassiodeveloper.com.br/images/intro-bg2.jpg",
+          "jobTitle": "Especialista em Segurança de Aplicações",
+          "description": "Especialista em Segurança de Aplicações, DevSecOps e Cloud Security com mais de 20 anos de experiência em TI e Segurança.",
+          "email": "cassio@cassiobp.com.br",
+          "knowsAbout": ["Application Security", "AppSec", "DevSecOps", "Cloud Security", "Threat Modeling", "Secure SDLC", "SAST", "DAST", "Product Security"],
+          "sameAs": [
+            "https://www.linkedin.com/in/cassiodeveloper/",
+            "https://x.com/cassiodeveloper",
+            "https://instagram.com/cassiodeveloper",
+            "https://www.facebook.com/cassiodeveloperpagina",
+            "https://youtube.com/c/CassioBatistaPereira",
+            "https://linktr.ee/cassiodeveloper"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://cassiodeveloper.com.br/#website",
+          "url": "https://cassiodeveloper.com.br/",
+          "name": "Cássio B. Pereira — Application Security",
+          "inLanguage": "pt-BR",
+          "author": { "@id": "https://cassiodeveloper.com.br/#cassio" }
+        }
+      ]
+    }
+    </script>
     <script>
         document.documentElement.classList.remove('no-js');
         document.documentElement.classList.add('js');
@@ -53,8 +103,8 @@
                 <nav class="s-header__nav">    
                     <ul class="s-header__menu-links">
                         <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
-                        <li><a class="smoothscroll" href="#about">Sobre mim</a></li>
                         <li><a class="smoothscroll" href="#works">Projetos</a></li>
+                        <li><a class="smoothscroll" href="#about">Sobre mim</a></li>
                         <li><a class="smoothscroll" href="#footer">Contato</a></li>
                         <li><a target="_blank" href="https://cassiodeveloper.com.br/en" title="English version"><img width="20px" height="15px" src="images/icons/en-us.svg" alt="English version" title="English version" /></a></li>
                     </ul>
@@ -108,13 +158,16 @@
                 </li>
             </ul>
             <div class="s-intro__content-media">                               
-                <img src="images/intro-bg2.png" srcset="images/intro-bg2.png 1x, images/intro-bg2.png 2x" alt="Cássio B. Pereira" />
+                <picture>
+                    <source type="image/webp" srcset="images/intro-bg2.webp" />
+                    <img src="images/intro-bg2.jpg" width="1333" height="2000" alt="Cássio B. Pereira — Especialista em Segurança de Aplicações" fetchpriority="high" decoding="async" />
+                </picture>
             </div>
             <div class="s-intro__btn-download">
                 <a class="btn btn--stroke" href="/assets/downloads/CassioBatistaPereira.pdf">Meu CV</a>
             </div>
             <div class="s-intro__scroll-down">
-                <a href="#about" class="smoothscroll" title="Scroll down">
+                <a href="#works" class="smoothscroll" title="Scroll down">
                     <div class="scroll-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
                     </div>
@@ -125,7 +178,7 @@
         <section id="about" class="s-about target-section">
             <div class="row s-about__content">
                 <div class="column xl-12">    
-                    <div class="section-header" data-num="01">
+                    <div class="section-header" data-num="02">
                         <h2 class="text-display-title">Sobre mim.</h2>
                     </div>
                     <p class="attention-getter">Cassio Batista Pereira <a href="https://linktr.ee/cassiodeveloper">(a.k.a. @cassiodeveloper)</a> possui formação em Desenvolvimento de Software e Análise de Sistemas, é MBA em Arquitetura de Software e especialista em Cyber Segurança com foco em Segurança de Aplicações, uma base sólida que conecta engenharia, arquitetura e segurança em profundidade. Atualmente, uma das principais referências em Segurança de Aplicações. Com mais de duas décadas de experiência em TI e Segurança, atua ajudando empresas, equipes e profissionais a desenvolver software seguro desde a concepção.</p>
@@ -170,7 +223,7 @@
         <section id="works" class="s-works target-section">
             <div class="row">
                 <div class="column xl-12">
-                    <div class="section-header" data-num="02">
+                    <div class="section-header" data-num="01">
                         <h2 class="text-display-title">Projetos</h2>
                     </div>
                 </div>
@@ -179,7 +232,7 @@
                 <div class="column entry">
                     <a href="images/folio/ccw.png" class="entry__link glightbox" data-glightbox="title: Códigos e Consequências; description: .entry__desc-01">
                         <div class="entry__thumb">
-                            <img src="images/folio/ccw.png" srcset="images/folio/ccw.png 1x, images/folio/white_turban@2x.jpg 2x" alt="Códigos & Consequências" />
+                            <img src="images/folio/ccw.png" alt="Códigos & Consequências" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Códigos e Consequências</h4>
@@ -193,7 +246,7 @@
                 <div class="column entry">
                     <a href="images/folio/Bsides.png" class="entry__link glightbox" data-glightbox="title: BSides Kraków; description: .entry__desc-02">
                         <div class="entry__thumb">
-                            <img src="images/folio/Bsides.png" srcset="images/folio/Bsides.png 1x, images/folio/woodcraft@2x.jpg 2x" alt="" />
+                            <img src="images/folio/Bsides.png" alt="BSides Kraków" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">BSides Kraków</h4>
@@ -207,7 +260,7 @@
                 <div class="column entry">
                     <a href="images/folio/DevSecOpsPodcast.png" class="entry__link glightbox" data-glightbox="title: DevSecOps Podcast; description: .entry__desc-03">
                         <div class="entry__thumb">
-                            <img src="images/folio/DevSecOpsPodcast.png" srcset="images/folio/DevSecOpsPodcast.png 1x, images/folio/caffeine_and_tulips@2x.jpg 2x" alt="" />
+                            <img src="images/folio/DevSecOpsPodcast.png" alt="DevSecOps Podcast" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">DevSecOps Podcast</h4>
@@ -221,7 +274,7 @@
                 <div class="column entry">
                     <a href="images/folio/devseccon.avif" class="entry__link glightbox" data-glightbox="title: DevSecCon Poland; description: .entry__desc-04">
                         <div class="entry__thumb">
-                            <img src="images/folio/devseccon.avif" srcset="images/folio/devseccon.avif 1x, images/folio/grayscale@2x.jpg 2x" alt="" />
+                            <img src="images/folio/devseccon.avif" alt="DevSecCon Polônia" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">DevSecCon Polônia</h4>
@@ -235,7 +288,7 @@
                 <div class="column entry">
                     <a href="images/folio/Cover.png" class="entry__link glightbox" data-glightbox="title: Livro - Explicando, Application Security; description: .entry__desc-05">
                         <div class="entry__thumb">
-                            <img src="images/folio/Cover.png" srcset="images/folio/Cover.png 1x, images/folio/lamp@2x.jpg 2x" alt="" />
+                            <img src="images/folio/Cover.png" alt="Livro - Explicando, Application Security" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Livro - Explicando, Application Security</h4>
@@ -249,7 +302,7 @@
                 <div class="column entry">
                     <a href="images/folio/livro-lessons-learned.png" class="entry__link glightbox" data-glightbox="title: Livro - Segurança de Aplicações Homem de Ferro; description: .entry__desc-06">
                         <div class="entry__thumb">
-                            <img src="images/folio/livro-lessons-learned.png" srcset="images/folio/livro-lessons-learned.png 1x, images/folio/tropical@2x.jpg 2x" alt="" />
+                            <img src="images/folio/livro-lessons-learned.png" alt="Livro - Segurança de Aplicações Homem de Ferro" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Livro - Segurança de Aplicações Homem de Ferro</h4>
@@ -263,7 +316,7 @@
                 <div class="column entry">
                     <a href="images/folio/appsecnightmare.png" class="entry__link glightbox" data-glightbox="title: AppSec Nightmare; description: .entry__desc-11">
                         <div class="entry__thumb">
-                            <img src="images/folio/appsecnightmare.png" srcset="images/folio/appsecnightmare.png 1x, images/folio/appsecnightmare@2x.png 2x" alt="AppSec Nightmare" />
+                            <img src="images/folio/appsecnightmare.png" alt="AppSec Nightmare" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">AppSec Nightmare</h4>
@@ -277,7 +330,7 @@
                 <div class="column entry">
                     <a href="images/folio/AppSec-Onfire.png" class="entry__link glightbox" data-glightbox="title: AppSec On Fire; description: .entry__desc-12">
                         <div class="entry__thumb">
-                            <img src="images/folio/AppSec-Onfire.png" srcset="images/folio/AppSec-Onfire.png 1x, images/folio/AppSec-Onfire@2x.png 2x" alt="AppSec On Fire" />
+                            <img src="images/folio/AppSec-Onfire.png" alt="AppSec On Fire" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">AppSec On Fire</h4>
@@ -291,7 +344,7 @@
                 <div class="column entry">
                     <a href="images/folio/ironsoftware-pt.png" class="entry__link glightbox" data-glightbox="title: Software de Ferro; description: .entry__desc-07">
                         <div class="entry__thumb">
-                            <img src="images/folio/ironsoftware-pt.png" srcset="images/folio/ironsoftware-pt.png 1x, images/folio/ironsoftware-pt@2x.png 2x" alt="Software de Ferro" />
+                            <img src="images/folio/ironsoftware-pt.png" alt="Software de Ferro" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Software de Ferro</h4>
@@ -305,7 +358,7 @@
                 <div class="column entry">
                     <a href="images/folio/yass.png" class="entry__link glightbox" data-glightbox="title: YASS Your AppSec Sucks!; description: .entry__desc-08">
                         <div class="entry__thumb">
-                            <img src="images/folio/yass.png" srcset="images/folio/yass.png 1x, images/folio/yass@2x.png 2x" alt="YASS" />
+                            <img src="images/folio/yass.png" alt="YASS" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">YASS - Your AppSec Sucks!</h4>
@@ -319,7 +372,7 @@
                 <div class="column entry">
                     <a href="images/folio/motherfucker.png" class="entry__link glightbox" data-glightbox="title: AppSec, Motherfucker; description: .entry__desc-09">
                         <div class="entry__thumb">
-                            <img src="images/folio/motherfucker.png" srcset="images/folio/motherfucker.png 1x, images/folio/motherfucker@2x.png 2x" alt="" />
+                            <img src="images/folio/motherfucker.png" alt="AppSec, Motherfucker" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">AppSec, Motherfucker</h4>
@@ -333,7 +386,7 @@
                 <div class="column entry">
                     <a href="images/folio/ant.png" class="entry__link glightbox" data-glightbox="title: The ANT; description: .entry__desc-10">
                         <div class="entry__thumb">
-                            <img src="images/folio/ant.png" srcset="images/folio/ant.png 1x, images/folio/ant@2x.png 2x" alt="" />
+                            <img src="images/folio/ant.png" alt="The ANT" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">The ANT</h4>
@@ -347,7 +400,7 @@
                 <div class="column entry">
                     <a href="images/folio/pos.png" class="entry__link glightbox" data-glightbox="title: Pós-Graduação AppSec & DevSecOps; description: .entry__desc-13">
                         <div class="entry__thumb">
-                            <img src="images/folio/pos.png" srcset="images/folio/pos.png 1x, images/folio/pos@2x.png 2x" alt="Pós AppSec" style="object-fit:contain; padding:20px;" />
+                            <img src="images/folio/pos.png" alt="Pós AppSec" style="object-fit:contain; padding:20px;" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Pós-Graduação AppSec & DevSecOps</h4>
@@ -361,7 +414,7 @@
                 <div class="column entry">
                     <a href="images/folio/CAS.png" class="entry__link glightbox" data-glightbox="title: C.A.S. - Comunidade AppSec; description: .entry__desc-14">
                         <div class="entry__thumb">
-                            <img src="images/folio/CAS.png" srcset="images/folio/CAS.png 1x, images/folio/CAS@2x.png 2x" alt="C.A.S. Comunidade AppSec" style="object-fit:contain; padding:20px;" />
+                            <img src="images/folio/CAS.png" alt="C.A.S. Comunidade AppSec" style="object-fit:contain; padding:20px;" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">C.A.S. - Comunidade AppSec</h4>
@@ -375,7 +428,7 @@
                 <div class="column entry">
                     <a href="images/folio/maria.png" class="entry__link glightbox" data-glightbox="title: C.A.S. - Comunidade AppSec; description: .entry__desc-15">
                         <div class="entry__thumb">
-                            <img src="images/folio/maria.png" srcset="images/folio/maria.png 1x, images/folio/maria@2x.png 2x" alt="Maria Silva" style="object-fit:contain; padding:20px;" />
+                            <img src="images/folio/maria.png" alt="Maria Silva" style="object-fit:contain; padding:20px;" />
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">M.A.R.I.A.</h4>
