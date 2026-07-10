@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>#sarif — Cássio Pereira</title><link>https://cassiodeveloper.com.br/blog/tag/sarif/rss.xml</link><description>Tag sarif</description><language>pt-BR</language><lastBuildDate>Fri, 10 Jul 2026 00:00:00 GMT</lastBuildDate><atom:link href="https://cassiodeveloper.com.br/blog/tag/sarif/rss.xml" rel="self" type="application/rss+xml"/><item><title>SecScore: decisões de segurança baseadas em contexto</title><link>https://cassiodeveloper.com.br/blog/secscore-decisoes-de-seguranca-baseadas-em-contexto/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/secscore-decisoes-de-seguranca-baseadas-em-contexto/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>Como o SecScore transforma findings de scanners em um score e uma decisão objetiva para Pull Requests.</description><content:encoded><![CDATA[<h2 id="scanner-encontra-secscore-ajuda-a-decidir-1">Scanner encontra. SecScore ajuda a decidir.</h2>
+<p>Ferramentas de segurança são excelentes sensores. Elas encontram vulnerabilidades, padrões inseguros e problemas em dependências, infraestrutura e código. O pipeline começa a falhar quando cada finding é tratado como se tivesse o mesmo impacto e toda ferramenta tenta decidir sozinha se uma entrega deve continuar.</p>
+<p>O SecScore foi criado como uma camada de decisão entre os scanners e o Pull Request.</p>
+<p>Ele consome findings, aplica uma política explícita e devolve duas respostas fáceis de entender:</p>
+<ul>
+<li>um score de segurança;</li>
+<li>uma decisão: <strong>PASS</strong>, <strong>REVIEW</strong> ou <strong>FAIL</strong>.</li>
+</ul>
+<p>O SecScore não é um scanner. Ele usa os resultados das ferramentas que a equipe já executa.</p>
+<h3 id="do-sarif-a-decisao-2">Do SARIF à decisão</h3>
+<p>SARIF é o caminho preferencial porque permite receber resultados de diferentes ferramentas em um formato comum. O SecScore também oferece modos específicos de provider quando uma integração direta faz sentido.</p>
+<p>O fluxo é direto:</p>
+<ol>
+<li>o scanner produz findings;</li>
+<li>os resultados chegam ao SecScore;</li>
+<li>a política define penalidades, limites e hard fails;</li>
+<li>o motor calcula o score;</li>
+<li>o Pull Request recebe uma decisão clara.</li>
+</ol>
+<p>Isso reduz a distância entre encontrar um problema e tomar uma decisão de engenharia.</p>
+<h3 id="politica-em-vez-de-severidade-isolada-3">Política em vez de severidade isolada</h3>
+<p>Severidade é importante, mas não deveria ser a única variável de um gate. Uma política do SecScore pode definir:</p>
+<ul>
+<li>penalidades diferentes por severidade;</li>
+<li>limites para PASS, REVIEW e FAIL;</li>
+<li>casos críticos que sempre causam hard fail;</li>
+<li>caminhos que devem ser ignorados, como artefatos gerados ou dependências vendorizadas;</li>
+<li>multiplicadores e regras adequadas ao contexto da organização.</li>
+</ul>
+<p>A lógica de segurança fica na política, de forma transparente e versionável, em vez de escondida dentro de um dashboard ou de uma decisão manual impossível de reproduzir.</p>
+<h3 id="feito-para-pull-requests-4">Feito para Pull Requests</h3>
+<p>O lugar natural da decisão é onde a mudança está sendo revisada. O SecScore pode publicar o resultado no Pull Request, comentar os principais motivos e atualizar status checks usados por regras de branch protection.</p>
+<p>Em vez de entregar dezenas de findings sem hierarquia, o time recebe uma resposta operacional:</p>
+<ul>
+<li><strong>PASS</strong> quando não há risco significativo segundo a política;</li>
+<li><strong>REVIEW</strong> quando contexto humano é necessário;</li>
+<li><strong>FAIL</strong> quando a mudança viola uma regra que não deve ser ignorada.</li>
+</ul>
+<p>O score não substitui a análise. Ele torna a decisão consistente e explica por que a análise é necessária.</p>
+<h3 id="compatibilidade-sem-lock-in-5">Compatibilidade sem lock-in</h3>
+<p>O SecScore é SARIF-first e foi desenhado para trabalhar com resultados produzidos por ferramentas como Snyk, Semgrep, CodeQL, KICS, Veracode e outras soluções que exportam o padrão. Também existe suporte a provider mode para Checkmarx.</p>
+<p>Essa abordagem evita amarrar a política de segurança a um único scanner.</p>
+<h3 id="open-source-por-um-motivo-6">Open source por um motivo</h3>
+<p>Um motor que influencia merge e branch protection precisa ser inspecionável. O core open source permite revisar a lógica, adaptar políticas, executar localmente e entender exatamente como cada score foi calculado.</p>
+<p>Não existe ciência secreta por trás do número. Existe uma política conhecida, findings conhecidos e uma decisão reproduzível.</p>
+<h3 id="para-quem-faz-sentido-7">Para quem faz sentido</h3>
+<p>O SecScore é voltado a equipes que já executam scanners no CI/CD e querem diminuir ruído sem abrir mão de controles.</p>
+<p>Ele ajuda especialmente quando:</p>
+<ul>
+<li>vários scanners participam do mesmo pipeline;</li>
+<li>toda severidade alta está bloqueando o fluxo sem considerar contexto;</li>
+<li>a organização precisa de regras claras para branch protection;</li>
+<li>desenvolvedores recebem findings, mas não entendem a decisão esperada;</li>
+<li>AppSec quer transformar política em automação verificável.</li>
+</ul>
+<p>O objetivo não é criar mais um dashboard. É dar ao Pull Request uma resposta que o time consiga usar.</p>
+<p><a href="https://secscore.dev" target="_blank" rel="noopener noreferrer">Conheça o SecScore<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></p>]]></content:encoded></item></channel></rss>

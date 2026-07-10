@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blog — Cássio Pereira</title><link>https://cassiodeveloper.com.br/blog/rss.xml</link><description>Ideias, opiniões e experiências sobre Application Security, DevSecOps, desenvolvimento seguro, tecnologia e os projetos que estou construindo.</description><language>pt-BR</language><lastBuildDate>Fri, 10 Jul 2026 00:00:00 GMT</lastBuildDate><atom:link href="https://cassiodeveloper.com.br/blog/rss.xml" rel="self" type="application/rss+xml"/><item><title>Segurança de Aplicações pela mente do Homem de Ferro</title><link>https://cassiodeveloper.com.br/blog/seguranca-de-aplicacoes-homem-de-ferro/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/seguranca-de-aplicacoes-homem-de-ferro/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>Um e-book gratuito que usa a evolução das armaduras de Tony Stark para explicar práticas reais de Application Security.</description><content:encoded><![CDATA[<h2 id="seguranca-de-software-versao-apos-versao-1">Segurança de software, versão após versão</h2>
+<p>Tony Stark não construiu uma armadura perfeita na primeira tentativa. Ele trabalhou com os recursos disponíveis, sobreviveu ao problema imediato, aprendeu com as falhas e criou uma versão melhor.</p>
+<p>Essa evolução é uma boa maneira de explicar Application Security.</p>
+<p><strong>Segurança de Aplicações pela mente do Homem de Ferro</strong> é um e-book gratuito de 71 páginas que conecta situações do Universo Cinematográfico Marvel a práticas reais de desenvolvimento seguro. A proposta não é transformar ficção em framework, mas usar uma referência conhecida para tornar decisões de segurança mais fáceis de visualizar.</p>
+<h3 id="a-ideia-central-2">A ideia central</h3>
+<p>Software seguro não nasce pronto. Ele evolui por meio de requisitos, hipóteses, testes, incidentes, correções e novos ciclos de engenharia.</p>
+<p>A primeira armadura de Tony Stark não foi criada para derrotar todas as ameaças possíveis. Ela precisava responder ao contexto da caverna, aos recursos disponíveis e ao objetivo imediato de escapar.</p>
+<p>Esse raciocínio aparece diversas vezes no livro: segurança precisa considerar ameaça, objetivo, contexto e capacidade. Um controle perfeito para outro sistema pode ser insuficiente ou desnecessário para o seu.</p>
+<h3 id="o-que-o-livro-aborda-3">O que o livro aborda</h3>
+<h4 id="modelagem-de-ameacas-4">Modelagem de Ameaças</h4>
+<p>O livro usa a criação da Mark I e da Hulkbuster para mostrar como ameaças, objetivos e requisitos de segurança podem ser pensados antes da execução.</p>
+<p>A discussão passa por perguntas essenciais:</p>
+<ul>
+<li>O que pode dar errado?</li>
+<li>Qual impacto precisa ser evitado?</li>
+<li>Quais mitigações são possíveis com os recursos atuais?</li>
+<li>O controle reduz a ameaça que realmente importa?</li>
+<li>O que foi aprendido com incidentes anteriores?</li>
+</ul>
+<h4 id="devsecops-5">DevSecOps</h4>
+<p>A seção de DevSecOps organiza a transformação em quatro pilares:</p>
+<ul>
+<li>cultura e participação das pessoas;</li>
+<li>processo e estratégia;</li>
+<li>ferramentas para escala;</li>
+<li>automação como capacidade operacional.</li>
+</ul>
+<p>A mensagem é direta: adicionar um scanner ao pipeline não cria colaboração nem garante que findings serão corrigidos.</p>
+<h4 id="gerenciamento-de-vulnerabilidades-6">Gerenciamento de Vulnerabilidades</h4>
+<p>Encontrar vulnerabilidades é apenas o início. O livro discute processo, ferramentas e a necessidade de tratar os problemas de forma organizada, considerando prioridade, responsabilidade e aprendizado.</p>
+<h4 id="monitoramento-de-aplicacoes-7">Monitoramento de Aplicações</h4>
+<p>Uma aplicação não pode ser protegida se ninguém entende seu comportamento normal. Logs, informação e observabilidade aparecem como elementos essenciais para reconhecer anomalias e responder melhor.</p>
+<h4 id="programa-de-seguranca-de-aplicacoes-8">Programa de Segurança de Aplicações</h4>
+<p>Os capítulos finais conectam as práticas a um programa de AppSec. O foco deixa de ser uma ação isolada e passa a ser uma capacidade contínua dentro do ciclo de desenvolvimento.</p>
+<h3 id="para-quem-e-9">Para quem é</h3>
+<p>O livro foi escrito para qualquer pessoa envolvida no desenvolvimento de software:</p>
+<ul>
+<li>desenvolvedores;</li>
+<li>profissionais de QA;</li>
+<li>DevOps e SRE;</li>
+<li>arquitetos;</li>
+<li>profissionais de segurança;</li>
+<li>líderes técnicos e Security Champions.</li>
+</ul>
+<p>Não é necessário ser especialista em Marvel. O livro explica o contexto usado em cada analogia, embora contenha spoilers dos filmes.</p>
+<h3 id="feito-e-melhor-que-perfeito-desde-que-exista-evolucao-10">Feito é melhor que perfeito, desde que exista evolução</h3>
+<p>A Mark I foi suficiente para um cenário específico. Permanecer nela para sempre seria irresponsável.</p>
+<p>Software funciona da mesma maneira. Uma primeira versão pode aceitar limitações conhecidas, mas precisa registrar risco, aprender com o uso real e evoluir. Segurança deixa de ser uma aprovação final e passa a fazer parte de cada nova versão da armadura.</p>
+<p>O e-book está disponível gratuitamente e sem cadastro.</p>
+<p><a href="/assets/downloads/AppSec%20-%20Homem%20de%20Ferro.pdf">Baixar Segurança de Aplicações pela mente do Homem de Ferro</a></p>]]></content:encoded></item><item><title>Codes &amp; Consequences</title><link>https://cassiodeveloper.com.br/blog/codes-and-consequences/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/codes-and-consequences/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>Um jogo estratégico de treinamento em AppSec no qual decisões sobre produto, segurança, orçamento e reputação produzem consequências.</description><content:encoded><![CDATA[<h2 id="appsec-se-aprende-tomando-decisoes-1">AppSec se aprende tomando decisões</h2>
+<p>Treinamentos tradicionais conseguem explicar conceitos. O problema é que o trabalho real raramente apresenta uma pergunta com quatro alternativas e apenas uma resposta correta.</p>
+<p>Na prática, equipes precisam equilibrar entrega, segurança, orçamento, prazo, reputação e risco. Cada escolha resolve um problema e pode criar outro. <strong>Codes &amp; Consequences</strong> transforma essa tensão em uma experiência de aprendizagem.</p>
+<p>É um jogo estratégico de treinamento em Application Security que simula ciclos de desenvolvimento inspirados em métodos ágeis. Os participantes assumem decisões de um time de tecnologia e precisam entregar um sistema funcional sem perder o controle da segurança.</p>
+<h3 id="como-funciona-a-experiencia-2">Como funciona a experiência</h3>
+<p>A cada ciclo, o time precisa decidir onde investir recursos. Novas funcionalidades competem com correções, controles e atividades de segurança. Durante a jornada, vulnerabilidades, incidentes, eventos inesperados e ameaças alteram o cenário.</p>
+<p>O jogo não premia quem simplesmente escolhe segurança em todas as rodadas. Ele exige equilíbrio.</p>
+<p>Os participantes precisam considerar:</p>
+<ul>
+<li>valor de negócio e funcionalidades;</li>
+<li>risco técnico e vulnerabilidades;</li>
+<li>orçamento e capacidade do time;</li>
+<li>reputação do produto;</li>
+<li>consequências de decisões anteriores.</li>
+</ul>
+<p>O objetivo é chegar ao final com um produto que funcione, preserve recursos e mantenha um nível de risco aceitável.</p>
+<h3 id="por-que-usar-um-jogo-3">Por que usar um jogo</h3>
+<p>Uma decisão vivenciada é mais fácil de lembrar do que uma regra apresentada em um slide. Quando uma escolha aparentemente inofensiva produz um incidente duas rodadas depois, a relação entre causa e consequência deixa de ser abstrata.</p>
+<p>A dinâmica ajuda a discutir temas como:</p>
+<ul>
+<li>dívida de segurança;</li>
+<li>priorização de vulnerabilidades;</li>
+<li>trade-offs entre velocidade e proteção;</li>
+<li>comunicação entre desenvolvimento, produto e segurança;</li>
+<li>impacto acumulado de pequenas decisões;</li>
+<li>responsabilidade compartilhada dentro do SDLC.</li>
+</ul>
+<p>O aprendizado acontece na conversa entre os participantes. Não existe ferramenta tomando a decisão no lugar do time.</p>
+<h3 id="para-quem-foi-criado-4">Para quem foi criado</h3>
+<p>Codes &amp; Consequences funciona como atividade para desenvolvedores, profissionais de AppSec, DevOps, Security Champions, Product Owners, líderes técnicos e outras pessoas envolvidas no desenvolvimento de software.</p>
+<p>Também pode ser usado em:</p>
+<ul>
+<li>treinamentos corporativos;</li>
+<li>workshops de desenvolvimento seguro;</li>
+<li>programas de Security Champions;</li>
+<li>conferências e eventos;</li>
+<li>encontros de comunidades técnicas;</li>
+<li>atividades de integração entre segurança e engenharia.</li>
+</ul>
+<h3 id="o-que-fica-depois-da-partida-5">O que fica depois da partida</h3>
+<p>O jogo cria uma linguagem comum. Depois da experiência, termos como risco, dívida, incidente, prioridade e consequência deixam de pertencer apenas ao time de segurança.</p>
+<p>Mais importante: os participantes percebem que segurança não é uma etapa separada no final do processo. Ela é parte das escolhas que constroem o produto em cada ciclo.</p>
+<p>Codes &amp; Consequences não ensina AppSec por memorização. Ele coloca as decisões na mesa e deixa as consequências fazerem o resto.</p>
+<p><a href="https://codesandconsequences.com" target="_blank" rel="noopener noreferrer">Conheça Codes &amp; Consequences<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></p>]]></content:encoded></item><item><title>DevSecOps Podcast</title><link>https://cassiodeveloper.com.br/blog/devsecops-podcast/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/devsecops-podcast/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>Conversas reais sobre AppSec, DevSecOps e decisões técnicas que precisam sobreviver à produção.</description><content:encoded><![CDATA[<h2 id="devsecops-nao-e-checklist-1">DevSecOps não é checklist</h2>
+<p>O DevSecOps Podcast nasceu para conversar sobre segurança de software do jeito que ela acontece no campo: com contexto, discordância, limitações e decisões que precisam continuar funcionando quando o código chega à produção.</p>
+<p>Ferramenta não é estratégia. Scanner não é programa de AppSec. Compliance não substitui engenharia. Esses princípios orientam as conversas do podcast.</p>
+<h3 id="sobre-o-programa-2">Sobre o programa</h3>
+<p>O podcast explora Application Security e DevSecOps por meio de discussões técnicas, entrevistas, experiências profissionais e análise de casos reais.</p>
+<p>Os episódios atendem tanto quem está começando quanto profissionais experientes. O objetivo não é simplificar todos os problemas, mas tornar os assuntos acessíveis sem retirar a complexidade que importa.</p>
+<p>Entre os temas recorrentes estão:</p>
+<ul>
+<li>cultura de desenvolvimento seguro;</li>
+<li>Security Champions;</li>
+<li>SAST, DAST e gestão de vulnerabilidades;</li>
+<li>threat modeling;</li>
+<li>CI/CD e automação;</li>
+<li>Product Security;</li>
+<li>cloud e Zero Trust;</li>
+<li>carreira e formação em AppSec;</li>
+<li>inteligência artificial aplicada à segurança.</li>
+</ul>
+<h3 id="producao-e-a-verdade-3">Produção é a verdade</h3>
+<p>Uma das ideias centrais do programa é que controles precisam sobreviver ao ambiente real. Um processo pode parecer excelente em uma apresentação e ainda falhar quando encontra prazos, sistemas legados, falsos positivos, dependências entre times e pressão por entrega.</p>
+<p>Por isso, as conversas procuram responder perguntas operacionais:</p>
+<ul>
+<li>Quem é responsável por tomar a decisão?</li>
+<li>O que o desenvolvedor consegue corrigir com a evidência disponível?</li>
+<li>Quando automatizar e quando exigir revisão humana?</li>
+<li>Como reduzir risco sem transformar o pipeline em um bloqueio permanente?</li>
+<li>O controle funciona em produção ou apenas no documento?</li>
+</ul>
+<h3 id="pessoas-e-perspectivas-4">Pessoas e perspectivas</h3>
+<p>O programa é apresentado por Cássio B. Pereira e conta com a participação de profissionais de segurança, desenvolvimento e mercado. Marcos Santos e Ben-Hur Santos integram a equipe do podcast, além dos convidados que trazem experiências de diferentes empresas e especialidades.</p>
+<p>Essa diversidade é importante porque AppSec não acontece dentro de uma única função. Segurança de software depende da colaboração entre quem projeta, desenvolve, opera, testa, prioriza e responde pelos produtos.</p>
+<h3 id="como-acompanhar-5">Como acompanhar</h3>
+<p>O site oficial reúne episódios, busca, tags e materiais relacionados. O programa também está disponível em vídeo e em diferentes aplicativos de podcast.</p>
+<p>Para acompanhar sem algoritmo, o RSS continua sendo a opção mais direta.</p>
+<ul>
+<li><a href="https://devsecopspodcast.com.br/" target="_blank" rel="noopener noreferrer">Abrir o site oficial<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></li>
+<li><a href="https://devsecopspodcast.com.br/episodes" target="_blank" rel="noopener noreferrer">Ver os episódios<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></li>
+<li><a href="https://linktr.ee/devsecopspodcast" target="_blank" rel="noopener noreferrer">Acompanhar os canais do podcast<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></li>
+</ul>
+<p>O DevSecOps Podcast existe para transformar segurança em uma conversa que engenharia consegue usar. Sem checklist como destino final. Sem ferramenta ocupando o lugar da estratégia.</p>]]></content:encoded></item><item><title>Manifesto AppSec, Motherfucker</title><link>https://cassiodeveloper.com.br/blog/manifesto-appsec-motherfucker/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/manifesto-appsec-motherfucker/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>Por que AppSec precisa sair do teatro de conformidade e voltar a falar sobre decisões, engenharia e risco real.</description><content:encoded><![CDATA[<h2 id="appsec-precisa-voltar-a-falar-a-verdade-1">AppSec precisa voltar a falar a verdade</h2>
+<p>Muitas organizações dizem que fazem Application Security porque executam um scanner, recebem um relatório de pentest ou possuem uma etapa de aprovação no pipeline.</p>
+<p>Isso não significa que o software está mais seguro.</p>
+<p><strong>AppSec, Motherfucker</strong> é um manifesto contra a segurança tratada como decoração de processo. Ele existe para provocar quem transformou desenvolvimento seguro em checklist, dashboard ou ritual de compliance sem consequência prática.</p>
+<h3 id="o-problema-nao-e-falta-de-ferramenta-2">O problema não é falta de ferramenta</h3>
+<p>Ferramentas são necessárias. SAST, DAST, SCA e outras tecnologias ajudam a encontrar problemas em uma escala que análise manual não conseguiria alcançar.</p>
+<p>O erro começa quando o resultado da ferramenta vira o objetivo.</p>
+<p>Um scanner pode produzir milhares de findings e ainda assim a organização pode não saber:</p>
+<ul>
+<li>quais aplicações concentram o maior risco;</li>
+<li>quem deve corrigir cada problema;</li>
+<li>quais findings são relevantes para o contexto;</li>
+<li>o que realmente deve bloquear uma entrega;</li>
+<li>se uma vulnerabilidade corrigida deixou de existir em produção.</li>
+</ul>
+<p>Ferramenta é sensor. AppSec é o sistema de decisões, responsabilidades e ações construído ao redor desse sensor.</p>
+<h3 id="compliance-nao-e-o-destino-3">Compliance não é o destino</h3>
+<p>Compliance pode estabelecer uma base, exigir evidências e tornar responsabilidades visíveis. Mas passar em uma auditoria não garante que as decisões técnicas corretas estão sendo tomadas.</p>
+<p>Segurança de verdade aparece no design, no código, no pipeline, na operação e na resposta a incidentes. Ela precisa funcionar quando existe pressão por prazo, quando o sistema é legado e quando o finding não possui uma resposta óbvia.</p>
+<p>O manifesto questiona a distância entre o processo documentado e o processo que realmente executa.</p>
+<h3 id="para-quem-e-o-manifesto-4">Para quem é o manifesto</h3>
+<p>Este texto é para:</p>
+<ul>
+<li>profissionais de AppSec cansados de produzir relatórios que ninguém usa;</li>
+<li>desenvolvedores que recebem findings sem contexto;</li>
+<li>gestores que confundem volume de alertas com redução de risco;</li>
+<li>equipes que adicionaram scanners ao pipeline e chamaram isso de DevSecOps;</li>
+<li>organizações que querem discutir segurança com mais honestidade.</li>
+</ul>
+<p>Não é um framework de maturidade nem uma metodologia pronta para implantação. É um convite para interromper o piloto automático e revisar o que as práticas atuais estão realmente entregando.</p>
+<h3 id="como-usar-a-provocacao-5">Como usar a provocação</h3>
+<p>Leia, discorde e leve as perguntas para o seu time.</p>
+<p>Observe o pipeline que executa, não apenas o diagrama. Escolha um finding importante e acompanhe o caminho completo até a correção. Verifique quem decide, quem recebe contexto, quanto tempo leva e como a solução é validada.</p>
+<p>Se o processo não consegue responder essas perguntas, mais uma ferramenta provavelmente não resolverá o problema.</p>
+<p>O nome é propositalmente desconfortável. Segurança de fachada também deveria ser.</p>
+<p><a href="/AppSec-Motherfucker/">Ler o manifesto original</a></p>]]></content:encoded></item><item><title>MARIA: priorização de riscos em Application Security</title><link>https://cassiodeveloper.com.br/blog/maria-priorizacao-de-riscos-em-application-security/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/maria-priorizacao-de-riscos-em-application-security/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>Como a MARIA transforma achados dispersos de segurança em uma visão de risco compreensível, priorizável e útil para engenharia.</description><content:encoded><![CDATA[<h2 id="seguranca-nao-precisa-de-mais-uma-lista-de-vulnerabilidades-1">Segurança não precisa de mais uma lista de vulnerabilidades</h2>
+<p>SAST, SCA, análise de secrets, containers, IaC, DAST e SBOM resolvem problemas importantes. O desafio aparece quando cada ferramenta produz sua própria fila, sua própria severidade e sua própria linguagem. No final, o time recebe muitos achados e continua sem uma resposta simples: <strong>o que representa mais risco para a aplicação agora?</strong></p>
+<p>A MARIA nasceu para responder essa pergunta.</p>
+<p>M.A.R.I.A significa <strong>Management Application Risk Integrated Analysis</strong>. É uma plataforma de Application Risk Intelligence criada para agregar evidências de ferramentas de segurança, normalizar esses sinais e transformá-los em uma visão de risco que desenvolvedores, Security Champions e equipes de segurança consigam usar.</p>
+<p>A MARIA não é um scanner. Ela trabalha acima dos scanners que a organização já possui.</p>
+<h3 id="o-problema-que-a-maria-resolve-2">O problema que a MARIA resolve</h3>
+<p>Um finding isolado raramente conta a história inteira. A mesma vulnerabilidade pode ter impactos muito diferentes dependendo da aplicação, do componente afetado, da exposição, da criticidade do negócio e do momento em que foi introduzida.</p>
+<p>Sem contexto, as equipes acabam priorizando por contagem ou por severidade bruta. Isso cria três efeitos conhecidos:</p>
+<ul>
+<li>milhares de alertas competindo pela mesma atenção;</li>
+<li>desenvolvedores recebendo trabalho sem contexto suficiente;</li>
+<li>equipes de segurança gastando tempo consolidando planilhas e dashboards desconectados.</li>
+</ul>
+<p>A MARIA organiza o problema a partir da aplicação e do risco, não da ferramenta que encontrou o problema.</p>
+<h3 id="como-a-plataforma-organiza-o-risco-3">Como a plataforma organiza o risco</h3>
+<h4 id="ingestao-e-normalizacao-4">Ingestão e normalização</h4>
+<p>A plataforma foi desenhada para consumir formatos já usados no ecossistema de segurança, incluindo SARIF, CycloneDX e saídas estruturadas de scanners. Os achados são normalizados para que ferramentas diferentes possam contribuir para a mesma análise.</p>
+<h4 id="risk-engine-5">Risk Engine</h4>
+<p>O Risk Engine combina os sinais disponíveis para calcular risco por repositório e por aplicação. O objetivo não é esconder os findings atrás de um número mágico, mas explicar quais fatores estão direcionando o risco e por que uma ação merece prioridade.</p>
+<h4 id="risco-em-pull-requests-6">Risco em Pull Requests</h4>
+<p>Uma mudança de código pode introduzir dependências vulneráveis, tocar módulos sensíveis ou alterar a exposição da aplicação. A análise de Pull Request procura mostrar o delta de risco da mudança antes que ela seja incorporada, aproximando a decisão de segurança do fluxo de desenvolvimento.</p>
+<h4 id="evolucao-ao-longo-do-tempo-7">Evolução ao longo do tempo</h4>
+<p>Risco também é histórico. A MARIA registra como a postura muda quando vulnerabilidades entram, correções são concluídas, dependências mudam e decisões são tomadas. Essa linha do tempo ajuda a diferenciar um problema pontual de uma dívida de segurança crescente.</p>
+<h4 id="uma-visao-util-para-security-champions-8">Uma visão útil para Security Champions</h4>
+<p>Security Champions precisam saber onde agir, não apenas quantos alertas existem. A experiência da MARIA é orientada a backlog, drivers de risco, evolução e ações possíveis dentro das aplicações acompanhadas pelo Champion.</p>
+<h3 id="para-quem-a-maria-foi-criada-9">Para quem a MARIA foi criada</h3>
+<p>A plataforma atende organizações que já usam ferramentas de segurança, mas ainda enfrentam dificuldade para conectar os resultados ao trabalho diário de engenharia.</p>
+<p>Ela é especialmente útil para:</p>
+<ul>
+<li>equipes de AppSec consolidando sinais de múltiplos scanners;</li>
+<li>líderes de engenharia comparando risco entre aplicações;</li>
+<li>desenvolvedores que precisam entender por que uma correção é prioritária;</li>
+<li>Security Champions acompanhando o risco dos seus produtos;</li>
+<li>organizações que querem medir evolução sem depender apenas de contagens.</li>
+</ul>
+<h3 id="o-principio-por-tras-do-produto-10">O princípio por trás do produto</h3>
+<p>O nome também é uma homenagem à minha mãe, Maria, que dedicou a vida a cuidar de outras pessoas. A filosofia do produto segue essa ideia: cuidar do software continuamente, entender seus riscos e agir antes que o problema se transforme em incidente.</p>
+<p>A ambição da MARIA é simples de explicar e difícil de executar: tornar o risco de aplicações <strong>mensurável, compreensível e acionável</strong>.</p>
+<p><a href="https://mariaappsec.com" target="_blank" rel="noopener noreferrer">Conheça a MARIA<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></p>]]></content:encoded></item><item><title>SecScore: decisões de segurança baseadas em contexto</title><link>https://cassiodeveloper.com.br/blog/secscore-decisoes-de-seguranca-baseadas-em-contexto/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/secscore-decisoes-de-seguranca-baseadas-em-contexto/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>Como o SecScore transforma findings de scanners em um score e uma decisão objetiva para Pull Requests.</description><content:encoded><![CDATA[<h2 id="scanner-encontra-secscore-ajuda-a-decidir-1">Scanner encontra. SecScore ajuda a decidir.</h2>
+<p>Ferramentas de segurança são excelentes sensores. Elas encontram vulnerabilidades, padrões inseguros e problemas em dependências, infraestrutura e código. O pipeline começa a falhar quando cada finding é tratado como se tivesse o mesmo impacto e toda ferramenta tenta decidir sozinha se uma entrega deve continuar.</p>
+<p>O SecScore foi criado como uma camada de decisão entre os scanners e o Pull Request.</p>
+<p>Ele consome findings, aplica uma política explícita e devolve duas respostas fáceis de entender:</p>
+<ul>
+<li>um score de segurança;</li>
+<li>uma decisão: <strong>PASS</strong>, <strong>REVIEW</strong> ou <strong>FAIL</strong>.</li>
+</ul>
+<p>O SecScore não é um scanner. Ele usa os resultados das ferramentas que a equipe já executa.</p>
+<h3 id="do-sarif-a-decisao-2">Do SARIF à decisão</h3>
+<p>SARIF é o caminho preferencial porque permite receber resultados de diferentes ferramentas em um formato comum. O SecScore também oferece modos específicos de provider quando uma integração direta faz sentido.</p>
+<p>O fluxo é direto:</p>
+<ol>
+<li>o scanner produz findings;</li>
+<li>os resultados chegam ao SecScore;</li>
+<li>a política define penalidades, limites e hard fails;</li>
+<li>o motor calcula o score;</li>
+<li>o Pull Request recebe uma decisão clara.</li>
+</ol>
+<p>Isso reduz a distância entre encontrar um problema e tomar uma decisão de engenharia.</p>
+<h3 id="politica-em-vez-de-severidade-isolada-3">Política em vez de severidade isolada</h3>
+<p>Severidade é importante, mas não deveria ser a única variável de um gate. Uma política do SecScore pode definir:</p>
+<ul>
+<li>penalidades diferentes por severidade;</li>
+<li>limites para PASS, REVIEW e FAIL;</li>
+<li>casos críticos que sempre causam hard fail;</li>
+<li>caminhos que devem ser ignorados, como artefatos gerados ou dependências vendorizadas;</li>
+<li>multiplicadores e regras adequadas ao contexto da organização.</li>
+</ul>
+<p>A lógica de segurança fica na política, de forma transparente e versionável, em vez de escondida dentro de um dashboard ou de uma decisão manual impossível de reproduzir.</p>
+<h3 id="feito-para-pull-requests-4">Feito para Pull Requests</h3>
+<p>O lugar natural da decisão é onde a mudança está sendo revisada. O SecScore pode publicar o resultado no Pull Request, comentar os principais motivos e atualizar status checks usados por regras de branch protection.</p>
+<p>Em vez de entregar dezenas de findings sem hierarquia, o time recebe uma resposta operacional:</p>
+<ul>
+<li><strong>PASS</strong> quando não há risco significativo segundo a política;</li>
+<li><strong>REVIEW</strong> quando contexto humano é necessário;</li>
+<li><strong>FAIL</strong> quando a mudança viola uma regra que não deve ser ignorada.</li>
+</ul>
+<p>O score não substitui a análise. Ele torna a decisão consistente e explica por que a análise é necessária.</p>
+<h3 id="compatibilidade-sem-lock-in-5">Compatibilidade sem lock-in</h3>
+<p>O SecScore é SARIF-first e foi desenhado para trabalhar com resultados produzidos por ferramentas como Snyk, Semgrep, CodeQL, KICS, Veracode e outras soluções que exportam o padrão. Também existe suporte a provider mode para Checkmarx.</p>
+<p>Essa abordagem evita amarrar a política de segurança a um único scanner.</p>
+<h3 id="open-source-por-um-motivo-6">Open source por um motivo</h3>
+<p>Um motor que influencia merge e branch protection precisa ser inspecionável. O core open source permite revisar a lógica, adaptar políticas, executar localmente e entender exatamente como cada score foi calculado.</p>
+<p>Não existe ciência secreta por trás do número. Existe uma política conhecida, findings conhecidos e uma decisão reproduzível.</p>
+<h3 id="para-quem-faz-sentido-7">Para quem faz sentido</h3>
+<p>O SecScore é voltado a equipes que já executam scanners no CI/CD e querem diminuir ruído sem abrir mão de controles.</p>
+<p>Ele ajuda especialmente quando:</p>
+<ul>
+<li>vários scanners participam do mesmo pipeline;</li>
+<li>toda severidade alta está bloqueando o fluxo sem considerar contexto;</li>
+<li>a organização precisa de regras claras para branch protection;</li>
+<li>desenvolvedores recebem findings, mas não entendem a decisão esperada;</li>
+<li>AppSec quer transformar política em automação verificável.</li>
+</ul>
+<p>O objetivo não é criar mais um dashboard. É dar ao Pull Request uma resposta que o time consiga usar.</p>
+<p><a href="https://secscore.dev" target="_blank" rel="noopener noreferrer">Conheça o SecScore<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></p>]]></content:encoded></item></channel></rss>

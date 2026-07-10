@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>#ci-cd — Cássio Pereira</title><link>https://cassiodeveloper.com.br/en/blog/tag/ci-cd/rss.xml</link><description>Tag ci-cd</description><language>en</language><lastBuildDate>Fri, 10 Jul 2026 00:00:00 GMT</lastBuildDate><atom:link href="https://cassiodeveloper.com.br/en/blog/tag/ci-cd/rss.xml" rel="self" type="application/rss+xml"/><item><title>SecScore: security decisions with context</title><link>https://cassiodeveloper.com.br/en/blog/secscore-security-decisions-with-context/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/en/blog/secscore-security-decisions-with-context/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>How SecScore turns scanner findings into a score and a clear decision for Pull Requests.</description><content:encoded><![CDATA[<h2 id="scanners-find-problems-secscore-helps-teams-decide-1">Scanners find problems. SecScore helps teams decide.</h2>
+<p>Security tools are excellent sensors. They find vulnerabilities, insecure patterns and problems in dependencies, infrastructure and code. The pipeline starts to fail when every finding is treated as if it had the same impact and every tool attempts to decide whether a delivery should continue.</p>
+<p>SecScore was created as a decision layer between scanners and the Pull Request.</p>
+<p>It consumes findings, applies an explicit policy and returns two answers that everyone can understand:</p>
+<ul>
+<li>a security score;</li>
+<li>a decision: <strong>PASS</strong>, <strong>REVIEW</strong> or <strong>FAIL</strong>.</li>
+</ul>
+<p>SecScore is not a scanner. It uses the output produced by the tools a team already runs.</p>
+<h3 id="from-sarif-to-a-decision-2">From SARIF to a decision</h3>
+<p>SARIF is the preferred path because it allows SecScore to receive results from different tools in a common format. Provider-specific modes are also available when a direct integration makes sense.</p>
+<p>The flow is straightforward:</p>
+<ol>
+<li>the scanner produces findings;</li>
+<li>the results reach SecScore;</li>
+<li>the policy defines penalties, thresholds and hard fails;</li>
+<li>the engine calculates the score;</li>
+<li>the Pull Request receives a clear decision.</li>
+</ol>
+<p>This reduces the distance between detecting a problem and making an engineering decision.</p>
+<h3 id="policy-instead-of-severity-alone-3">Policy instead of severity alone</h3>
+<p>Severity matters, but it should not be the only variable in a security gate. A SecScore policy can define:</p>
+<ul>
+<li>different penalties for each severity;</li>
+<li>thresholds for PASS, REVIEW and FAIL;</li>
+<li>critical cases that always cause a hard fail;</li>
+<li>paths that should be ignored, such as generated artifacts or vendored dependencies;</li>
+<li>multipliers and rules that reflect the organization&#039;s context.</li>
+</ul>
+<p>Security logic lives in a transparent, versionable policy instead of being hidden inside a dashboard or an impossible-to-reproduce manual decision.</p>
+<h3 id="designed-for-pull-requests-4">Designed for Pull Requests</h3>
+<p>The natural place for a decision is where the change is being reviewed. SecScore can publish the result in the Pull Request, comment on the main reasons and update status checks used by branch protection rules.</p>
+<p>Instead of receiving dozens of findings with no hierarchy, the team gets an operational answer:</p>
+<ul>
+<li><strong>PASS</strong> when the policy finds no significant security risk;</li>
+<li><strong>REVIEW</strong> when human context is required;</li>
+<li><strong>FAIL</strong> when the change violates a rule that must not be ignored.</li>
+</ul>
+<p>The score does not replace analysis. It makes the decision consistent and explains why an analysis may be necessary.</p>
+<h3 id="compatibility-without-lock-in-5">Compatibility without lock-in</h3>
+<p>SecScore is SARIF-first and is designed to work with results produced by tools such as Snyk, Semgrep, CodeQL, KICS, Veracode and other solutions that export the standard. A provider mode for Checkmarx is also available.</p>
+<p>This approach prevents the security policy from being tied to a single scanner.</p>
+<h3 id="open-source-for-a-reason-6">Open source for a reason</h3>
+<p>An engine that influences merges and branch protection must be inspectable. The open-source core allows teams to review the logic, adapt policies, run it locally and understand exactly how each score was calculated.</p>
+<p>There is no secret science behind the number. There is a known policy, known findings and a reproducible decision.</p>
+<h3 id="who-it-is-for-7">Who it is for</h3>
+<p>SecScore is intended for teams that already run scanners in CI/CD and want to reduce noise without removing controls.</p>
+<p>It is particularly useful when:</p>
+<ul>
+<li>several scanners participate in the same pipeline;</li>
+<li>every high-severity finding blocks delivery without context;</li>
+<li>the organization needs explicit branch protection rules;</li>
+<li>developers receive findings but do not understand the expected decision;</li>
+<li>AppSec wants to turn policy into verifiable automation.</li>
+</ul>
+<p>The objective is not to create another dashboard. It is to give the Pull Request an answer the team can use.</p>
+<p><a href="https://secscore.dev" target="_blank" rel="noopener noreferrer">Meet SecScore<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></p>]]></content:encoded></item></channel></rss>

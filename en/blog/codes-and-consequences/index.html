@@ -1,0 +1,95 @@
+<!doctype html><html lang="en" class="no-js"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codes &amp; Consequences: AppSec decisions as a game</title>
+<meta name="description" content="Meet Codes &amp; Consequences, a strategic game that teaches secure development through cycles, choices and consequences.">
+<meta name="author" content="Cássio Batista Pereira">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; frame-src https://www.youtube-nocookie.com https://open.spotify.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+<link rel="canonical" href="https://cassiodeveloper.com.br/en/blog/codes-and-consequences/">
+<link rel="alternate" hreflang="en" href="https://cassiodeveloper.com.br/en/blog/codes-and-consequences/">
+<link rel="alternate" hreflang="pt-BR" href="https://cassiodeveloper.com.br/blog/codes-and-consequences/">
+<link rel="alternate" type="application/rss+xml" title="Blog — English" href="https://cassiodeveloper.com.br/en/blog/rss.xml">
+<link rel="icon" href="/images/icons/favicon.ico">
+<link rel="stylesheet" href="/blog/assets/blog.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cássio B. Pereira — Application Security">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Codes &amp; Consequences: AppSec decisions as a game">
+<meta property="og:description" content="Meet Codes &amp; Consequences, a strategic game that teaches secure development through cycles, choices and consequences.">
+<meta property="og:url" content="https://cassiodeveloper.com.br/en/blog/codes-and-consequences/">
+<meta property="og:image" content="https://cassiodeveloper.com.br/images/folio/ccw.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cassiodeveloper">
+<meta name="twitter:title" content="Codes &amp; Consequences: AppSec decisions as a game">
+<meta name="twitter:description" content="Meet Codes &amp; Consequences, a strategic game that teaches secure development through cycles, choices and consequences.">
+<meta name="twitter:image" content="https://cassiodeveloper.com.br/images/folio/ccw.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"TechArticle","@id":"https://cassiodeveloper.com.br/en/blog/codes-and-consequences/#post","mainEntityOfPage":"https://cassiodeveloper.com.br/en/blog/codes-and-consequences/","headline":"Codes & Consequences","description":"A strategic AppSec training game where product, security, budget and reputation decisions produce consequences.","datePublished":"2026-07-10","dateModified":"2026-07-10","inLanguage":"en","author":{"@type":"Person","@id":"https://cassiodeveloper.com.br/#cassio","name":"Cássio Batista Pereira"},"image":"https://cassiodeveloper.com.br/images/folio/ccw.png","keywords":"appsec, secure-development, security-training, game"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cassiodeveloper.com.br"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://cassiodeveloper.com.br/en/blog/"},{"@type":"ListItem","position":3,"name":"Codes & Consequences","item":"https://cassiodeveloper.com.br/en/blog/codes-and-consequences/"}]}]}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL5R9VPGV9"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-NL5R9VPGV9');</script><script>document.documentElement.classList.replace('no-js','js')</script></head><body class="blog-post-page"><a class="skip-link" href="#main-content">Skip to content</a>
+<header class="blog-header">
+  <div class="blog-shell header-inner">
+    <a class="brand" href="/en" aria-label="Home"><img src="/images/Logo.png" width="104" height="42" alt="Cássio Pereira"></a>
+    <nav aria-label="Primary navigation">
+      <a href="/en">Home</a>
+      <a href="/en/blog/" aria-current="page">Blog</a>
+      <a href="/blog/" lang="pt-BR">PT</a>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch theme">◐</button>
+    </nav>
+  </div>
+</header><main id="main-content"><article class="post"><header class="post-hero"><div class="reading-shell"><a class="back-home" href="/en/blog/">← Back to blog</a><div class="post-meta"><span class="type-badge">PROJECT</span><time datetime="2026-07-10">July 10, 2026</time><span lang="en">EN</span><span title="related external content">↗ <span class="sr-only">related external content</span></span></div><h1>Codes &amp; Consequences</h1><p class="post-description">A strategic AppSec training game where product, security, budget and reputation decisions produce consequences.</p><div class="post-dates"><span>Published on <time datetime="2026-07-10">July 10, 2026</time></span><span>by Cássio Batista Pereira</span></div><ul class="tag-list"><li><a href="/en/blog/tag/appsec/">#appsec</a></li><li><a href="/en/blog/tag/secure-development/">#secure-development</a></li><li><a href="/en/blog/tag/security-training/">#security-training</a></li><li><a href="/en/blog/tag/game/">#game</a></li></ul><a class="translation-link" href="/blog/codes-and-consequences/" hreflang="pt-BR">Ler em português →</a></div></header><figure class="post-cover reading-shell"><img src="/images/folio/ccw.png" width="1200" height="675" alt="Codes &amp; Consequences strategic AppSec training game" decoding="async"></figure><div class="reading-shell article-layout"><aside class="toc" aria-labelledby="toc-title"><h2 id="toc-title">In this article</h2><ol><li class="toc-level-2"><a href="#appsec-is-learned-by-making-decisions-1">AppSec is learned by making decisions</a></li><li class="toc-level-3"><a href="#how-the-experience-works-2">How the experience works</a></li><li class="toc-level-3"><a href="#why-use-a-game-3">Why use a game</a></li><li class="toc-level-3"><a href="#who-it-was-created-for-4">Who it was created for</a></li><li class="toc-level-3"><a href="#what-remains-after-the-game-5">What remains after the game</a></li></ol></aside><div class="post-content"><h2 id="appsec-is-learned-by-making-decisions-1">AppSec is learned by making decisions</h2>
+<p>Traditional training can explain concepts. The problem is that real work rarely presents a question with four options and only one correct answer.</p>
+<p>In practice, teams must balance delivery, security, budget, deadlines, reputation and risk. Every choice solves one problem and may create another. <strong>Codes &amp; Consequences</strong> turns that tension into a learning experience.</p>
+<p>It is a strategic Application Security training game that simulates development cycles inspired by agile methods. Participants make decisions as a technology team and must deliver a functional system without losing control of security.</p>
+<h3 id="how-the-experience-works-2">How the experience works</h3>
+<p>During each cycle, the team decides where to invest its resources. New features compete with fixes, controls and security activities. Vulnerabilities, incidents, unexpected events and cyber threats change the situation throughout the journey.</p>
+<p>The game does not reward the team that simply chooses security in every round. It requires balance.</p>
+<p>Participants need to consider:</p>
+<ul>
+<li>business value and functionality;</li>
+<li>technical risk and vulnerabilities;</li>
+<li>budget and team capacity;</li>
+<li>product reputation;</li>
+<li>consequences created by previous decisions.</li>
+</ul>
+<p>The objective is to reach the end with a product that works, preserves resources and maintains an acceptable level of risk.</p>
+<h3 id="why-use-a-game-3">Why use a game</h3>
+<p>A decision that people experience is easier to remember than a rule shown on a slide. When a harmless-looking choice creates an incident two rounds later, the relationship between cause and consequence stops being abstract.</p>
+<p>The activity helps teams discuss topics such as:</p>
+<ul>
+<li>security debt;</li>
+<li>vulnerability prioritization;</li>
+<li>trade-offs between speed and protection;</li>
+<li>communication between development, product and security;</li>
+<li>the accumulated impact of small decisions;</li>
+<li>shared responsibility across the SDLC.</li>
+</ul>
+<p>Learning happens in the conversation between participants. No tool makes the decision on behalf of the team.</p>
+<h3 id="who-it-was-created-for-4">Who it was created for</h3>
+<p>Codes &amp; Consequences works as an activity for developers, AppSec professionals, DevOps, Security Champions, Product Owners, technical leaders and other people involved in software development.</p>
+<p>It can also be used in:</p>
+<ul>
+<li>corporate training;</li>
+<li>secure development workshops;</li>
+<li>Security Champions programs;</li>
+<li>conferences and events;</li>
+<li>technical community meetings;</li>
+<li>activities that connect security and engineering.</li>
+</ul>
+<h3 id="what-remains-after-the-game-5">What remains after the game</h3>
+<p>The game creates a shared language. After the experience, terms such as risk, debt, incident, priority and consequence no longer belong exclusively to the security team.</p>
+<p>More importantly, participants see that security is not a separate step at the end of the process. It is part of the choices that build the product during every cycle.</p>
+<p>Codes &amp; Consequences does not teach AppSec through memorization. It puts decisions on the table and lets the consequences do the rest.</p>
+<p><a href="https://codesandconsequences.com" target="_blank" rel="noopener noreferrer">Meet Codes &amp; Consequences<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></p><p class="external-resource"><a href="https://codesandconsequences.com" target="_blank" rel="noopener noreferrer" data-analytics="external">Open related external content ↗</a></p></div></div><div class="reading-shell post-actions"><button class="copy-link" type="button" data-copy-label="Link copied">Copy link</button><div aria-label="Share"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcassiodeveloper.com.br%2Fen%2Fblog%2Fcodes-and-consequences%2F" target="_blank" rel="noopener noreferrer" data-analytics="share">LinkedIn</a><a href="https://x.com/intent/post?url=https%3A%2F%2Fcassiodeveloper.com.br%2Fen%2Fblog%2Fcodes-and-consequences%2F&text=Codes%20%26%20Consequences" target="_blank" rel="noopener noreferrer" data-analytics="share">X</a><a href="mailto:?subject=Codes%20%26%20Consequences&body=https%3A%2F%2Fcassiodeveloper.com.br%2Fen%2Fblog%2Fcodes-and-consequences%2F" data-analytics="share">E-mail</a></div></div><aside class="author-box reading-shell"><img src="/images/avatars/cassio-mini.png" width="72" height="72" loading="lazy" alt="Cássio Pereira"><div><p class="eyebrow">About the author</p><h2>Cássio Pereira</h2><p>Application Security specialist, software architect, author, speaker and builder of security-focused projects.</p></div></aside><section class="related reading-shell" aria-labelledby="related-title"><h2 id="related-title">Related publications</h2><article class="feed-item" data-post-id="appsec-iron-man-book-en">
+    <div class="feed-date" aria-hidden="true"><time datetime="2026-07-10">Jul 10</time></div>
+    <div class="feed-content"><div class="post-meta"><span class="type-badge">BOOK</span><time datetime="2026-07-10">Jul 10</time><span>3 min read</span><span lang="en">EN</span></div><h3><a href="/en/blog/application-security-through-iron-mans-mind/">Application Security through Iron Man&#039;s mind</a></h3><p>A free e-book that uses the evolution of Tony Stark&#039;s armor to explain practical Application Security.</p><ul class="tag-list" aria-label="Tags"><li><a href="/en/blog/tag/appsec/" data-tag="appsec">#appsec</a></li><li><a href="/en/blog/tag/secure-development/" data-tag="secure-development">#secure-development</a></li><li><a href="/en/blog/tag/threat-modeling/" data-tag="threat-modeling">#threat-modeling</a></li><li><a href="/en/blog/tag/book/" data-tag="book">#book</a></li></ul></div>
+    <a class="feed-thumb" href="/en/blog/application-security-through-iron-mans-mind/" tabindex="-1" aria-hidden="true"><img src="/images/folio/livro-lessons-learned.png" width="144" height="96" loading="lazy" decoding="async" alt=""></a>
+  </article><article class="feed-item is-pinned" data-post-id="manifesto-appsec-en">
+    <div class="feed-date" aria-hidden="true"><time datetime="2026-07-10">Jul 10</time></div>
+    <div class="feed-content"><div class="post-meta"><span class="type-badge">NOTE</span><time datetime="2026-07-10">Jul 10</time><span>2 min read</span><span lang="en">EN</span></div><h3><a href="/en/blog/appsec-motherfucker-manifesto/">AppSec, Motherfucker: a manifesto against security theater</a></h3><p>Why AppSec must move beyond compliance theater and return to honest conversations about decisions, engineering and real risk.</p><ul class="tag-list" aria-label="Tags"><li><a href="/en/blog/tag/appsec/" data-tag="appsec">#appsec</a></li><li><a href="/en/blog/tag/secure-development/" data-tag="secure-development">#secure-development</a></li><li><a href="/en/blog/tag/manifesto/" data-tag="manifesto">#manifesto</a></li></ul></div>
+    <a class="feed-thumb" href="/en/blog/appsec-motherfucker-manifesto/" tabindex="-1" aria-hidden="true"><img src="/images/folio/motherfucker.png" width="144" height="96" loading="lazy" decoding="async" alt=""></a>
+  </article><article class="feed-item is-pinned" data-post-id="devsecops-podcast-en">
+    <div class="feed-date" aria-hidden="true"><time datetime="2026-07-10">Jul 10</time></div>
+    <div class="feed-content"><div class="post-meta"><span class="type-badge">PODCAST</span><time datetime="2026-07-10">Jul 10</time><span lang="en">EN</span><span title="related external content">↗ <span class="sr-only">related external content</span></span></div><h3><a href="/en/blog/devsecops-podcast/">DevSecOps Podcast</a></h3><p>Real conversations about AppSec, DevSecOps and technical decisions that must survive production.</p><ul class="tag-list" aria-label="Tags"><li><a href="/en/blog/tag/podcast/" data-tag="podcast">#podcast</a></li><li><a href="/en/blog/tag/appsec/" data-tag="appsec">#appsec</a></li><li><a href="/en/blog/tag/devsecops/" data-tag="devsecops">#devsecops</a></li><li><a href="/en/blog/tag/secure-development/" data-tag="secure-development">#secure-development</a></li></ul></div>
+    <a class="feed-thumb" href="/en/blog/devsecops-podcast/" tabindex="-1" aria-hidden="true"><img src="/images/folio/DevSecOpsPodcast.png" width="144" height="96" loading="lazy" decoding="async" alt=""></a>
+  </article></section><div class="reading-shell"><nav class="post-navigation" aria-label="Adjacent publications"><div><span>Previous</span><a rel="prev" href="/en/blog/devsecops-podcast/">DevSecOps Podcast</a></div><div><span>Next</span><a rel="next" href="/en/blog/appsec-motherfucker-manifesto/">AppSec, Motherfucker: a manifesto against security theater</a></div></nav><aside class="rss-callout" aria-labelledby="rss-callout-title"><p class="eyebrow">RSS</p><h2 id="rss-callout-title">Follow new publications</h2><p>This blog is entirely static. Subscribe to the RSS feed to receive new publications.</p><a href="/en/blog/rss.xml" data-analytics="rss">Follow via RSS →</a></aside></div></article></main><footer class="blog-footer"><div class="blog-shell footer-inner"><div><strong>Cássio B. Pereira</strong><p>Application Security · DevSecOps · Secure Development</p></div><nav aria-label="Footer"><a href="/en/blog/rss.xml" data-analytics="rss">RSS</a><a href="https://www.linkedin.com/in/cassiodeveloper/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:cassio@cassiobp.com.br">E-mail</a></nav><p class="copyright">© 2026 Cássio B. Pereira</p></div></footer><script src="/blog/assets/blog.js" defer></script></body></html>

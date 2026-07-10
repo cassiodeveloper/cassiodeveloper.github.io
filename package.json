@@ -1,0 +1,15 @@
+{
+  "name": "cassiodeveloper-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-blog.mjs",
+    "test": "node --test",
+    "lint": "node --check scripts/blog-core.mjs && node --check scripts/build-blog.mjs && node --check blog/assets/blog.js",
+    "check:links": "node scripts/check-links.mjs",
+    "verify": "npm run lint && npm run test && npm run build && npm run check:links"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

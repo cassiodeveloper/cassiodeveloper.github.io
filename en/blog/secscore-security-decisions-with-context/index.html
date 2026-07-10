@@ -1,0 +1,108 @@
+<!doctype html><html lang="en" class="no-js"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SecScore: security scores and decisions for CI/CD</title>
+<meta name="description" content="Meet SecScore, the open-source engine that turns SARIF findings into a score and PASS, REVIEW or FAIL decisions for Pull Requests.">
+<meta name="author" content="Cássio Batista Pereira">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; frame-src https://www.youtube-nocookie.com https://open.spotify.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+<link rel="canonical" href="https://cassiodeveloper.com.br/en/blog/secscore-security-decisions-with-context/">
+<link rel="alternate" hreflang="en" href="https://cassiodeveloper.com.br/en/blog/secscore-security-decisions-with-context/">
+<link rel="alternate" hreflang="pt-BR" href="https://cassiodeveloper.com.br/blog/secscore-decisoes-de-seguranca-baseadas-em-contexto/">
+<link rel="alternate" type="application/rss+xml" title="Blog — English" href="https://cassiodeveloper.com.br/en/blog/rss.xml">
+<link rel="icon" href="/images/icons/favicon.ico">
+<link rel="stylesheet" href="/blog/assets/blog.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cássio B. Pereira — Application Security">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="SecScore: security scores and decisions for CI/CD">
+<meta property="og:description" content="Meet SecScore, the open-source engine that turns SARIF findings into a score and PASS, REVIEW or FAIL decisions for Pull Requests.">
+<meta property="og:url" content="https://cassiodeveloper.com.br/en/blog/secscore-security-decisions-with-context/">
+<meta property="og:image" content="https://cassiodeveloper.com.br/images/intro-bg.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cassiodeveloper">
+<meta name="twitter:title" content="SecScore: security scores and decisions for CI/CD">
+<meta name="twitter:description" content="Meet SecScore, the open-source engine that turns SARIF findings into a score and PASS, REVIEW or FAIL decisions for Pull Requests.">
+<meta name="twitter:image" content="https://cassiodeveloper.com.br/images/intro-bg.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"TechArticle","@id":"https://cassiodeveloper.com.br/en/blog/secscore-security-decisions-with-context/#post","mainEntityOfPage":"https://cassiodeveloper.com.br/en/blog/secscore-security-decisions-with-context/","headline":"SecScore: security decisions with context","description":"How SecScore turns scanner findings into a score and a clear decision for Pull Requests.","datePublished":"2026-07-10","dateModified":"2026-07-10","inLanguage":"en","author":{"@type":"Person","@id":"https://cassiodeveloper.com.br/#cassio","name":"Cássio Batista Pereira"},"image":"https://cassiodeveloper.com.br/images/intro-bg.jpg","keywords":"secscore, appsec, sarif, ci-cd"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cassiodeveloper.com.br"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://cassiodeveloper.com.br/en/blog/"},{"@type":"ListItem","position":3,"name":"SecScore: security decisions with context","item":"https://cassiodeveloper.com.br/en/blog/secscore-security-decisions-with-context/"}]}]}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL5R9VPGV9"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-NL5R9VPGV9');</script><script>document.documentElement.classList.replace('no-js','js')</script></head><body class="blog-post-page"><a class="skip-link" href="#main-content">Skip to content</a>
+<header class="blog-header">
+  <div class="blog-shell header-inner">
+    <a class="brand" href="/en" aria-label="Home"><img src="/images/Logo.png" width="104" height="42" alt="Cássio Pereira"></a>
+    <nav aria-label="Primary navigation">
+      <a href="/en">Home</a>
+      <a href="/en/blog/" aria-current="page">Blog</a>
+      <a href="/blog/" lang="pt-BR">PT</a>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch theme">◐</button>
+    </nav>
+  </div>
+</header><main id="main-content"><article class="post"><header class="post-hero"><div class="reading-shell"><a class="back-home" href="/en/blog/">← Back to blog</a><div class="post-meta"><span class="type-badge">PROJECT</span><time datetime="2026-07-10">July 10, 2026</time><span lang="en">EN</span><span title="related external content">↗ <span class="sr-only">related external content</span></span></div><h1>SecScore: security decisions with context</h1><p class="post-description">How SecScore turns scanner findings into a score and a clear decision for Pull Requests.</p><div class="post-dates"><span>Published on <time datetime="2026-07-10">July 10, 2026</time></span><span>by Cássio Batista Pereira</span></div><ul class="tag-list"><li><a href="/en/blog/tag/secscore/">#secscore</a></li><li><a href="/en/blog/tag/appsec/">#appsec</a></li><li><a href="/en/blog/tag/sarif/">#sarif</a></li><li><a href="/en/blog/tag/ci-cd/">#ci-cd</a></li></ul><a class="translation-link" href="/blog/secscore-decisoes-de-seguranca-baseadas-em-contexto/" hreflang="pt-BR">Ler em português →</a></div></header><div class="reading-shell article-layout"><aside class="toc" aria-labelledby="toc-title"><h2 id="toc-title">In this article</h2><ol><li class="toc-level-2"><a href="#scanners-find-problems-secscore-helps-teams-decide-1">Scanners find problems. SecScore helps teams decide.</a></li><li class="toc-level-3"><a href="#from-sarif-to-a-decision-2">From SARIF to a decision</a></li><li class="toc-level-3"><a href="#policy-instead-of-severity-alone-3">Policy instead of severity alone</a></li><li class="toc-level-3"><a href="#designed-for-pull-requests-4">Designed for Pull Requests</a></li><li class="toc-level-3"><a href="#compatibility-without-lock-in-5">Compatibility without lock-in</a></li><li class="toc-level-3"><a href="#open-source-for-a-reason-6">Open source for a reason</a></li><li class="toc-level-3"><a href="#who-it-is-for-7">Who it is for</a></li></ol></aside><div class="post-content"><h2 id="scanners-find-problems-secscore-helps-teams-decide-1">Scanners find problems. SecScore helps teams decide.</h2>
+<p>Security tools are excellent sensors. They find vulnerabilities, insecure patterns and problems in dependencies, infrastructure and code. The pipeline starts to fail when every finding is treated as if it had the same impact and every tool attempts to decide whether a delivery should continue.</p>
+<p>SecScore was created as a decision layer between scanners and the Pull Request.</p>
+<p>It consumes findings, applies an explicit policy and returns two answers that everyone can understand:</p>
+<ul>
+<li>a security score;</li>
+<li>a decision: <strong>PASS</strong>, <strong>REVIEW</strong> or <strong>FAIL</strong>.</li>
+</ul>
+<p>SecScore is not a scanner. It uses the output produced by the tools a team already runs.</p>
+<h3 id="from-sarif-to-a-decision-2">From SARIF to a decision</h3>
+<p>SARIF is the preferred path because it allows SecScore to receive results from different tools in a common format. Provider-specific modes are also available when a direct integration makes sense.</p>
+<p>The flow is straightforward:</p>
+<ol>
+<li>the scanner produces findings;</li>
+<li>the results reach SecScore;</li>
+<li>the policy defines penalties, thresholds and hard fails;</li>
+<li>the engine calculates the score;</li>
+<li>the Pull Request receives a clear decision.</li>
+</ol>
+<p>This reduces the distance between detecting a problem and making an engineering decision.</p>
+<h3 id="policy-instead-of-severity-alone-3">Policy instead of severity alone</h3>
+<p>Severity matters, but it should not be the only variable in a security gate. A SecScore policy can define:</p>
+<ul>
+<li>different penalties for each severity;</li>
+<li>thresholds for PASS, REVIEW and FAIL;</li>
+<li>critical cases that always cause a hard fail;</li>
+<li>paths that should be ignored, such as generated artifacts or vendored dependencies;</li>
+<li>multipliers and rules that reflect the organization&#039;s context.</li>
+</ul>
+<p>Security logic lives in a transparent, versionable policy instead of being hidden inside a dashboard or an impossible-to-reproduce manual decision.</p>
+<h3 id="designed-for-pull-requests-4">Designed for Pull Requests</h3>
+<p>The natural place for a decision is where the change is being reviewed. SecScore can publish the result in the Pull Request, comment on the main reasons and update status checks used by branch protection rules.</p>
+<p>Instead of receiving dozens of findings with no hierarchy, the team gets an operational answer:</p>
+<ul>
+<li><strong>PASS</strong> when the policy finds no significant security risk;</li>
+<li><strong>REVIEW</strong> when human context is required;</li>
+<li><strong>FAIL</strong> when the change violates a rule that must not be ignored.</li>
+</ul>
+<p>The score does not replace analysis. It makes the decision consistent and explains why an analysis may be necessary.</p>
+<h3 id="compatibility-without-lock-in-5">Compatibility without lock-in</h3>
+<p>SecScore is SARIF-first and is designed to work with results produced by tools such as Snyk, Semgrep, CodeQL, KICS, Veracode and other solutions that export the standard. A provider mode for Checkmarx is also available.</p>
+<p>This approach prevents the security policy from being tied to a single scanner.</p>
+<h3 id="open-source-for-a-reason-6">Open source for a reason</h3>
+<p>An engine that influences merges and branch protection must be inspectable. The open-source core allows teams to review the logic, adapt policies, run it locally and understand exactly how each score was calculated.</p>
+<p>There is no secret science behind the number. There is a known policy, known findings and a reproducible decision.</p>
+<h3 id="who-it-is-for-7">Who it is for</h3>
+<p>SecScore is intended for teams that already run scanners in CI/CD and want to reduce noise without removing controls.</p>
+<p>It is particularly useful when:</p>
+<ul>
+<li>several scanners participate in the same pipeline;</li>
+<li>every high-severity finding blocks delivery without context;</li>
+<li>the organization needs explicit branch protection rules;</li>
+<li>developers receive findings but do not understand the expected decision;</li>
+<li>AppSec wants to turn policy into verifiable automation.</li>
+</ul>
+<p>The objective is not to create another dashboard. It is to give the Pull Request an answer the team can use.</p>
+<p><a href="https://secscore.dev" target="_blank" rel="noopener noreferrer">Meet SecScore<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></p><p class="external-resource"><a href="https://secscore.dev" target="_blank" rel="noopener noreferrer" data-analytics="external">Open related external content ↗</a></p></div></div><div class="reading-shell post-actions"><button class="copy-link" type="button" data-copy-label="Link copied">Copy link</button><div aria-label="Share"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcassiodeveloper.com.br%2Fen%2Fblog%2Fsecscore-security-decisions-with-context%2F" target="_blank" rel="noopener noreferrer" data-analytics="share">LinkedIn</a><a href="https://x.com/intent/post?url=https%3A%2F%2Fcassiodeveloper.com.br%2Fen%2Fblog%2Fsecscore-security-decisions-with-context%2F&text=SecScore%3A%20security%20decisions%20with%20context" target="_blank" rel="noopener noreferrer" data-analytics="share">X</a><a href="mailto:?subject=SecScore%3A%20security%20decisions%20with%20context&body=https%3A%2F%2Fcassiodeveloper.com.br%2Fen%2Fblog%2Fsecscore-security-decisions-with-context%2F" data-analytics="share">E-mail</a></div></div><aside class="author-box reading-shell"><img src="/images/avatars/cassio-mini.png" width="72" height="72" loading="lazy" alt="Cássio Pereira"><div><p class="eyebrow">About the author</p><h2>Cássio Pereira</h2><p>Application Security specialist, software architect, author, speaker and builder of security-focused projects.</p></div></aside><section class="related reading-shell" aria-labelledby="related-title"><h2 id="related-title">Related publications</h2><article class="feed-item" data-post-id="appsec-iron-man-book-en">
+    <div class="feed-date" aria-hidden="true"><time datetime="2026-07-10">Jul 10</time></div>
+    <div class="feed-content"><div class="post-meta"><span class="type-badge">BOOK</span><time datetime="2026-07-10">Jul 10</time><span>3 min read</span><span lang="en">EN</span></div><h3><a href="/en/blog/application-security-through-iron-mans-mind/">Application Security through Iron Man&#039;s mind</a></h3><p>A free e-book that uses the evolution of Tony Stark&#039;s armor to explain practical Application Security.</p><ul class="tag-list" aria-label="Tags"><li><a href="/en/blog/tag/appsec/" data-tag="appsec">#appsec</a></li><li><a href="/en/blog/tag/secure-development/" data-tag="secure-development">#secure-development</a></li><li><a href="/en/blog/tag/threat-modeling/" data-tag="threat-modeling">#threat-modeling</a></li><li><a href="/en/blog/tag/book/" data-tag="book">#book</a></li></ul></div>
+    <a class="feed-thumb" href="/en/blog/application-security-through-iron-mans-mind/" tabindex="-1" aria-hidden="true"><img src="/images/folio/livro-lessons-learned.png" width="144" height="96" loading="lazy" decoding="async" alt=""></a>
+  </article><article class="feed-item is-pinned" data-post-id="manifesto-appsec-en">
+    <div class="feed-date" aria-hidden="true"><time datetime="2026-07-10">Jul 10</time></div>
+    <div class="feed-content"><div class="post-meta"><span class="type-badge">NOTE</span><time datetime="2026-07-10">Jul 10</time><span>2 min read</span><span lang="en">EN</span></div><h3><a href="/en/blog/appsec-motherfucker-manifesto/">AppSec, Motherfucker: a manifesto against security theater</a></h3><p>Why AppSec must move beyond compliance theater and return to honest conversations about decisions, engineering and real risk.</p><ul class="tag-list" aria-label="Tags"><li><a href="/en/blog/tag/appsec/" data-tag="appsec">#appsec</a></li><li><a href="/en/blog/tag/secure-development/" data-tag="secure-development">#secure-development</a></li><li><a href="/en/blog/tag/manifesto/" data-tag="manifesto">#manifesto</a></li></ul></div>
+    <a class="feed-thumb" href="/en/blog/appsec-motherfucker-manifesto/" tabindex="-1" aria-hidden="true"><img src="/images/folio/motherfucker.png" width="144" height="96" loading="lazy" decoding="async" alt=""></a>
+  </article><article class="feed-item is-pinned" data-post-id="codes-consequences-en">
+    <div class="feed-date" aria-hidden="true"><time datetime="2026-07-10">Jul 10</time></div>
+    <div class="feed-content"><div class="post-meta"><span class="type-badge">PROJECT</span><time datetime="2026-07-10">Jul 10</time><span lang="en">EN</span><span title="related external content">↗ <span class="sr-only">related external content</span></span></div><h3><a href="/en/blog/codes-and-consequences/">Codes &amp; Consequences</a></h3><p>A strategic AppSec training game where product, security, budget and reputation decisions produce consequences.</p><ul class="tag-list" aria-label="Tags"><li><a href="/en/blog/tag/appsec/" data-tag="appsec">#appsec</a></li><li><a href="/en/blog/tag/secure-development/" data-tag="secure-development">#secure-development</a></li><li><a href="/en/blog/tag/security-training/" data-tag="security-training">#security-training</a></li><li><a href="/en/blog/tag/game/" data-tag="game">#game</a></li></ul></div>
+    <a class="feed-thumb" href="/en/blog/codes-and-consequences/" tabindex="-1" aria-hidden="true"><img src="/images/folio/ccw.png" width="144" height="96" loading="lazy" decoding="async" alt=""></a>
+  </article></section><div class="reading-shell"><nav class="post-navigation" aria-label="Adjacent publications"><div></div><div><span>Next</span><a rel="next" href="/en/blog/maria-application-security-risk-prioritization/">MARIA: Application Security risk prioritization</a></div></nav><aside class="rss-callout" aria-labelledby="rss-callout-title"><p class="eyebrow">RSS</p><h2 id="rss-callout-title">Follow new publications</h2><p>This blog is entirely static. Subscribe to the RSS feed to receive new publications.</p><a href="/en/blog/rss.xml" data-analytics="rss">Follow via RSS →</a></aside></div></article></main><footer class="blog-footer"><div class="blog-shell footer-inner"><div><strong>Cássio B. Pereira</strong><p>Application Security · DevSecOps · Secure Development</p></div><nav aria-label="Footer"><a href="/en/blog/rss.xml" data-analytics="rss">RSS</a><a href="https://www.linkedin.com/in/cassiodeveloper/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:cassio@cassiobp.com.br">E-mail</a></nav><p class="copyright">© 2026 Cássio B. Pereira</p></div></footer><script src="/blog/assets/blog.js" defer></script></body></html>

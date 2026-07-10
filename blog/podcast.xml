@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Podcasts — Cássio Pereira</title><link>https://cassiodeveloper.com.br/blog/podcast.xml</link><description>Publicações relacionadas ao DevSecOps Podcast.</description><language>pt-BR</language><lastBuildDate>Fri, 10 Jul 2026 00:00:00 GMT</lastBuildDate><atom:link href="https://cassiodeveloper.com.br/blog/podcast.xml" rel="self" type="application/rss+xml"/><item><title>DevSecOps Podcast</title><link>https://cassiodeveloper.com.br/blog/devsecops-podcast/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/devsecops-podcast/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>Conversas reais sobre AppSec, DevSecOps e decisões técnicas que precisam sobreviver à produção.</description><content:encoded><![CDATA[<h2 id="devsecops-nao-e-checklist-1">DevSecOps não é checklist</h2>
+<p>O DevSecOps Podcast nasceu para conversar sobre segurança de software do jeito que ela acontece no campo: com contexto, discordância, limitações e decisões que precisam continuar funcionando quando o código chega à produção.</p>
+<p>Ferramenta não é estratégia. Scanner não é programa de AppSec. Compliance não substitui engenharia. Esses princípios orientam as conversas do podcast.</p>
+<h3 id="sobre-o-programa-2">Sobre o programa</h3>
+<p>O podcast explora Application Security e DevSecOps por meio de discussões técnicas, entrevistas, experiências profissionais e análise de casos reais.</p>
+<p>Os episódios atendem tanto quem está começando quanto profissionais experientes. O objetivo não é simplificar todos os problemas, mas tornar os assuntos acessíveis sem retirar a complexidade que importa.</p>
+<p>Entre os temas recorrentes estão:</p>
+<ul>
+<li>cultura de desenvolvimento seguro;</li>
+<li>Security Champions;</li>
+<li>SAST, DAST e gestão de vulnerabilidades;</li>
+<li>threat modeling;</li>
+<li>CI/CD e automação;</li>
+<li>Product Security;</li>
+<li>cloud e Zero Trust;</li>
+<li>carreira e formação em AppSec;</li>
+<li>inteligência artificial aplicada à segurança.</li>
+</ul>
+<h3 id="producao-e-a-verdade-3">Produção é a verdade</h3>
+<p>Uma das ideias centrais do programa é que controles precisam sobreviver ao ambiente real. Um processo pode parecer excelente em uma apresentação e ainda falhar quando encontra prazos, sistemas legados, falsos positivos, dependências entre times e pressão por entrega.</p>
+<p>Por isso, as conversas procuram responder perguntas operacionais:</p>
+<ul>
+<li>Quem é responsável por tomar a decisão?</li>
+<li>O que o desenvolvedor consegue corrigir com a evidência disponível?</li>
+<li>Quando automatizar e quando exigir revisão humana?</li>
+<li>Como reduzir risco sem transformar o pipeline em um bloqueio permanente?</li>
+<li>O controle funciona em produção ou apenas no documento?</li>
+</ul>
+<h3 id="pessoas-e-perspectivas-4">Pessoas e perspectivas</h3>
+<p>O programa é apresentado por Cássio B. Pereira e conta com a participação de profissionais de segurança, desenvolvimento e mercado. Marcos Santos e Ben-Hur Santos integram a equipe do podcast, além dos convidados que trazem experiências de diferentes empresas e especialidades.</p>
+<p>Essa diversidade é importante porque AppSec não acontece dentro de uma única função. Segurança de software depende da colaboração entre quem projeta, desenvolve, opera, testa, prioriza e responde pelos produtos.</p>
+<h3 id="como-acompanhar-5">Como acompanhar</h3>
+<p>O site oficial reúne episódios, busca, tags e materiais relacionados. O programa também está disponível em vídeo e em diferentes aplicativos de podcast.</p>
+<p>Para acompanhar sem algoritmo, o RSS continua sendo a opção mais direta.</p>
+<ul>
+<li><a href="https://devsecopspodcast.com.br/" target="_blank" rel="noopener noreferrer">Abrir o site oficial<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></li>
+<li><a href="https://devsecopspodcast.com.br/episodes" target="_blank" rel="noopener noreferrer">Ver os episódios<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></li>
+<li><a href="https://linktr.ee/devsecopspodcast" target="_blank" rel="noopener noreferrer">Acompanhar os canais do podcast<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></li>
+</ul>
+<p>O DevSecOps Podcast existe para transformar segurança em uma conversa que engenharia consegue usar. Sem checklist como destino final. Sem ferramenta ocupando o lugar da estratégia.</p>]]></content:encoded></item></channel></rss>

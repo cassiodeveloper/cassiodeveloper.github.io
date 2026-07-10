@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>#threat-modeling — Cássio Pereira</title><link>https://cassiodeveloper.com.br/en/blog/tag/threat-modeling/rss.xml</link><description>Tag threat-modeling</description><language>en</language><lastBuildDate>Fri, 10 Jul 2026 00:00:00 GMT</lastBuildDate><atom:link href="https://cassiodeveloper.com.br/en/blog/tag/threat-modeling/rss.xml" rel="self" type="application/rss+xml"/><item><title>Application Security through Iron Man&apos;s mind</title><link>https://cassiodeveloper.com.br/en/blog/application-security-through-iron-mans-mind/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/en/blog/application-security-through-iron-mans-mind/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>A free e-book that uses the evolution of Tony Stark&apos;s armor to explain practical Application Security.</description><content:encoded><![CDATA[<h2 id="software-security-version-after-version-1">Software security, version after version</h2>
+<p>Tony Stark did not build a perfect suit of armor on his first attempt. He worked with the resources available, survived the immediate problem, learned from failure and created a better version.</p>
+<p>That evolution is a useful way to explain Application Security.</p>
+<p><strong>Application Security through Iron Man&#039;s mind</strong> is a free e-book that connects situations from the Marvel Cinematic Universe to practical secure development. The objective is not to turn fiction into a framework, but to use a familiar reference to make security decisions easier to visualize.</p>
+<h3 id="the-central-idea-2">The central idea</h3>
+<p>Secure software does not arrive fully formed. It evolves through requirements, hypotheses, tests, incidents, corrections and new engineering cycles.</p>
+<p>Tony Stark&#039;s first armor was not created to defeat every possible threat. It needed to address the context of the cave, the resources available and the immediate objective of escaping.</p>
+<p>The same reasoning appears throughout the book: security must consider threats, objectives, context and capacity. A control that is perfect for another system may be insufficient or unnecessary for yours.</p>
+<h3 id="what-the-book-covers-3">What the book covers</h3>
+<h4 id="threat-modeling-4">Threat Modeling</h4>
+<p>The book uses the creation of the Mark I and the Hulkbuster to show how threats, objectives and security requirements can be considered before execution.</p>
+<p>The discussion includes essential questions:</p>
+<ul>
+<li>What can go wrong?</li>
+<li>Which impact must be avoided?</li>
+<li>Which mitigations are possible with the resources available?</li>
+<li>Does the control reduce the threat that actually matters?</li>
+<li>What did previous incidents teach us?</li>
+</ul>
+<h4 id="devsecops-5">DevSecOps</h4>
+<p>The DevSecOps section organizes the transformation around four pillars:</p>
+<ul>
+<li>culture and people&#039;s participation;</li>
+<li>process and strategy;</li>
+<li>tools for scale;</li>
+<li>automation as an operational capability.</li>
+</ul>
+<p>The message is direct: adding a scanner to a pipeline does not create collaboration or guarantee that findings will be fixed.</p>
+<h4 id="vulnerability-management-6">Vulnerability Management</h4>
+<p>Finding vulnerabilities is only the beginning. The book discusses process, tools and the need to address problems in an organized way, with priority, responsibility and learning.</p>
+<h4 id="application-monitoring-7">Application Monitoring</h4>
+<p>An application cannot be protected if nobody understands its normal behavior. Logs, information and observability appear as essential elements for identifying anomalies and responding more effectively.</p>
+<h4 id="application-security-program-8">Application Security Program</h4>
+<p>The final chapters connect individual practices to an AppSec program. The focus moves from isolated activities to a continuous capability inside the software development lifecycle.</p>
+<h3 id="who-it-is-for-9">Who it is for</h3>
+<p>The book was written for anyone involved in software development:</p>
+<ul>
+<li>developers;</li>
+<li>QA professionals;</li>
+<li>DevOps and SRE;</li>
+<li>architects;</li>
+<li>security professionals;</li>
+<li>technical leaders and Security Champions.</li>
+</ul>
+<p>You do not need to be a Marvel specialist. The book explains the context used by each analogy, although it contains spoilers from the movies.</p>
+<h3 id="done-is-better-than-perfect-as-long-as-it-evolves-10">Done is better than perfect, as long as it evolves</h3>
+<p>The Mark I was enough for a specific scenario. Remaining on the Mark I forever would have been irresponsible.</p>
+<p>Software works in the same way. A first version may accept known limitations, but the team must record risk, learn from real use and evolve. Security stops being a final approval and becomes part of every new version of the armor.</p>
+<p>The English e-book is available as a direct download.</p>
+<p><a href="https://cassiodeveloper.com.br/en/assets/downloads/AppSec-Iron-Man.pdf" target="_blank" rel="noopener noreferrer">Download Application Security through Iron Man&#039;s mind<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></p>]]></content:encoded></item></channel></rss>

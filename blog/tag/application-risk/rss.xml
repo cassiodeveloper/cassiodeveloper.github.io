@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>#application-risk — Cássio Pereira</title><link>https://cassiodeveloper.com.br/blog/tag/application-risk/rss.xml</link><description>Tag application-risk</description><language>pt-BR</language><lastBuildDate>Fri, 10 Jul 2026 00:00:00 GMT</lastBuildDate><atom:link href="https://cassiodeveloper.com.br/blog/tag/application-risk/rss.xml" rel="self" type="application/rss+xml"/><item><title>MARIA: priorização de riscos em Application Security</title><link>https://cassiodeveloper.com.br/blog/maria-priorizacao-de-riscos-em-application-security/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/maria-priorizacao-de-riscos-em-application-security/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>Como a MARIA transforma achados dispersos de segurança em uma visão de risco compreensível, priorizável e útil para engenharia.</description><content:encoded><![CDATA[<h2 id="seguranca-nao-precisa-de-mais-uma-lista-de-vulnerabilidades-1">Segurança não precisa de mais uma lista de vulnerabilidades</h2>
+<p>SAST, SCA, análise de secrets, containers, IaC, DAST e SBOM resolvem problemas importantes. O desafio aparece quando cada ferramenta produz sua própria fila, sua própria severidade e sua própria linguagem. No final, o time recebe muitos achados e continua sem uma resposta simples: <strong>o que representa mais risco para a aplicação agora?</strong></p>
+<p>A MARIA nasceu para responder essa pergunta.</p>
+<p>M.A.R.I.A significa <strong>Management Application Risk Integrated Analysis</strong>. É uma plataforma de Application Risk Intelligence criada para agregar evidências de ferramentas de segurança, normalizar esses sinais e transformá-los em uma visão de risco que desenvolvedores, Security Champions e equipes de segurança consigam usar.</p>
+<p>A MARIA não é um scanner. Ela trabalha acima dos scanners que a organização já possui.</p>
+<h3 id="o-problema-que-a-maria-resolve-2">O problema que a MARIA resolve</h3>
+<p>Um finding isolado raramente conta a história inteira. A mesma vulnerabilidade pode ter impactos muito diferentes dependendo da aplicação, do componente afetado, da exposição, da criticidade do negócio e do momento em que foi introduzida.</p>
+<p>Sem contexto, as equipes acabam priorizando por contagem ou por severidade bruta. Isso cria três efeitos conhecidos:</p>
+<ul>
+<li>milhares de alertas competindo pela mesma atenção;</li>
+<li>desenvolvedores recebendo trabalho sem contexto suficiente;</li>
+<li>equipes de segurança gastando tempo consolidando planilhas e dashboards desconectados.</li>
+</ul>
+<p>A MARIA organiza o problema a partir da aplicação e do risco, não da ferramenta que encontrou o problema.</p>
+<h3 id="como-a-plataforma-organiza-o-risco-3">Como a plataforma organiza o risco</h3>
+<h4 id="ingestao-e-normalizacao-4">Ingestão e normalização</h4>
+<p>A plataforma foi desenhada para consumir formatos já usados no ecossistema de segurança, incluindo SARIF, CycloneDX e saídas estruturadas de scanners. Os achados são normalizados para que ferramentas diferentes possam contribuir para a mesma análise.</p>
+<h4 id="risk-engine-5">Risk Engine</h4>
+<p>O Risk Engine combina os sinais disponíveis para calcular risco por repositório e por aplicação. O objetivo não é esconder os findings atrás de um número mágico, mas explicar quais fatores estão direcionando o risco e por que uma ação merece prioridade.</p>
+<h4 id="risco-em-pull-requests-6">Risco em Pull Requests</h4>
+<p>Uma mudança de código pode introduzir dependências vulneráveis, tocar módulos sensíveis ou alterar a exposição da aplicação. A análise de Pull Request procura mostrar o delta de risco da mudança antes que ela seja incorporada, aproximando a decisão de segurança do fluxo de desenvolvimento.</p>
+<h4 id="evolucao-ao-longo-do-tempo-7">Evolução ao longo do tempo</h4>
+<p>Risco também é histórico. A MARIA registra como a postura muda quando vulnerabilidades entram, correções são concluídas, dependências mudam e decisões são tomadas. Essa linha do tempo ajuda a diferenciar um problema pontual de uma dívida de segurança crescente.</p>
+<h4 id="uma-visao-util-para-security-champions-8">Uma visão útil para Security Champions</h4>
+<p>Security Champions precisam saber onde agir, não apenas quantos alertas existem. A experiência da MARIA é orientada a backlog, drivers de risco, evolução e ações possíveis dentro das aplicações acompanhadas pelo Champion.</p>
+<h3 id="para-quem-a-maria-foi-criada-9">Para quem a MARIA foi criada</h3>
+<p>A plataforma atende organizações que já usam ferramentas de segurança, mas ainda enfrentam dificuldade para conectar os resultados ao trabalho diário de engenharia.</p>
+<p>Ela é especialmente útil para:</p>
+<ul>
+<li>equipes de AppSec consolidando sinais de múltiplos scanners;</li>
+<li>líderes de engenharia comparando risco entre aplicações;</li>
+<li>desenvolvedores que precisam entender por que uma correção é prioritária;</li>
+<li>Security Champions acompanhando o risco dos seus produtos;</li>
+<li>organizações que querem medir evolução sem depender apenas de contagens.</li>
+</ul>
+<h3 id="o-principio-por-tras-do-produto-10">O princípio por trás do produto</h3>
+<p>O nome também é uma homenagem à minha mãe, Maria, que dedicou a vida a cuidar de outras pessoas. A filosofia do produto segue essa ideia: cuidar do software continuamente, entender seus riscos e agir antes que o problema se transforme em incidente.</p>
+<p>A ambição da MARIA é simples de explicar e difícil de executar: tornar o risco de aplicações <strong>mensurável, compreensível e acionável</strong>.</p>
+<p><a href="https://mariaappsec.com" target="_blank" rel="noopener noreferrer">Conheça a MARIA<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></p>]]></content:encoded></item></channel></rss>

@@ -1,0 +1,87 @@
+<!doctype html><html lang="pt-BR" class="no-js"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AppSec, Motherfucker: um manifesto contra segurança de fachada</title>
+<meta name="description" content="Uma introdução ao manifesto AppSec, Motherfucker e à crítica de uma segurança reduzida a checklist, relatório e ferramenta.">
+<meta name="author" content="Cássio Batista Pereira">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; frame-src https://www.youtube-nocookie.com https://open.spotify.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+<link rel="canonical" href="https://cassiodeveloper.com.br/blog/manifesto-appsec-motherfucker/">
+<link rel="alternate" hreflang="pt-BR" href="https://cassiodeveloper.com.br/blog/manifesto-appsec-motherfucker/">
+<link rel="alternate" hreflang="en" href="https://cassiodeveloper.com.br/en/blog/appsec-motherfucker-manifesto/">
+<link rel="alternate" type="application/rss+xml" title="Blog — Português" href="https://cassiodeveloper.com.br/blog/rss.xml">
+<link rel="icon" href="/images/icons/favicon.ico">
+<link rel="stylesheet" href="/blog/assets/blog.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cássio B. Pereira — Application Security">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="AppSec, Motherfucker: um manifesto contra segurança de fachada">
+<meta property="og:description" content="Uma introdução ao manifesto AppSec, Motherfucker e à crítica de uma segurança reduzida a checklist, relatório e ferramenta.">
+<meta property="og:url" content="https://cassiodeveloper.com.br/blog/manifesto-appsec-motherfucker/">
+<meta property="og:image" content="https://cassiodeveloper.com.br/images/folio/motherfucker.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@cassiodeveloper">
+<meta name="twitter:title" content="AppSec, Motherfucker: um manifesto contra segurança de fachada">
+<meta name="twitter:description" content="Uma introdução ao manifesto AppSec, Motherfucker e à crítica de uma segurança reduzida a checklist, relatório e ferramenta.">
+<meta name="twitter:image" content="https://cassiodeveloper.com.br/images/folio/motherfucker.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://cassiodeveloper.com.br/blog/manifesto-appsec-motherfucker/#post","mainEntityOfPage":"https://cassiodeveloper.com.br/blog/manifesto-appsec-motherfucker/","headline":"Manifesto AppSec, Motherfucker","description":"Por que AppSec precisa sair do teatro de conformidade e voltar a falar sobre decisões, engenharia e risco real.","datePublished":"2026-07-10","dateModified":"2026-07-10","inLanguage":"pt-BR","author":{"@type":"Person","@id":"https://cassiodeveloper.com.br/#cassio","name":"Cássio Batista Pereira"},"image":"https://cassiodeveloper.com.br/images/folio/motherfucker.png","keywords":"appsec, secure-development, manifesto"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cassiodeveloper.com.br"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://cassiodeveloper.com.br/blog/"},{"@type":"ListItem","position":3,"name":"Manifesto AppSec, Motherfucker","item":"https://cassiodeveloper.com.br/blog/manifesto-appsec-motherfucker/"}]}]}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL5R9VPGV9"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-NL5R9VPGV9');</script><script>document.documentElement.classList.replace('no-js','js')</script></head><body class="blog-post-page"><a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+<header class="blog-header">
+  <div class="blog-shell header-inner">
+    <a class="brand" href="/" aria-label="Página principal"><img src="/images/Logo.png" width="104" height="42" alt="Cássio Pereira"></a>
+    <nav aria-label="Navegação principal">
+      <a href="/">Página principal</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/en/blog/" lang="en">EN</a>
+      <button class="theme-toggle" type="button" aria-label="Alternar tema de cores" title="Alternar tema">◐</button>
+    </nav>
+  </div>
+</header><main id="main-content"><article class="post"><header class="post-hero"><div class="reading-shell"><a class="back-home" href="/blog/">← Voltar ao blog</a><div class="post-meta"><span class="type-badge">NOTA</span><time datetime="2026-07-10">10 de julho de 2026</time><span>3 min de leitura</span><span lang="pt-BR">PT-BR</span></div><h1>Manifesto AppSec, Motherfucker</h1><p class="post-description">Por que AppSec precisa sair do teatro de conformidade e voltar a falar sobre decisões, engenharia e risco real.</p><div class="post-dates"><span>Publicado em <time datetime="2026-07-10">10 de julho de 2026</time></span><span>por Cássio Batista Pereira</span></div><ul class="tag-list"><li><a href="/blog/tag/appsec/">#appsec</a></li><li><a href="/blog/tag/secure-development/">#secure-development</a></li><li><a href="/blog/tag/manifesto/">#manifesto</a></li></ul><a class="translation-link" href="/en/blog/appsec-motherfucker-manifesto/" hreflang="en">Read in English →</a></div></header><figure class="post-cover reading-shell"><img src="/images/folio/motherfucker.png" width="1200" height="675" alt="Identidade visual do manifesto AppSec, Motherfucker" decoding="async"></figure><div class="reading-shell article-layout"><aside class="toc" aria-labelledby="toc-title"><h2 id="toc-title">Neste artigo</h2><ol><li class="toc-level-2"><a href="#appsec-precisa-voltar-a-falar-a-verdade-1">AppSec precisa voltar a falar a verdade</a></li><li class="toc-level-3"><a href="#o-problema-nao-e-falta-de-ferramenta-2">O problema não é falta de ferramenta</a></li><li class="toc-level-3"><a href="#compliance-nao-e-o-destino-3">Compliance não é o destino</a></li><li class="toc-level-3"><a href="#para-quem-e-o-manifesto-4">Para quem é o manifesto</a></li><li class="toc-level-3"><a href="#como-usar-a-provocacao-5">Como usar a provocação</a></li></ol></aside><div class="post-content"><h2 id="appsec-precisa-voltar-a-falar-a-verdade-1">AppSec precisa voltar a falar a verdade</h2>
+<p>Muitas organizações dizem que fazem Application Security porque executam um scanner, recebem um relatório de pentest ou possuem uma etapa de aprovação no pipeline.</p>
+<p>Isso não significa que o software está mais seguro.</p>
+<p><strong>AppSec, Motherfucker</strong> é um manifesto contra a segurança tratada como decoração de processo. Ele existe para provocar quem transformou desenvolvimento seguro em checklist, dashboard ou ritual de compliance sem consequência prática.</p>
+<h3 id="o-problema-nao-e-falta-de-ferramenta-2">O problema não é falta de ferramenta</h3>
+<p>Ferramentas são necessárias. SAST, DAST, SCA e outras tecnologias ajudam a encontrar problemas em uma escala que análise manual não conseguiria alcançar.</p>
+<p>O erro começa quando o resultado da ferramenta vira o objetivo.</p>
+<p>Um scanner pode produzir milhares de findings e ainda assim a organização pode não saber:</p>
+<ul>
+<li>quais aplicações concentram o maior risco;</li>
+<li>quem deve corrigir cada problema;</li>
+<li>quais findings são relevantes para o contexto;</li>
+<li>o que realmente deve bloquear uma entrega;</li>
+<li>se uma vulnerabilidade corrigida deixou de existir em produção.</li>
+</ul>
+<p>Ferramenta é sensor. AppSec é o sistema de decisões, responsabilidades e ações construído ao redor desse sensor.</p>
+<h3 id="compliance-nao-e-o-destino-3">Compliance não é o destino</h3>
+<p>Compliance pode estabelecer uma base, exigir evidências e tornar responsabilidades visíveis. Mas passar em uma auditoria não garante que as decisões técnicas corretas estão sendo tomadas.</p>
+<p>Segurança de verdade aparece no design, no código, no pipeline, na operação e na resposta a incidentes. Ela precisa funcionar quando existe pressão por prazo, quando o sistema é legado e quando o finding não possui uma resposta óbvia.</p>
+<p>O manifesto questiona a distância entre o processo documentado e o processo que realmente executa.</p>
+<h3 id="para-quem-e-o-manifesto-4">Para quem é o manifesto</h3>
+<p>Este texto é para:</p>
+<ul>
+<li>profissionais de AppSec cansados de produzir relatórios que ninguém usa;</li>
+<li>desenvolvedores que recebem findings sem contexto;</li>
+<li>gestores que confundem volume de alertas com redução de risco;</li>
+<li>equipes que adicionaram scanners ao pipeline e chamaram isso de DevSecOps;</li>
+<li>organizações que querem discutir segurança com mais honestidade.</li>
+</ul>
+<p>Não é um framework de maturidade nem uma metodologia pronta para implantação. É um convite para interromper o piloto automático e revisar o que as práticas atuais estão realmente entregando.</p>
+<h3 id="como-usar-a-provocacao-5">Como usar a provocação</h3>
+<p>Leia, discorde e leve as perguntas para o seu time.</p>
+<p>Observe o pipeline que executa, não apenas o diagrama. Escolha um finding importante e acompanhe o caminho completo até a correção. Verifique quem decide, quem recebe contexto, quanto tempo leva e como a solução é validada.</p>
+<p>Se o processo não consegue responder essas perguntas, mais uma ferramenta provavelmente não resolverá o problema.</p>
+<p>O nome é propositalmente desconfortável. Segurança de fachada também deveria ser.</p>
+<p><a href="/AppSec-Motherfucker/">Ler o manifesto original</a></p></div></div><div class="reading-shell post-actions"><button class="copy-link" type="button" data-copy-label="Link copiado">Copiar link</button><div aria-label="Compartilhar"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcassiodeveloper.com.br%2Fblog%2Fmanifesto-appsec-motherfucker%2F" target="_blank" rel="noopener noreferrer" data-analytics="share">LinkedIn</a><a href="https://x.com/intent/post?url=https%3A%2F%2Fcassiodeveloper.com.br%2Fblog%2Fmanifesto-appsec-motherfucker%2F&text=Manifesto%20AppSec%2C%20Motherfucker" target="_blank" rel="noopener noreferrer" data-analytics="share">X</a><a href="mailto:?subject=Manifesto%20AppSec%2C%20Motherfucker&body=https%3A%2F%2Fcassiodeveloper.com.br%2Fblog%2Fmanifesto-appsec-motherfucker%2F" data-analytics="share">E-mail</a></div></div><aside class="author-box reading-shell"><img src="/images/avatars/cassio-mini.png" width="72" height="72" loading="lazy" alt="Cássio Pereira"><div><p class="eyebrow">Sobre o autor</p><h2>Cássio Pereira</h2><p>Especialista em Application Security, arquiteto de software, autor, palestrante e criador de projetos voltados à segurança.</p></div></aside><section class="related reading-shell" aria-labelledby="related-title"><h2 id="related-title">Publicações relacionadas</h2><article class="feed-item" data-post-id="appsec-iron-man-book">
+    <div class="feed-date" aria-hidden="true"><time datetime="2026-07-10">10 de jul</time></div>
+    <div class="feed-content"><div class="post-meta"><span class="type-badge">LIVRO</span><time datetime="2026-07-10">10 de jul</time><span>3 min de leitura</span><span lang="pt-BR">PT-BR</span></div><h3><a href="/blog/seguranca-de-aplicacoes-homem-de-ferro/">Segurança de Aplicações pela mente do Homem de Ferro</a></h3><p>Um e-book gratuito que usa a evolução das armaduras de Tony Stark para explicar práticas reais de Application Security.</p><ul class="tag-list" aria-label="Tags"><li><a href="/blog/tag/appsec/" data-tag="appsec">#appsec</a></li><li><a href="/blog/tag/secure-development/" data-tag="secure-development">#secure-development</a></li><li><a href="/blog/tag/threat-modeling/" data-tag="threat-modeling">#threat-modeling</a></li><li><a href="/blog/tag/book/" data-tag="book">#book</a></li></ul></div>
+    <a class="feed-thumb" href="/blog/seguranca-de-aplicacoes-homem-de-ferro/" tabindex="-1" aria-hidden="true"><img src="/images/folio/livro-lessons-learned.png" width="144" height="96" loading="lazy" decoding="async" alt=""></a>
+  </article><article class="feed-item is-pinned" data-post-id="codes-consequences">
+    <div class="feed-date" aria-hidden="true"><time datetime="2026-07-10">10 de jul</time></div>
+    <div class="feed-content"><div class="post-meta"><span class="type-badge">PROJETO</span><time datetime="2026-07-10">10 de jul</time><span lang="pt-BR">PT-BR</span><span title="conteúdo relacionado externo">↗ <span class="sr-only">conteúdo relacionado externo</span></span></div><h3><a href="/blog/codes-and-consequences/">Codes &amp; Consequences</a></h3><p>Um jogo estratégico de treinamento em AppSec no qual decisões sobre produto, segurança, orçamento e reputação produzem consequências.</p><ul class="tag-list" aria-label="Tags"><li><a href="/blog/tag/appsec/" data-tag="appsec">#appsec</a></li><li><a href="/blog/tag/secure-development/" data-tag="secure-development">#secure-development</a></li><li><a href="/blog/tag/security-training/" data-tag="security-training">#security-training</a></li><li><a href="/blog/tag/game/" data-tag="game">#game</a></li></ul></div>
+    <a class="feed-thumb" href="/blog/codes-and-consequences/" tabindex="-1" aria-hidden="true"><img src="/images/folio/ccw.png" width="144" height="96" loading="lazy" decoding="async" alt=""></a>
+  </article><article class="feed-item is-pinned" data-post-id="devsecops-podcast">
+    <div class="feed-date" aria-hidden="true"><time datetime="2026-07-10">10 de jul</time></div>
+    <div class="feed-content"><div class="post-meta"><span class="type-badge">PODCAST</span><time datetime="2026-07-10">10 de jul</time><span lang="pt-BR">PT-BR</span><span title="conteúdo relacionado externo">↗ <span class="sr-only">conteúdo relacionado externo</span></span></div><h3><a href="/blog/devsecops-podcast/">DevSecOps Podcast</a></h3><p>Conversas reais sobre AppSec, DevSecOps e decisões técnicas que precisam sobreviver à produção.</p><ul class="tag-list" aria-label="Tags"><li><a href="/blog/tag/podcast/" data-tag="podcast">#podcast</a></li><li><a href="/blog/tag/appsec/" data-tag="appsec">#appsec</a></li><li><a href="/blog/tag/devsecops/" data-tag="devsecops">#devsecops</a></li><li><a href="/blog/tag/secure-development/" data-tag="secure-development">#secure-development</a></li></ul></div>
+    <a class="feed-thumb" href="/blog/devsecops-podcast/" tabindex="-1" aria-hidden="true"><img src="/images/folio/DevSecOpsPodcast.png" width="144" height="96" loading="lazy" decoding="async" alt=""></a>
+  </article></section><div class="reading-shell"><nav class="post-navigation" aria-label="Publicações adjacentes"><div><span>Anterior</span><a rel="prev" href="/blog/maria-priorizacao-de-riscos-em-application-security/">MARIA: priorização de riscos em Application Security</a></div><div><span>Próxima</span><a rel="next" href="/blog/devsecops-podcast/">DevSecOps Podcast</a></div></nav><aside class="rss-callout" aria-labelledby="rss-callout-title"><p class="eyebrow">RSS</p><h2 id="rss-callout-title">Acompanhe novas publicações</h2><p>Este blog é inteiramente estático. Assine o feed RSS para acompanhar novas publicações.</p><a href="/blog/rss.xml" data-analytics="rss">Acompanhar por RSS →</a></aside></div></article></main><footer class="blog-footer"><div class="blog-shell footer-inner"><div><strong>Cássio B. Pereira</strong><p>Application Security · DevSecOps · Secure Development</p></div><nav aria-label="Rodapé"><a href="/blog/rss.xml" data-analytics="rss">RSS</a><a href="https://www.linkedin.com/in/cassiodeveloper/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:cassio@cassiobp.com.br">E-mail</a></nav><p class="copyright">© 2026 Cássio B. Pereira</p></div></footer><script src="/blog/assets/blog.js" defer></script></body></html>
