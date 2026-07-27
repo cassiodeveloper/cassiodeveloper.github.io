@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CyberSec Games Village is a flexible, hands-on cybersecurity experience for conferences, community events and company summits.">
+  <meta name="theme-color" content="#2d0848">
+  <title>CyberSec Games Village | Play to learn. Learn to defend.</title>
+  <style>
+    :root{
+      --ink:#241b2d;
+      --muted:#675f6e;
+      --purple:#2d0848;
+      --purple-deep:#210147;
+      --purple-soft:#4a1d63;
+      --teal:#48b9b7;
+      --teal-deep:#168f91;
+      --cream:#f7f4ed;
+      --paper:#fffefa;
+      --white:#ffffff;
+      --line:rgba(45,8,72,.13);
+      --shadow:0 24px 70px rgba(34,8,64,.15);
+      --radius:28px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:var(--paper);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+    body.menu-open{overflow:hidden}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button,input,textarea{font:inherit}
+    .shell{width:min(calc(100% - 40px),var(--max));margin-inline:auto}
+    .eyebrow{display:inline-flex;align-items:center;gap:.55rem;text-transform:uppercase;letter-spacing:.17em;font-size:.72rem;font-weight:850;color:var(--teal-deep)}
+    .eyebrow:before{content:"";width:24px;height:3px;border-radius:99px;background:currentColor}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{line-height:1.04;letter-spacing:-.035em}
+    h1{font-size:clamp(3.25rem,7.5vw,7.7rem);max-width:950px;margin-bottom:1.35rem}
+    h2{font-size:clamp(2.3rem,5vw,4.65rem);margin-bottom:1.2rem}
+    h3{font-size:clamp(1.3rem,2vw,1.75rem);margin-bottom:.65rem}
+    .lead{font-size:clamp(1.05rem,1.8vw,1.35rem);max-width:720px;color:var(--muted)}
+    .section{padding:112px 0}
+    .section-tight{padding:78px 0}
+    .announcement{background:var(--teal);color:#082c2e;text-align:center;padding:10px 18px;font-weight:800;font-size:.86rem;letter-spacing:.02em}
+    .header{position:absolute;inset:42px 0 auto;z-index:10;color:white}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:13px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;line-height:.92}
+    .brand-mark{width:48px;height:48px;border-radius:14px;background:var(--teal);display:grid;place-items:center;color:var(--purple-deep);box-shadow:0 12px 30px rgba(0,0,0,.15)}
+    .brand-mark svg{width:30px;height:30px}
+    .brand-copy small{display:block;font-size:.62rem;letter-spacing:.24em;color:#d6cae4;margin-top:6px}
+    .nav-links{display:flex;gap:28px;align-items:center;font-size:.9rem;font-weight:750}
+    .nav-links a{opacity:.82;transition:.2s}
+    .nav-links a:hover{opacity:1;color:#9ce0de}
+    .nav-cta{padding:12px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);backdrop-filter:blur(8px)}
+    .menu-btn{display:none;border:0;background:transparent;color:white;padding:10px}
+    .menu-btn svg{width:28px;height:28px}
+    .hero{min-height:860px;position:relative;display:flex;align-items:flex-end;color:white;background-image:linear-gradient(105deg,rgba(24,1,53,.98) 5%,rgba(45,8,72,.9) 52%,rgba(45,8,72,.52) 100%),url('assets/village-hero.webp');background-size:cover;background-position:center;overflow:hidden}
+    .hero:after{content:"";position:absolute;right:-100px;bottom:-180px;width:520px;height:520px;border:95px solid rgba(72,185,183,.17);border-radius:50%}
+    .hero-inner{position:relative;z-index:2;padding:210px 0 96px}
+    .hero h1 span{color:var(--teal)}
+    .hero .lead{color:#e9e2ee;max-width:740px}
+    .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;border-radius:999px;font-weight:850;border:1px solid transparent;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--teal);color:#082c2e;box-shadow:0 15px 32px rgba(72,185,183,.25)}
+    .btn-primary:hover{box-shadow:0 20px 42px rgba(72,185,183,.34)}
+    .btn-ghost{border-color:rgba(255,255,255,.4);color:white;background:rgba(255,255,255,.07)}
+    .btn-dark{background:var(--purple);color:white}
+    .hero-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:76px;background:rgba(255,255,255,.19);border:1px solid rgba(255,255,255,.18);border-radius:22px;overflow:hidden;max-width:980px}
+    .hero-meta div{padding:22px;background:rgba(33,1,71,.55);backdrop-filter:blur(9px)}
+    .hero-meta strong{display:block;font-size:1.1rem;margin-bottom:4px;color:white}
+    .hero-meta span{font-size:.82rem;color:#d9cedf}
+    .intro-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:72px;align-items:center}
+    .photo-card{position:relative}
+    .photo-card img{width:100%;aspect-ratio:1.16/1;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .photo-note{position:absolute;right:-26px;bottom:-30px;max-width:285px;background:var(--teal);padding:25px;border-radius:20px;color:#082c2e;box-shadow:var(--shadow);font-weight:850;font-size:1.05rem}
+    .copy-stack{display:grid;gap:18px}
+    .copy-stack p{color:var(--muted);font-size:1.05rem}
+    .feature-strip{background:var(--purple);color:white}
+    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid rgba(255,255,255,.12);border-radius:26px;overflow:hidden}
+    .feature{padding:34px 28px;min-height:220px;border-right:1px solid rgba(255,255,255,.12);background:linear-gradient(145deg,rgba(255,255,255,.035),transparent)}
+    .feature:last-child{border-right:0}
+    .feature-num{font-size:.72rem;font-weight:900;color:var(--teal);letter-spacing:.14em;margin-bottom:38px}
+    .feature p{color:#cfc3da;margin-bottom:0}
+    .pillars-head{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:end;margin-bottom:52px}
+    .pillars-head .lead{margin-bottom:0}
+    .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .pillar{padding:30px;border-radius:22px;border:1px solid var(--line);background:white;min-height:235px;transition:.25s;position:relative;overflow:hidden}
+    .pillar:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+    .pillar:after{content:"";width:86px;height:86px;border-radius:50%;background:rgba(72,185,183,.13);position:absolute;right:-28px;bottom:-28px}
+    .pillar-icon{width:46px;height:46px;border-radius:14px;background:var(--cream);display:grid;place-items:center;color:var(--purple);margin-bottom:28px;font-weight:950;font-size:1.05rem}
+    .pillar p{color:var(--muted);margin-bottom:0}
+    .zones{background:var(--cream)}
+    .zones-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:58px;align-items:stretch}
+    .zone-image{position:relative;min-height:620px;border-radius:var(--radius);overflow:hidden;background:url('assets/games.webp') center/cover no-repeat;box-shadow:var(--shadow)}
+    .zone-image:before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(33,1,71,.82),transparent 60%)}
+    .zone-image-copy{position:absolute;left:34px;right:34px;bottom:32px;color:white;z-index:2}
+    .zone-image-copy p{margin:0;color:#ddd0e8}
+    .zone-list{display:grid;gap:12px}
+    .zone-item{background:white;border-radius:20px;padding:24px 26px;display:grid;grid-template-columns:62px 1fr;gap:18px;align-items:start;border:1px solid rgba(45,8,72,.08)}
+    .zone-badge{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--purple);color:white;font-weight:900}
+    .zone-item p{color:var(--muted);margin:0}
+    .agenda{background:var(--purple-deep);color:white;position:relative;overflow:hidden}
+    .agenda:before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(72,185,183,.15),transparent 65%);right:-180px;top:-180px}
+    .agenda-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:55px;position:relative}
+    .agenda-head .lead{color:#d9cedf;margin-bottom:0}
+    .timeline{position:relative;z-index:2;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .time-card{display:grid;grid-template-columns:100px 1fr;gap:18px;padding:24px;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:rgba(255,255,255,.055);backdrop-filter:blur(6px);transition:.2s}
+    .time-card:hover{background:rgba(255,255,255,.09);border-color:rgba(72,185,183,.45)}
+    .time{font-weight:900;color:var(--teal);font-size:.88rem}
+    .time-card h3{font-size:1.08rem;letter-spacing:-.01em;margin-bottom:6px}
+    .time-card p{font-size:.88rem;color:#cfc3da;margin-bottom:0}
+    .formats-head{text-align:center;max-width:820px;margin:0 auto 55px}
+    .formats-head .eyebrow{justify-content:center}
+    .formats-head .lead{margin-inline:auto}
+    .format-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .format-card{border:1px solid var(--line);border-radius:22px;padding:30px;background:white;position:relative;overflow:hidden}
+    .format-card.featured{background:var(--purple);color:white;transform:translateY(-12px);box-shadow:var(--shadow)}
+    .format-card.featured p,.format-card.featured li{color:#d9cedf}
+    .format-tag{font-size:.72rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:25px}
+    .featured .format-tag{color:var(--teal)}
+    .format-card .big{font-size:3rem;line-height:1;font-weight:950;letter-spacing:-.055em;margin:12px 0 6px}
+    .format-card p{color:var(--muted)}
+    .format-card ul{list-style:none;padding:18px 0 0;margin:18px 0 0;border-top:1px solid var(--line);display:grid;gap:10px;color:var(--muted);font-size:.9rem}
+    .featured ul{border-color:rgba(255,255,255,.14)}
+    .format-card li:before{content:"✓";color:var(--teal-deep);font-weight:900;margin-right:9px}
+    .featured li:before{color:var(--teal)}
+    .outcomes{background:var(--cream)}
+    .outcomes-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+    .outcomes-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative}
+    .outcomes-photo img{width:100%;height:590px;object-fit:cover}
+    .outcomes-photo:after{content:"REAL OUTCOMES";position:absolute;left:24px;top:24px;background:var(--teal);color:#082c2e;font-weight:950;letter-spacing:.12em;font-size:.7rem;padding:10px 13px;border-radius:999px}
+    .outcome-list{display:grid;gap:16px;margin-top:34px}
+    .outcome{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start}
+    .outcome b{width:38px;height:38px;border-radius:50%;background:white;display:grid;place-items:center;color:var(--purple);box-shadow:0 8px 18px rgba(45,8,72,.08)}
+    .outcome h3{font-size:1.07rem;letter-spacing:-.01em;margin-bottom:4px}
+    .outcome p{color:var(--muted);margin:0}
+    .ready-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+    .ready-card{padding:26px;border:1px solid var(--line);border-radius:20px;background:white}
+    .ready-card strong{display:block;margin-bottom:7px}
+    .ready-card p{color:var(--muted);margin:0;font-size:.92rem}
+    .cta{padding:96px 0;background:var(--teal);color:#082c2e;position:relative;overflow:hidden}
+    .cta:after{content:"";position:absolute;width:440px;height:440px;border:70px solid rgba(45,8,72,.1);border-radius:50%;right:-120px;top:-170px}
+    .cta-grid{display:grid;grid-template-columns:1fr auto;gap:60px;align-items:center;position:relative;z-index:2}
+    .cta h2{max-width:780px;margin-bottom:12px}
+    .cta p{max-width:700px;margin-bottom:0;font-size:1.08rem}
+    .cta .btn-dark{white-space:nowrap;padding-inline:27px}
+    footer{background:#19012f;color:#d5c9de;padding:58px 0 32px}
+    .footer-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr;gap:50px;padding-bottom:46px;border-bottom:1px solid rgba(255,255,255,.1)}
+    footer .brand{color:white;margin-bottom:22px}
+    footer p{max-width:470px;color:#ad9cba}
+    footer h3{font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;color:white;margin-bottom:18px}
+    .footer-links{display:grid;gap:10px;font-size:.91rem}
+    .footer-links a:hover{color:var(--teal)}
+    .footer-bottom{display:flex;justify-content:space-between;gap:25px;padding-top:25px;font-size:.82rem;color:#8f7d9e}
+    .reveal{opacity:0;transform:translateY(20px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+    .reveal.visible{opacity:1;transform:none}
+    @media(max-width:960px){
+      .nav-links{display:none;position:fixed;inset:0;background:rgba(25,1,47,.98);padding:120px 30px 40px;flex-direction:column;align-items:flex-start;font-size:1.35rem;z-index:-1}
+      .menu-open .nav-links{display:flex}
+      .menu-btn{display:block}
+      .hero{min-height:820px}
+      .hero-meta,.features,.format-grid{grid-template-columns:repeat(2,1fr)}
+      .feature:nth-child(2){border-right:0}.feature:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.12)}
+      .intro-grid,.zones-grid,.outcomes-grid{grid-template-columns:1fr}
+      .photo-card{max-width:760px}
+      .photo-note{right:20px}
+      .pillars-head{grid-template-columns:1fr;gap:18px}
+      .pillar-grid{grid-template-columns:repeat(2,1fr)}
+      .zone-image{min-height:470px}
+      .agenda-head{display:block}.agenda-head .lead{margin-top:18px}
+      .cta-grid{grid-template-columns:1fr}.cta .btn{justify-self:start}
+    }
+    @media(max-width:680px){
+      .shell{width:min(calc(100% - 28px),var(--max))}
+      .section{padding:82px 0}.section-tight{padding:60px 0}
+      .header{top:28px}
+      .brand-mark{width:42px;height:42px}.brand-copy{font-size:.88rem}
+      .hero{min-height:930px;background-position:58% center}
+      .hero-inner{padding:175px 0 65px}
+      h1{font-size:clamp(3.2rem,17vw,5rem)}
+      h2{font-size:clamp(2.15rem,11vw,3.15rem)}
+      .hero-meta,.features,.pillar-grid,.timeline,.format-grid,.ready-grid,.footer-grid{grid-template-columns:1fr}
+      .hero-meta div{padding:17px 19px}
+      .feature{border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}.feature:last-child{border-bottom:0}
+      .photo-note{position:relative;right:auto;bottom:auto;margin:-36px 18px 0}
+      .zone-image{min-height:410px}
+      .zone-item{grid-template-columns:48px 1fr;padding:20px}.zone-badge{width:44px;height:44px}
+      .time-card{grid-template-columns:1fr;gap:7px}
+      .format-card.featured{transform:none}
+      .outcomes-photo img{height:440px}
+      .cta-grid{gap:28px}
+      .footer-bottom{flex-direction:column}
+    }
+    @media print{
+      .announcement,.header,.actions,.cta,footer{display:none!important}
+      .hero{min-height:auto;color:#111;background:white!important}.hero-inner{padding:30px 0}.hero h1 span{color:#111}.hero .lead{color:#333}.hero-meta{border:1px solid #ccc;background:white}.hero-meta div{background:white;color:#111}.hero-meta span{color:#444}
+      .section,.section-tight{padding:32px 0}.agenda{background:white;color:#111}.agenda-head .lead,.time-card p{color:#444}.time-card{border:1px solid #ccc;background:white}.features{color:#111;border-color:#ccc}.feature-strip{background:white}.feature{border-color:#ccc}.feature p{color:#444}
+      .reveal{opacity:1;transform:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">A flexible, hands-on cybersecurity experience for conferences, communities and company events.</div>
+
+  <header class="header">
+    <div class="shell nav">
+      <a class="brand" href="#top" aria-label="CyberSec Games Village home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none"><path d="M14 18 32 8l18 10v21L32 56 14 39V18Z" stroke="currentColor" stroke-width="5"/><path d="m23 31 7 7 13-15" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-copy">CyberSec Games<small>Village</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#experience">Experience</a>
+        <a href="#zones">Village zones</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#formats">Formats</a>
+        <a class="nav-cta" href="#contact">Bring it to your event</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="shell hero-inner">
+        <span class="eyebrow" style="color:#86dad7">Play to learn. Learn to defend.</span>
+        <h1>CyberSec Games <span>Village</span></h1>
+        <p class="lead">Bring a living cybersecurity playground to your event. Physical games, guided sessions, team challenges and real conversations that make security accessible, collaborative and memorable.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#experience">Explore the experience <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#agenda">See the one-day agenda</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>Always open</strong><span>Drop-in activities throughout the day</span></div>
+          <div><strong>10–60 minutes</strong><span>From quick play to guided sessions</span></div>
+          <div><strong>All skill levels</strong><span>Curious beginners to security experts</span></div>
+          <div><strong>Fully adaptable</strong><span>Two tables or a complete festival zone</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="shell intro-grid">
+        <div class="photo-card reveal">
+          <img src="assets/play-table.webp" alt="Participants using physical cybersecurity games around a table">
+          <div class="photo-note">Security learning works better when people can touch it, challenge it and talk about it.</div>
+        </div>
+        <div class="copy-stack reveal">
+          <span class="eyebrow">Security is a team activity</span>
+          <h2>Security should not be a spectator sport.</h2>
+          <p>The CyberSec Games Village turns part of a conference floor into an active, social learning environment. Attendees do not simply hear about cybersecurity. They make decisions, debate trade-offs, test assumptions and experience the consequences.</p>
+          <p>The format works around the conference rather than fighting it. Visitors can join a ten-minute challenge, book a facilitated game, compete with a team or return throughout the day to complete their Cyber Passport.</p>
+          <div class="actions" style="margin-top:8px"><a class="btn btn-dark" href="#zones">Discover the Village zones</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight feature-strip">
+      <div class="shell features reveal">
+        <article class="feature"><div class="feature-num">01 / HANDS-ON</div><h3>Physical security games</h3><p>Cards, boards, scenarios and tangible decisions that bring cybersecurity off the slide deck.</p></article>
+        <article class="feature"><div class="feature-num">02 / HUMAN</div><h3>Real conversations</h3><p>Participants share perspectives, question assumptions and build trust across roles and teams.</p></article>
+        <article class="feature"><div class="feature-num">03 / PRACTICAL</div><h3>Useful outcomes</h3><p>Threats, priorities, response options and lessons that connect directly to real work.</p></article>
+        <article class="feature"><div class="feature-num">04 / FLEXIBLE</div><h3>Built for the event</h3><p>Adapt the games, timetable, language, competition and capacity to fit each audience.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="pillars-head reveal">
+          <div><span class="eyebrow">The Village rhythm</span><h2>Six reasons to step inside.</h2></div>
+          <p class="lead">A consistent programme identity makes the Village easy to understand and easy to adapt across conferences, internal summits and community events.</p>
+        </div>
+        <div class="pillar-grid">
+          <article class="pillar reveal"><div class="pillar-icon">01</div><h3>Play</h3><p>Explore cybersecurity through physical, social and inclusive game experiences.</p></article>
+          <article class="pillar reveal"><div class="pillar-icon">02</div><h3>Learn</h3><p>Turn every session into a practical lesson through focused facilitator debriefs.</p></article>
+          <article class="pillar reveal"><div class="pillar-icon">03</div><h3>Challenge</h3><p>Work through scenarios, limited resources and unexpected events as a team.</p></article>
+          <article class="pillar reveal"><div class="pillar-icon">04</div><h3>Compete</h3><p>Join quick contests, team challenges, semifinals and a public Village final.</p></article>
+          <article class="pillar reveal"><div class="pillar-icon">05</div><h3>Create</h3><p>Meet creators, test prototypes and discover how security ideas become games.</p></article>
+          <article class="pillar reveal"><div class="pillar-icon">06</div><h3>Connect</h3><p>Give developers, leaders, defenders and educators a natural reason to talk.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section zones" id="zones">
+      <div class="shell zones-grid">
+        <div class="zone-image reveal">
+          <div class="zone-image-copy"><span class="eyebrow" style="color:#86dad7">Always active</span><h2 style="font-size:clamp(2.2rem,4vw,3.8rem);margin:12px 0">One Village.<br>Many ways to play.</h2><p>Visitors choose the experience that fits their time, confidence and curiosity.</p></div>
+        </div>
+        <div class="zone-list">
+          <article class="zone-item reveal"><div class="zone-badge">01</div><div><h3>Welcome Desk</h3><p>Registration, activity guidance, Cyber Passports, session bookings and leaderboard updates.</p></div></article>
+          <article class="zone-item reveal"><div class="zone-badge">02</div><div><h3>Quick Play Zone</h3><p>Open games and challenges lasting between 10 and 25 minutes for easy drop-in participation.</p></div></article>
+          <article class="zone-item reveal"><div class="zone-badge">03</div><div><h3>Guided Sessions Zone</h3><p>Scheduled, facilitator-led games with structured learning and a practical debrief.</p></div></article>
+          <article class="zone-item reveal"><div class="zone-badge">04</div><div><h3>Challenge Arena</h3><p>Team scenarios, tournament rounds and visible competitions that draw in the wider audience.</p></div></article>
+          <article class="zone-item reveal"><div class="zone-badge">05</div><div><h3>Creator’s Corner</h3><p>Game demonstrations, prototypes, interviews and short spotlights with creators and partners.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section agenda" id="agenda">
+      <div class="shell">
+        <div class="agenda-head reveal">
+          <div><span class="eyebrow" style="color:#86dad7">One-day model</span><h2>A programme that keeps moving.</h2></div>
+          <p class="lead">Flagship activities create momentum while open play continues around the main conference schedule.</p>
+        </div>
+        <div class="timeline">
+          <article class="time-card reveal"><div class="time">09:00</div><div><h3>Village Opening</h3><p>Welcome, Cyber Passports, game discovery and registrations.</p></div></article>
+          <article class="time-card reveal"><div class="time">09:20</div><div><h3>Quick Start Games</h3><p>Short introductory activities with a low barrier to entry.</p></div></article>
+          <article class="time-card reveal"><div class="time">10:00</div><div><h3>Guided Game Session 1</h3><p>Threat modeling, awareness, AppSec or incident response tables.</p></div></article>
+          <article class="time-card reveal"><div class="time">10:50</div><div><h3>Open Play & Networking</h3><p>Demos, new games, conversations and leaderboard updates.</p></div></article>
+          <article class="time-card reveal"><div class="time">11:10</div><div><h3>Creator Spotlight</h3><p>A focused 15-minute game story and live demonstration.</p></div></article>
+          <article class="time-card reveal"><div class="time">11:30</div><div><h3>Guided Game Session 2</h3><p>Beginner, developer, blue team, risk and open challenge tables.</p></div></article>
+          <article class="time-card reveal"><div class="time">12:20</div><div><h3>Lunch Drop-In Games</h3><p>Light, fast activities designed for conference lunchtime traffic.</p></div></article>
+          <article class="time-card reveal"><div class="time">13:20</div><div><h3>CyberSec Team Challenge</h3><p>Teams identify risks, select controls and defend their decisions.</p></div></article>
+          <article class="time-card reveal"><div class="time">14:10</div><div><h3>Challenge Debrief</h3><p>Connect the decisions to real cybersecurity practices and outcomes.</p></div></article>
+          <article class="time-card reveal"><div class="time">14:30</div><div><h3>Advanced Game Sessions</h3><p>Architecture, supply chain, incident simulation and prioritisation.</p></div></article>
+          <article class="time-card reveal"><div class="time">15:40</div><div><h3>Tournament Semifinals</h3><p>Qualified teams compete in a shared scenario under time pressure.</p></div></article>
+          <article class="time-card reveal"><div class="time">16:35</div><div><h3>Village Final</h3><p>A visible final designed for both players and spectators.</p></div></article>
+          <article class="time-card reveal" style="grid-column:1/-1"><div class="time">17:15</div><div><h3>Awards & Closing</h3><p>Celebrate the Village Champion, best decisions, collaboration, creativity and participation.</p></div></article>
+        </div>
+        <div class="actions reveal"><button class="btn btn-primary" type="button" onclick="window.print()">Print or save the concept</button></div>
+      </div>
+    </section>
+
+    <section class="section" id="formats">
+      <div class="shell">
+        <div class="formats-head reveal"><span class="eyebrow">Built to scale</span><h2>From two tables to a complete festival zone.</h2><p class="lead">The same model can fit a compact booth, a dedicated conference room or a high-traffic Village with parallel activities.</p></div>
+        <div class="format-grid">
+          <article class="format-card reveal"><div class="format-tag">Compact</div><h3>Focused presence</h3><div class="big">2</div><p>game tables</p><ul><li>8–12 concurrent players</li><li>3-person team</li><li>Quick play + guided sessions</li></ul></article>
+          <article class="format-card featured reveal"><div class="format-tag">Recommended</div><h3>Standard Village</h3><div class="big">4</div><p>game tables</p><ul><li>16–24 concurrent players</li><li>5–6-person team</li><li>All core Village zones</li></ul></article>
+          <article class="format-card reveal"><div class="format-tag">Extended</div><h3>Multiple tracks</h3><div class="big">6</div><p>game tables</p><ul><li>24–36 concurrent players</li><li>7–9-person team</li><li>Parallel tracks + tournament</li></ul></article>
+          <article class="format-card reveal"><div class="format-tag">Festival</div><h3>Full destination</h3><div class="big">8+</div><p>game tables</p><ul><li>40+ concurrent players</li><li>10+ person team</li><li>Stage, creators and finals</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section outcomes">
+      <div class="shell outcomes-grid">
+        <div class="outcomes-photo reveal"><img src="assets/play-table.webp" alt="People collaborating during a guided cybersecurity game session"></div>
+        <div class="reveal">
+          <span class="eyebrow">Why it works</span>
+          <h2>Serious learning without the serious faces.</h2>
+          <p class="lead">The Village creates a low-pressure environment where people can practise security thinking before the stakes become real.</p>
+          <div class="outcome-list">
+            <div class="outcome"><b>1</b><div><h3>Accessible participation</h3><p>No prior game or cybersecurity experience is required for the entry-level activities.</p></div></div>
+            <div class="outcome"><b>2</b><div><h3>Cross-functional collaboration</h3><p>Games give technical and non-technical participants a shared language and common problem.</p></div></div>
+            <div class="outcome"><b>3</b><div><h3>Memorable decisions</h3><p>Players remember the trade-off they made, the attack they missed and the teammate who saw it first.</p></div></div>
+            <div class="outcome"><b>4</b><div><h3>Conference energy</h3><p>Visible play, leaderboards and finals create natural movement and repeat visits throughout the day.</p></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="shell" style="margin-top:70px">
+        <div class="reveal"><span class="eyebrow">Event-ready model</span><h2 style="max-width:800px">A complete experience, not a pile of games on a table.</h2></div>
+        <div class="ready-grid">
+          <article class="ready-card reveal"><strong>Facilitation</strong><p>Briefed facilitators, clear roles, timed sessions and practical debriefs.</p></article>
+          <article class="ready-card reveal"><strong>Participation journey</strong><p>Welcome Desk, Cyber Passport, session booking and accessible activity levels.</p></article>
+          <article class="ready-card reveal"><strong>Competition</strong><p>Simple scoring, leaderboard, team challenge, final and meaningful award categories.</p></article>
+          <article class="ready-card reveal"><strong>Event integration</strong><p>Agenda aligned with keynotes, coffee breaks, lunch and conference closing.</p></article>
+          <article class="ready-card reveal"><strong>Partner visibility</strong><p>Sponsored tables, custom scenarios, branded games and creator showcases.</p></article>
+          <article class="ready-card reveal"><strong>Measurable impact</strong><p>Track visitors, players, games, completed missions, feedback and engagement.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="shell cta-grid">
+        <div><span class="eyebrow" style="color:#173f40">Bring play to the conference floor</span><h2>Make cybersecurity the part of the event people actually join.</h2><p>Build a Village around the audience, venue, available space and learning goals of each conference or company event.</p></div>
+        <a class="btn btn-dark" href="https://cybersecgames.com/pages/contact" target="_blank" rel="noopener">Talk to CyberSec Games <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 64 64" fill="none"><path d="M14 18 32 8l18 10v21L32 56 14 39V18Z" stroke="currentColor" stroke-width="5"/><path d="m23 31 7 7 13-15" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-copy">CyberSec Games<small>Village</small></span></a>
+          <p>Physical cybersecurity games, facilitated experiences and event partnerships that help people think, talk and work together on security.</p>
+        </div>
+        <div><h3>Explore</h3><div class="footer-links"><a href="#experience">The experience</a><a href="#zones">Village zones</a><a href="#agenda">One-day agenda</a><a href="#formats">Event formats</a></div></div>
+        <div><h3>CyberSec Games</h3><div class="footer-links"><a href="https://cybersecgames.com" target="_blank" rel="noopener">Official website</a><a href="https://cybersecgames.com/pages/play" target="_blank" rel="noopener">Play to Learn</a><a href="https://cybersecgames.com/pages/make" target="_blank" rel="noopener">Make a game</a><a href="https://cybersecgames.com/pages/contact" target="_blank" rel="noopener">Contact</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>CyberSec Games Village concept.</span><span>Play a game. Learn a skill. Challenge a team. Meet the creators.</span></div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton=document.querySelector('.menu-btn');
+    const navLinks=document.querySelector('.nav-links');
+    menuButton.addEventListener('click',()=>{
+      const open=document.body.classList.toggle('menu-open');
+      menuButton.setAttribute('aria-expanded',String(open));
+    });
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+      document.body.classList.remove('menu-open');
+      menuButton.setAttribute('aria-expanded','false');
+    }));
+    const observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})
+    },{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
