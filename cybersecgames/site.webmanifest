@@ -1,0 +1,11 @@
+﻿{
+  "name": "CyberSec Games Facilitator | Cássio B. Pereira",
+  "short_name": "CSG Facilitator",
+  "description": "Facilitated cybersecurity game sessions for teams and events.",
+  "start_url": "/cybersecgames/",
+  "scope": "/cybersecgames/",
+  "display": "standalone",
+  "background_color": "#240052",
+  "theme_color": "#240052",
+  "icons": [{"src": "/images/icons/favicon.ico", "sizes": "48x48", "type": "image/x-icon"}]
+}
