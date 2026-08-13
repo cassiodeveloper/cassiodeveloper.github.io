@@ -194,18 +194,18 @@
     </div></section>
   </main>
 
-  <section class="ladder-next" aria-label="What comes next">
+  <section class="ladder-next" aria-label="next">
   <div class="ladder-next__inner">
-    <p class="ladder-next__kicker">What comes next</p>
+    <p class="ladder-next__kicker" data-pt="Próximo passo" data-en="What comes next">What comes next</p>
     <div class="ladder-next__cards">
       <a class="ladder-next__card ladder-next__card--primary" href="https://cassiodeveloper.com.br/IronSoftware/" data-ladder-from="capacitacao" data-ladder-to="capacitacao">
-        <span class="ladder-next__title">AppSec: Software of Iron</span>
-        <span class="ladder-next__reason">From the game to the hard 8-hour hands-on training.</span>
-        <span class="ladder-next__go">See the training &rarr;</span>
+        <span class="ladder-next__title" data-pt="AppSec: Software de Ferro" data-en="AppSec: Software of Iron">AppSec: Software of Iron</span>
+        <span class="ladder-next__reason" data-pt="Do jogo para o treinamento prático e duro de 8h." data-en="From the game to the hard 8-hour hands-on training.">From the game to the hard 8-hour hands-on training.</span>
+        <span class="ladder-next__go" data-pt="Ver o treinamento →" data-en="See the training →">See the training →</span>
       </a>
       <a class="ladder-next__card" href="https://mariaappsec.com" data-ladder-from="capacitacao" data-ladder-to="recorrencia">
-        <span class="ladder-next__title">M.A.R.I.A.</span>
-        <span class="ladder-next__reason">Give the team prioritized risk in their CI, every day.</span>
+        <span class="ladder-next__title" data-pt="M.A.R.I.A." data-en="M.A.R.I.A.">M.A.R.I.A.</span>
+        <span class="ladder-next__reason" data-pt="Dê ao time risco priorizado no CI, todo dia." data-en="Give the team prioritized risk in their CI, every day.">Give the team prioritized risk in their CI, every day.</span>
       </a>
     </div>
   </div>
@@ -228,11 +228,15 @@
 </style>
 
 <script>
-  document.addEventListener('click',function(e){
-    var a=e.target.closest&&e.target.closest('.ladder-next__card');
-    if(!a||!window.gtag)return;
-    gtag('event','ladder_click',{from_step:a.getAttribute('data-ladder-from'),to_step:a.getAttribute('data-ladder-to'),link_url:a.href,source_page:location.pathname});
-  });
+(function(){
+  var root=document.documentElement;
+  function apply(){var pt=(root.getAttribute('lang')||'').toLowerCase().indexOf('pt')===0;
+    document.querySelectorAll('.ladder-next [data-pt][data-en]').forEach(function(el){el.textContent=pt?el.getAttribute('data-pt'):el.getAttribute('data-en');});}
+  apply();
+  try{new MutationObserver(apply).observe(root,{attributes:true,attributeFilter:['lang']});}catch(e){}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.ladder-next__card');if(!a||!window.gtag)return;
+    gtag('event','ladder_click',{from_step:a.getAttribute('data-ladder-from'),to_step:a.getAttribute('data-ladder-to'),link_url:a.href,source_page:location.pathname});});
+})();
 </script>
 
 <footer class="site-footer"><div class="shell footer-grid"><div><a class="wordmark footer-wordmark" href="#top"><span class="wordmark-token" aria-hidden="true">CBP</span><span><strong>Cássio B. Pereira</strong><small data-i18n="brandRole">CyberSec Games Facilitator</small></span></a><p data-i18n="footerPositioning">Facilitated learning experiences for better security conversations and decisions.</p></div><div><h2 data-i18n="footerExplore">Explore</h2><a href="#how" data-i18n="navHow">How it works</a><a href="#formats" data-i18n="navFormats">Formats</a><a href="#facilitator" data-i18n="navAbout">About Cássio</a><a href="#contact" data-i18n="navBook">Book a session</a></div><div><h2 data-i18n="footerConnect">Connect</h2><a href="mailto:cassio@cassiobp.com.br">cassio@cassiobp.com.br</a><a href="https://www.linkedin.com/in/cassiodeveloper/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://cybersecgames.com/" target="_blank" rel="noopener noreferrer">CyberSecGames.com</a></div></div><div class="shell legal"><p data-i18n="legal">CyberSec Games names, logos and game titles belong to their respective owners. This page presents independent facilitation services delivered in collaboration with CyberSec Games.</p><p>© <span data-year></span> Cássio B. Pereira.</p></div></footer>
