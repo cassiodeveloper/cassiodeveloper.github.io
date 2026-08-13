@@ -6,7 +6,7 @@
   <meta name="description" content="Facilitated cybersecurity game sessions for engineering, security, product and leadership teams. Learn threat modeling, privacy, incident response and secure design through play.">
   <meta name="theme-color" content="#240052">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self';">
   <link rel="canonical" href="https://cassiodeveloper.com.br/cybersecgames/">
   <link rel="alternate" hreflang="en" href="https://cassiodeveloper.com.br/cybersecgames/?lang=en">
   <link rel="alternate" hreflang="pt-BR" href="https://cassiodeveloper.com.br/cybersecgames/?lang=pt-BR">
@@ -44,21 +44,7 @@
   </script>
   <!-- Google Analytics 4 (propriedade compartilhada cassiodeveloper.com.br) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NL5R9VPGV9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-NL5R9VPGV9');
-    document.addEventListener('click', function(e){
-      var a = e.target.closest && e.target.closest('a[href*="calendar.app.google"]');
-      if(!a) return;
-      gtag('event', 'book_click', {
-        link_url: a.href,
-        link_text: (a.textContent||'').replace(/\s+/g,' ').trim().slice(0,80),
-        source_page: location.pathname
-      });
-    });
-  </script>
+  <script src="/cybersecgames/ga-init.js"></script>
 </head>
 <body class="csg-page">
   <a class="skip-link" href="#main" data-i18n="skip">Skip to main content</a>

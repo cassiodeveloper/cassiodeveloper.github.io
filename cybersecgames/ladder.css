@@ -1,13 +1,15 @@
-.ladder-next{--ln-bg:#0e0e10;--ln-card:#17171b;--ln-line:#2a2a30;--ln-fg:#fff;--ln-muted:#a0a0a8;--ln-accent:#C73E1D;
-  background:var(--ln-bg);color:var(--ln-fg);padding:48px 20px;border-top:1px solid var(--ln-line);font-family:inherit}
-.ladder-next__inner{max-width:900px;margin:0 auto}
-.ladder-next__kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ln-accent);margin:0 0 16px;font-weight:700}
-.ladder-next__cards{display:grid;grid-template-columns:1fr;gap:14px}
+/* Bloco "Proximo passo" no padrao de secao escura da pagina (roxo + ciano). */
+.ladder-next{background:var(--purple);color:var(--white);padding:clamp(3.5rem,7vw,5.5rem) 0;position:relative;overflow:hidden}
+.ladder-next::after{position:absolute;z-index:0;width:420px;aspect-ratio:1;right:-190px;bottom:-240px;border:70px solid rgba(0,240,255,.08);border-radius:50%;content:"";pointer-events:none}
+.ladder-next__inner{position:relative;z-index:1;width:min(calc(100% - 2.5rem),var(--max));margin-inline:auto}
+.ladder-next__kicker{margin:0 0 1rem;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan)}
+.ladder-next__cards{display:grid;grid-template-columns:1fr;gap:1rem}
 @media(min-width:720px){.ladder-next__cards{grid-template-columns:1fr 1fr}.ladder-next__card--primary{grid-column:1/-1}}
-.ladder-next__card{display:flex;flex-direction:column;gap:6px;padding:20px 22px;background:var(--ln-card);
-  border:1px solid var(--ln-line);border-radius:12px;text-decoration:none;color:var(--ln-fg);transition:border-color .2s,transform .2s}
-.ladder-next__card:hover{border-color:var(--ln-accent);transform:translateY(-2px)}
-.ladder-next__card--primary{border-color:var(--ln-accent)}
-.ladder-next__title{font-size:20px;font-weight:700}
-.ladder-next__reason{font-size:15px;color:var(--ln-muted);line-height:1.45}
-.ladder-next__go{margin-top:6px;font-weight:700;color:var(--ln-accent)}
+.ladder-next__card{display:flex;flex-direction:column;gap:.4rem;padding:1.6rem 1.8rem;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.16);border-radius:20px;text-decoration:none;color:var(--white);
+  transition:border-color .2s,transform .2s,background .2s}
+.ladder-next__card:hover{border-color:var(--cyan);background:rgba(255,255,255,.1);transform:translateY(-2px)}
+.ladder-next__card--primary{border-color:var(--cyan)}
+.ladder-next__title{font-family:var(--display-font);font-size:1.5rem;letter-spacing:-.02em}
+.ladder-next__reason{font-size:.98rem;line-height:1.5;color:rgba(255,255,255,.74)}
+.ladder-next__go{margin-top:.35rem;font-weight:700;color:var(--cyan)}
