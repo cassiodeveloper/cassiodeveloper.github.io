@@ -194,7 +194,48 @@
     </div></section>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-grid"><div><a class="wordmark footer-wordmark" href="#top"><span class="wordmark-token" aria-hidden="true">CBP</span><span><strong>Cássio B. Pereira</strong><small data-i18n="brandRole">CyberSec Games Facilitator</small></span></a><p data-i18n="footerPositioning">Facilitated learning experiences for better security conversations and decisions.</p></div><div><h2 data-i18n="footerExplore">Explore</h2><a href="#how" data-i18n="navHow">How it works</a><a href="#formats" data-i18n="navFormats">Formats</a><a href="#facilitator" data-i18n="navAbout">About Cássio</a><a href="#contact" data-i18n="navBook">Book a session</a></div><div><h2 data-i18n="footerConnect">Connect</h2><a href="mailto:cassio@cassiobp.com.br">cassio@cassiobp.com.br</a><a href="https://www.linkedin.com/in/cassiodeveloper/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://cybersecgames.com/" target="_blank" rel="noopener noreferrer">CyberSecGames.com</a></div></div><div class="shell legal"><p data-i18n="legal">CyberSec Games names, logos and game titles belong to their respective owners. This page presents independent facilitation services delivered in collaboration with CyberSec Games.</p><p>© <span data-year></span> Cássio B. Pereira.</p></div></footer>
+  <section class="ladder-next" aria-label="What comes next">
+  <div class="ladder-next__inner">
+    <p class="ladder-next__kicker">What comes next</p>
+    <div class="ladder-next__cards">
+      <a class="ladder-next__card ladder-next__card--primary" href="https://cassiodeveloper.com.br/IronSoftware/" data-ladder-from="capacitacao" data-ladder-to="capacitacao">
+        <span class="ladder-next__title">AppSec: Software of Iron</span>
+        <span class="ladder-next__reason">From the game to the hard 8-hour hands-on training.</span>
+        <span class="ladder-next__go">See the training &rarr;</span>
+      </a>
+      <a class="ladder-next__card" href="https://mariaappsec.com" data-ladder-from="capacitacao" data-ladder-to="recorrencia">
+        <span class="ladder-next__title">M.A.R.I.A.</span>
+        <span class="ladder-next__reason">Give the team prioritized risk in their CI, every day.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ladder-next{--ln-bg:#0e0e10;--ln-card:#17171b;--ln-line:#2a2a30;--ln-fg:#fff;--ln-muted:#a0a0a8;--ln-accent:#C73E1D;
+    background:var(--ln-bg);color:var(--ln-fg);padding:48px 20px;border-top:1px solid var(--ln-line);font-family:inherit}
+  .ladder-next__inner{max-width:900px;margin:0 auto}
+  .ladder-next__kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ln-accent);margin:0 0 16px;font-weight:700}
+  .ladder-next__cards{display:grid;grid-template-columns:1fr;gap:14px}
+  @media(min-width:720px){.ladder-next__cards{grid-template-columns:1fr 1fr}.ladder-next__card--primary{grid-column:1/-1}}
+  .ladder-next__card{display:flex;flex-direction:column;gap:6px;padding:20px 22px;background:var(--ln-card);
+    border:1px solid var(--ln-line);border-radius:12px;text-decoration:none;color:var(--ln-fg);transition:border-color .2s,transform .2s}
+  .ladder-next__card:hover{border-color:var(--ln-accent);transform:translateY(-2px)}
+  .ladder-next__card--primary{border-color:var(--ln-accent)}
+  .ladder-next__title{font-size:20px;font-weight:700}
+  .ladder-next__reason{font-size:15px;color:var(--ln-muted);line-height:1.45}
+  .ladder-next__go{margin-top:6px;font-weight:700;color:var(--ln-accent)}
+</style>
+
+<script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('.ladder-next__card');
+    if(!a||!window.gtag)return;
+    gtag('event','ladder_click',{from_step:a.getAttribute('data-ladder-from'),to_step:a.getAttribute('data-ladder-to'),link_url:a.href,source_page:location.pathname});
+  });
+</script>
+
+<footer class="site-footer"><div class="shell footer-grid"><div><a class="wordmark footer-wordmark" href="#top"><span class="wordmark-token" aria-hidden="true">CBP</span><span><strong>Cássio B. Pereira</strong><small data-i18n="brandRole">CyberSec Games Facilitator</small></span></a><p data-i18n="footerPositioning">Facilitated learning experiences for better security conversations and decisions.</p></div><div><h2 data-i18n="footerExplore">Explore</h2><a href="#how" data-i18n="navHow">How it works</a><a href="#formats" data-i18n="navFormats">Formats</a><a href="#facilitator" data-i18n="navAbout">About Cássio</a><a href="#contact" data-i18n="navBook">Book a session</a></div><div><h2 data-i18n="footerConnect">Connect</h2><a href="mailto:cassio@cassiobp.com.br">cassio@cassiobp.com.br</a><a href="https://www.linkedin.com/in/cassiodeveloper/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://cybersecgames.com/" target="_blank" rel="noopener noreferrer">CyberSecGames.com</a></div></div><div class="shell legal"><p data-i18n="legal">CyberSec Games names, logos and game titles belong to their respective owners. This page presents independent facilitation services delivered in collaboration with CyberSec Games.</p><p>© <span data-year></span> Cássio B. Pereira.</p></div></footer>
   <script src="/cybersecgames/script.js" defer></script>
 </body>
 </html>
