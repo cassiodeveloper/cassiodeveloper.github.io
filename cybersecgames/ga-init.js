@@ -1,7 +1,7 @@
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-NL5R9VPGV9');
+gtag('config', 'G-NL5R9VPGV9', { allow_google_signals: false, allow_ad_personalization_signals: false });
 document.addEventListener('click', function (e) {
   var a = e.target.closest && e.target.closest('a[href*="calendar.app.google"]');
   if (!a) return;
