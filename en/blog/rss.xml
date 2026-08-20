@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blog — Cássio Pereira</title><link>https://cassiodeveloper.com.br/en/blog/rss.xml</link><description>Ideas, opinions and experience about Application Security, DevSecOps, secure development, technology and the projects I am building.</description><language>en</language><lastBuildDate>Fri, 10 Jul 2026 00:00:00 GMT</lastBuildDate><atom:link href="https://cassiodeveloper.com.br/en/blog/rss.xml" rel="self" type="application/rss+xml"/><item><title>Application Security through Iron Man&apos;s mind</title><link>https://cassiodeveloper.com.br/en/blog/application-security-through-iron-mans-mind/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/en/blog/application-security-through-iron-mans-mind/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>A free e-book that uses the evolution of Tony Stark&apos;s armor to explain practical Application Security.</description><content:encoded><![CDATA[<h2 id="software-security-version-after-version-1">Software security, version after version</h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blog — Cássio Pereira</title><link>https://cassiodeveloper.com.br/en/blog/rss.xml</link><description>Ideas, opinions and experience about Application Security, DevSecOps, secure development, technology and the projects I am building.</description><language>en</language><lastBuildDate>Fri, 10 Jul 2026 00:00:00 GMT</lastBuildDate><atom:link href="https://cassiodeveloper.com.br/en/blog/rss.xml" rel="self" type="application/rss+xml"/><item><title>Facilitating CyberSec Games: when security leaves the slide and reaches the table</title><link>https://cassiodeveloper.com.br/en/blog/facilitating-cybersec-games-security-around-the-table/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/en/blog/facilitating-cybersec-games-security-around-the-table/</guid><pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate><description>How facilitated CyberSec Games sessions turn complex security topics into decisions, conversations and lessons teams can take back to work.</description><content:encoded><![CDATA[<h2 id="security-is-learned-better-when-everyone-participates-1">Security is learned better when everyone participates</h2>
+<p>Much of security training still follows the same script: a presentation, many concepts, a few recommendations and an audience that starts attentive but ends up waiting for the last slide.</p>
+<p>The problem is not a lack of content. It is a lack of experience.</p>
+<p>Security decisions are rarely isolated or obvious. Teams face pressure from deadlines, cost, usability, delivery and business continuity. People with different responsibilities see the same risk in different ways. Useful training needs to create room for those perspectives to emerge, challenge each other and find a shared direction.</p>
+<p>That is why I work as a <strong>CyberSec Games Facilitator</strong>: to help teams learn security by making decisions, discussing consequences and reflecting on situations that resemble real work.</p>
+<p>CyberSec Games creates the games. I facilitate the experience.</p>
+<h3 id="a-game-is-more-than-the-material-on-the-table-2">A game is more than the material on the table</h3>
+<p>Buying or printing a cybersecurity game gives you components, rules and a dynamic. A facilitated session adds something essential: intention.</p>
+<p>Before bringing participants together, I seek to understand the organisation&#039;s objective, the group&#039;s profile, the business context, current challenges and expected outcome. From there, we select the appropriate game, technical depth and format.</p>
+<p>During the session, my role is not to provide every answer. It is to create the conditions for the group to ask better questions.</p>
+<p>That means:</p>
+<ul>
+<li>explaining the activity without turning the rules into another lecture;</li>
+<li>balancing participation across different roles and experience levels;</li>
+<li>challenging the discussion when a decision is made out of habit;</li>
+<li>connecting choices in the game with real risks and situations;</li>
+<li>keeping the conversation focused without controlling the group&#039;s thinking;</li>
+<li>observing patterns that can be explored during the debrief.</li>
+</ul>
+<p>Facilitation turns the game into a deliberate learning journey. The material starts the conversation; the experience gives it meaning.</p>
+<h3 id="how-a-facilitated-session-works-3">How a facilitated session works</h3>
+<p>Every experience is adapted, but a common flow guides the work.</p>
+<h4 id="1-understand-the-objective-4">1. Understand the objective</h4>
+<p>Everything starts with the challenge, not the game. Does the team want to practise threat modeling? Improve conversations between security and product? Work on incident response? Engage Security Champions? Discuss privacy, architecture or leadership decisions?</p>
+<p>A clear objective prevents the session from being enjoyable but disconnected from what the organisation needs.</p>
+<h4 id="2-select-the-right-experience-5">2. Select the right experience</h4>
+<p>The game and format are selected according to the audience, number of participants, available time, technical level and organisational context. Possible games include <strong>Elevation of Privilege</strong>, <strong>OWASP Cornucopia</strong>, <strong>Backdoors &amp; Breaches</strong>, <strong>LINDDUN GO</strong> and <strong>Context &amp; Cringe</strong>.</p>
+<p>The game serves the objective—not the other way around.</p>
+<h4 id="3-put-decisions-in-motion-6">3. Put decisions in motion</h4>
+<p>Around the table, participants analyse scenarios, negotiate priorities, challenge assumptions and deal with consequences. My responsibility is to keep the group engaged and the discussion productive while giving different perspectives room to contribute.</p>
+<p>This is where abstract concepts become concrete conversations. Risk stops being just a number. Privacy stops being merely an obligation. Secure design stops being a list of controls and becomes part of a shared decision.</p>
+<h4 id="4-lead-the-debrief-7">4. Lead the debrief</h4>
+<p>The game may be over, but the learning is not.</p>
+<p>During the debrief, we revisit decisions, patterns, risks, conflicts and surprises. We ask what happened, why it happened and where something similar appears in the team&#039;s daily work. This stage helps participants turn a game into applicable understanding.</p>
+<h4 id="5-take-the-learning-back-to-work-8">5. Take the learning back to work</h4>
+<p>Depending on the objective, insights can become recommendations, actions, requirements, process adjustments or next steps. The session does not have to end as an interesting memory; it can start a practical change.</p>
+<h3 id="what-happens-around-the-table-9">What happens around the table</h3>
+<p>Serious games create a safe environment for experimentation. People can test an idea, disagree, make a mistake and observe the consequence without putting a real system at risk.</p>
+<p>This produces benefits that a presentation can rarely deliver on its own:</p>
+<ul>
+<li><strong>active participation:</strong> everyone contributes, negotiates and learns from each other;</li>
+<li><strong>better conversations:</strong> complex subjects become accessible across security, engineering, product, risk and business teams;</li>
+<li><strong>practical learning:</strong> decisions are explored through recognisable situations;</li>
+<li><strong>shared ownership:</strong> security stops belonging exclusively to the security team;</li>
+<li><strong>actionable insights:</strong> the activity exposes assumptions, process gaps and opportunities for improvement;</li>
+<li><strong>retention:</strong> people remember the decisions, discussions and consequences they experienced.</li>
+</ul>
+<p>Nobody needs to arrive as a cybersecurity expert. The language, difficulty and technical depth can be adapted to the group.</p>
+<h3 id="for-technical-teams-and-the-people-who-make-decisions-with-them-10">For technical teams—and the people who make decisions with them</h3>
+<p>Sessions can bring together developers, security professionals, architects, Product Owners, leaders, risk and privacy teams, and others involved in product or organisational decisions.</p>
+<p>That mix of perspectives is valuable. Many security problems do not result from a lack of technical knowledge, but from assumptions that were never made explicit, priorities that were never negotiated or responsibilities that each area believed belonged to another.</p>
+<p>The game puts those differences on the table in a structured way. Facilitation helps turn them into understanding rather than conflict.</p>
+<h3 id="different-formats-for-different-objectives-11">Different formats for different objectives</h3>
+<p>A session can take several forms:</p>
+<ul>
+<li><strong>focused team session</strong>, typically lasting from 90 minutes to three hours;</li>
+<li><strong>corporate workshop</strong>, lasting half a day or a full day, with more context and depth;</li>
+<li><strong>conference activation</strong> for booths, villages, community gatherings and internal events;</li>
+<li><strong>leadership session</strong> centred on risk, priorities, communication and decision-making;</li>
+<li><strong>Security Champions experience</strong> focused on engagement and programme development;</li>
+<li><strong>Train the Facilitator</strong> for organisations that want to prepare internal professionals to run game-based activities.</li>
+</ul>
+<p>Experiences can be delivered in English or Portuguese, on-site or remotely, depending on the format and the group&#039;s needs.</p>
+<h3 id="more-than-making-training-fun-12">More than making training fun</h3>
+<p>The objective is not to gamify a lecture or use fun as a distraction. It is to create an experience where people need to think, choose, explain and listen.</p>
+<p>A good session does not deliver one ready-made answer. It makes trade-offs visible, improves the quality of questions and creates a shared language for future decisions.</p>
+<p>That is the value I want to bring as a facilitator: combining the structure of CyberSec Games with experience in Application Security, DevSecOps, Threat Modeling, Security Champions and software development to turn an activity around the table into learning that matters beyond it.</p>
+<p>If your team needs better security conversations, another slide may not be the answer. It may be time to put the challenge on the table.</p>
+<p><a href="/cybersecgames/">Explore facilitated CyberSec Games sessions</a></p>]]></content:encoded></item><item><title>Application Security through Iron Man&apos;s mind</title><link>https://cassiodeveloper.com.br/en/blog/application-security-through-iron-mans-mind/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/en/blog/application-security-through-iron-mans-mind/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>A free e-book that uses the evolution of Tony Stark&apos;s armor to explain practical Application Security.</description><content:encoded><![CDATA[<h2 id="software-security-version-after-version-1">Software security, version after version</h2>
 <p>Tony Stark did not build a perfect suit of armor on his first attempt. He worked with the resources available, survived the immediate problem, learned from failure and created a better version.</p>
 <p>That evolution is a useful way to explain Application Security.</p>
 <p><strong>Application Security through Iron Man&#039;s mind</strong> is a free e-book that connects situations from the Marvel Cinematic Universe to practical secure development. The objective is not to turn fiction into a framework, but to use a familiar reference to make security decisions easier to visualize.</p>

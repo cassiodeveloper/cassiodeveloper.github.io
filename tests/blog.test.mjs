@@ -34,8 +34,10 @@ test('oferece filtros, ordenação, busca e índice apenas com projetos publicad
   assert.match(read('blog/assets/blog.js'), /setTimeout\(.+220/);
   assert.match(read('blog/assets/blog.js'), /normalize\('NFD'\)/);
   const index = JSON.parse(read('blog/search-index.json'));
-  assert.equal(index.length, 12);
+  assert.equal(index.length, 14);
   assert.equal(index.some(post => post.placeholder), false);
+  assert.equal(index.some(post => post.slug === 'facilitar-cybersec-games-seguranca-na-mesa'), true);
+  assert.equal(index.some(post => post.slug === 'facilitating-cybersec-games-security-around-the-table'), true);
   assert.equal(index.some(post => post.slug === 'gates-de-seguranca-que-realmente-funcionam'), false);
 });
 
@@ -55,11 +57,13 @@ test('relaciona todas as traduções nos dois sentidos', () => {
     ['blog/devsecops-podcast/index.html', '/en/blog/devsecops-podcast/', 'Read in English'],
     ['blog/manifesto-appsec-motherfucker/index.html', '/en/blog/appsec-motherfucker-manifesto/', 'Read in English'],
     ['blog/seguranca-de-aplicacoes-homem-de-ferro/index.html', '/en/blog/application-security-through-iron-mans-mind/', 'Read in English'],
+    ['blog/facilitar-cybersec-games-seguranca-na-mesa/index.html', '/en/blog/facilitating-cybersec-games-security-around-the-table/', 'Read in English'],
     ['en/blog/secscore-security-decisions-with-context/index.html', '/blog/secscore-decisoes-de-seguranca-baseadas-em-contexto/', 'Ler em português'],
     ['en/blog/codes-and-consequences/index.html', '/blog/codes-and-consequences/', 'Ler em português'],
     ['en/blog/devsecops-podcast/index.html', '/blog/devsecops-podcast/', 'Ler em português'],
     ['en/blog/appsec-motherfucker-manifesto/index.html', '/blog/manifesto-appsec-motherfucker/', 'Ler em português'],
-    ['en/blog/application-security-through-iron-mans-mind/index.html', '/blog/seguranca-de-aplicacoes-homem-de-ferro/', 'Ler em português']
+    ['en/blog/application-security-through-iron-mans-mind/index.html', '/blog/seguranca-de-aplicacoes-homem-de-ferro/', 'Ler em português'],
+    ['en/blog/facilitating-cybersec-games-security-around-the-table/index.html', '/blog/facilitar-cybersec-games-seguranca-na-mesa/', 'Ler em português']
   ];
   for (const [file, href, label] of pairs) {
     const html = read(file);

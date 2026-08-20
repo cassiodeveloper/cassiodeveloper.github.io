@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>#security-training — Cássio Pereira</title><link>https://cassiodeveloper.com.br/blog/tag/security-training/rss.xml</link><description>Tag security-training</description><language>pt-BR</language><lastBuildDate>Fri, 10 Jul 2026 00:00:00 GMT</lastBuildDate><atom:link href="https://cassiodeveloper.com.br/blog/tag/security-training/rss.xml" rel="self" type="application/rss+xml"/><item><title>Facilitar CyberSec Games: quando a segurança sai do slide e vai para a mesa</title><link>https://cassiodeveloper.com.br/blog/facilitar-cybersec-games-seguranca-na-mesa/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/facilitar-cybersec-games-seguranca-na-mesa/</guid><pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate><description>Como sessões facilitadas da CyberSec Games transformam temas complexos de segurança em decisões, conversas e aprendizados que o time realmente leva para o trabalho.</description><content:encoded><![CDATA[<h2 id="seguranca-se-aprende-melhor-quando-todos-participam-1">Segurança se aprende melhor quando todos participam</h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>#facilitation — Cássio Pereira</title><link>https://cassiodeveloper.com.br/blog/tag/facilitation/rss.xml</link><description>Tag facilitation</description><language>pt-BR</language><lastBuildDate>Fri, 10 Jul 2026 00:00:00 GMT</lastBuildDate><atom:link href="https://cassiodeveloper.com.br/blog/tag/facilitation/rss.xml" rel="self" type="application/rss+xml"/><item><title>Facilitar CyberSec Games: quando a segurança sai do slide e vai para a mesa</title><link>https://cassiodeveloper.com.br/blog/facilitar-cybersec-games-seguranca-na-mesa/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/facilitar-cybersec-games-seguranca-na-mesa/</guid><pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate><description>Como sessões facilitadas da CyberSec Games transformam temas complexos de segurança em decisões, conversas e aprendizados que o time realmente leva para o trabalho.</description><content:encoded><![CDATA[<h2 id="seguranca-se-aprende-melhor-quando-todos-participam-1">Segurança se aprende melhor quando todos participam</h2>
 <p>Grande parte dos treinamentos de segurança ainda segue o mesmo roteiro: uma apresentação, muitos conceitos, algumas recomendações e uma audiência que começa atenta, mas termina apenas esperando o último slide.</p>
 <p>O problema não é falta de conteúdo. É falta de experiência.</p>
 <p>Em segurança, as decisões raramente são isoladas ou óbvias. Existe pressão por prazo, custo, usabilidade, entrega e continuidade do negócio. Pessoas com responsabilidades diferentes enxergam o mesmo risco de formas diferentes. Um treinamento realmente útil precisa criar espaço para essas perspectivas aparecerem, entrarem em conflito e encontrarem uma direção comum.</p>
@@ -67,47 +67,4 @@
 <p>Uma boa sessão não entrega uma única resposta pronta. Ela torna visíveis os trade-offs, melhora a qualidade das perguntas e cria uma linguagem comum para decisões futuras.</p>
 <p>Esse é o valor que quero levar como facilitador: combinar a estrutura dos jogos da CyberSec Games com experiência em Application Security, DevSecOps, Threat Modeling, Security Champions e desenvolvimento de software para transformar uma atividade ao redor da mesa em aprendizado relevante para o mundo fora dela.</p>
 <p>Se sua equipe precisa conversar melhor sobre segurança, talvez não seja necessário outro slide. Talvez seja hora de colocar o desafio na mesa.</p>
-<p><a href="/cybersecgames/">Conheça as sessões facilitadas da CyberSec Games</a></p>]]></content:encoded></item><item><title>Codes &amp; Consequences</title><link>https://cassiodeveloper.com.br/blog/codes-and-consequences/</link><guid isPermaLink="true">https://cassiodeveloper.com.br/blog/codes-and-consequences/</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>Um jogo estratégico de treinamento em AppSec no qual decisões sobre produto, segurança, orçamento e reputação produzem consequências.</description><content:encoded><![CDATA[<h2 id="appsec-se-aprende-tomando-decisoes-1">AppSec se aprende tomando decisões</h2>
-<p>Treinamentos tradicionais conseguem explicar conceitos. O problema é que o trabalho real raramente apresenta uma pergunta com quatro alternativas e apenas uma resposta correta.</p>
-<p>Na prática, equipes precisam equilibrar entrega, segurança, orçamento, prazo, reputação e risco. Cada escolha resolve um problema e pode criar outro. <strong>Codes &amp; Consequences</strong> transforma essa tensão em uma experiência de aprendizagem.</p>
-<p>É um jogo estratégico de treinamento em Application Security que simula ciclos de desenvolvimento inspirados em métodos ágeis. Os participantes assumem decisões de um time de tecnologia e precisam entregar um sistema funcional sem perder o controle da segurança.</p>
-<h3 id="como-funciona-a-experiencia-2">Como funciona a experiência</h3>
-<p>A cada ciclo, o time precisa decidir onde investir recursos. Novas funcionalidades competem com correções, controles e atividades de segurança. Durante a jornada, vulnerabilidades, incidentes, eventos inesperados e ameaças alteram o cenário.</p>
-<p>O jogo não premia quem simplesmente escolhe segurança em todas as rodadas. Ele exige equilíbrio.</p>
-<p>Os participantes precisam considerar:</p>
-<ul>
-<li>valor de negócio e funcionalidades;</li>
-<li>risco técnico e vulnerabilidades;</li>
-<li>orçamento e capacidade do time;</li>
-<li>reputação do produto;</li>
-<li>consequências de decisões anteriores.</li>
-</ul>
-<p>O objetivo é chegar ao final com um produto que funcione, preserve recursos e mantenha um nível de risco aceitável.</p>
-<h3 id="por-que-usar-um-jogo-3">Por que usar um jogo</h3>
-<p>Uma decisão vivenciada é mais fácil de lembrar do que uma regra apresentada em um slide. Quando uma escolha aparentemente inofensiva produz um incidente duas rodadas depois, a relação entre causa e consequência deixa de ser abstrata.</p>
-<p>A dinâmica ajuda a discutir temas como:</p>
-<ul>
-<li>dívida de segurança;</li>
-<li>priorização de vulnerabilidades;</li>
-<li>trade-offs entre velocidade e proteção;</li>
-<li>comunicação entre desenvolvimento, produto e segurança;</li>
-<li>impacto acumulado de pequenas decisões;</li>
-<li>responsabilidade compartilhada dentro do SDLC.</li>
-</ul>
-<p>O aprendizado acontece na conversa entre os participantes. Não existe ferramenta tomando a decisão no lugar do time.</p>
-<h3 id="para-quem-foi-criado-4">Para quem foi criado</h3>
-<p>Codes &amp; Consequences funciona como atividade para desenvolvedores, profissionais de AppSec, DevOps, Security Champions, Product Owners, líderes técnicos e outras pessoas envolvidas no desenvolvimento de software.</p>
-<p>Também pode ser usado em:</p>
-<ul>
-<li>treinamentos corporativos;</li>
-<li>workshops de desenvolvimento seguro;</li>
-<li>programas de Security Champions;</li>
-<li>conferências e eventos;</li>
-<li>encontros de comunidades técnicas;</li>
-<li>atividades de integração entre segurança e engenharia.</li>
-</ul>
-<h3 id="o-que-fica-depois-da-partida-5">O que fica depois da partida</h3>
-<p>O jogo cria uma linguagem comum. Depois da experiência, termos como risco, dívida, incidente, prioridade e consequência deixam de pertencer apenas ao time de segurança.</p>
-<p>Mais importante: os participantes percebem que segurança não é uma etapa separada no final do processo. Ela é parte das escolhas que constroem o produto em cada ciclo.</p>
-<p>Codes &amp; Consequences não ensina AppSec por memorização. Ele coloca as decisões na mesa e deixa as consequências fazerem o resto.</p>
-<p><a href="https://codesandconsequences.com" target="_blank" rel="noopener noreferrer">Conheça Codes &amp; Consequences<span class="external-mark" aria-hidden="true"> ↗</span><span class="sr-only"> (abre em nova aba)</span></a></p>]]></content:encoded></item></channel></rss>
+<p><a href="/cybersecgames/">Conheça as sessões facilitadas da CyberSec Games</a></p>]]></content:encoded></item></channel></rss>

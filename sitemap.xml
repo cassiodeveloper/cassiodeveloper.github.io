@@ -193,6 +193,26 @@
     <priority>0.70</priority>
   </url>
   <url>
+    <loc>https://cassiodeveloper.com.br/blog/tag/security-training/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/blog/tag/serious-games/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/blog/tag/facilitation/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/blog/tag/security-culture/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
     <loc>https://cassiodeveloper.com.br/blog/tag/secure-development/</loc>
     <lastmod>2026-07-10</lastmod>
     <priority>0.70</priority>
@@ -204,11 +224,6 @@
   </url>
   <url>
     <loc>https://cassiodeveloper.com.br/blog/tag/book/</loc>
-    <lastmod>2026-07-10</lastmod>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://cassiodeveloper.com.br/blog/tag/security-training/</loc>
     <lastmod>2026-07-10</lastmod>
     <priority>0.70</priority>
   </url>
@@ -298,6 +313,26 @@
     <priority>0.70</priority>
   </url>
   <url>
+    <loc>https://cassiodeveloper.com.br/en/blog/tag/security-training/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/en/blog/tag/serious-games/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/en/blog/tag/facilitation/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/en/blog/tag/security-culture/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
     <loc>https://cassiodeveloper.com.br/en/blog/tag/secure-development/</loc>
     <lastmod>2026-07-10</lastmod>
     <priority>0.70</priority>
@@ -314,11 +349,6 @@
   </url>
   <url>
     <loc>https://cassiodeveloper.com.br/en/blog/tag/manifesto/</loc>
-    <lastmod>2026-07-10</lastmod>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://cassiodeveloper.com.br/en/blog/tag/security-training/</loc>
     <lastmod>2026-07-10</lastmod>
     <priority>0.70</priority>
   </url>
@@ -366,6 +396,16 @@
     <loc>https://cassiodeveloper.com.br/en/blog/tag/ci-cd/</loc>
     <lastmod>2026-07-10</lastmod>
     <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/en/blog/facilitating-cybersec-games-security-around-the-table/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cassiodeveloper.com.br/blog/facilitar-cybersec-games-seguranca-na-mesa/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://cassiodeveloper.com.br/en/blog/application-security-through-iron-mans-mind/</loc>
