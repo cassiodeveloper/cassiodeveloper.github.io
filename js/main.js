@@ -312,3 +312,61 @@
     })();
 
 })(document.documentElement);
+/* ====================================================================
+ * Toggles globais: tema (dark/light) e idioma (PT/EN -> /en)
+ * Adicionado ao fim do main.js; roda em todas as páginas que o carregam.
+ * ==================================================================== */
+(function siteToggles() {
+    var root = document.documentElement;
+
+    // aplica tema salvo (padrão: claro)
+    try {
+        var saved = localStorage.getItem('site-theme');
+        if (saved === 'dark' || saved === 'light') root.setAttribute('data-theme', saved);
+    } catch (e) {}
+
+    function currentTheme() {
+        var t = root.getAttribute('data-theme');
+        return (t === 'dark') ? 'dark' : 'light';
+    }
+    function toggleTheme() {
+        var next = currentTheme() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('site-theme', next); } catch (e) {}
+    }
+
+    // idioma: detecta pelo <html lang> (robusto, independe do caminho de deploy)
+    var isEN = ((root.getAttribute('lang') || '').toLowerCase().indexOf('en') === 0);
+    // PT -> /en/ (COM barra final, senão os assets relativos quebram); EN -> /
+    var otherLangHref = isEN ? '/' : '/en/';
+
+    var SUN = '<svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+    var MOON = '<svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
+
+    function injectInto(menu) {
+        if (!menu || menu.querySelector('.s-header__tools')) return;
+        // remove link antigo da bandeira de idioma (en-us no PT, pt-br no EN)
+        menu.querySelectorAll('a').forEach(function (a) {
+            if (a.querySelector('img[src*="en-us"]') || a.querySelector('img[src*="pt-br"]')) {
+                var li = a.closest('li'); if (li) li.remove();
+            }
+        });
+        var li = document.createElement('li');
+        li.className = 's-header__tools';
+        li.innerHTML =
+            '<button class="tool-lang" type="button" aria-label="Switch language">' +
+                '<span class="' + (isEN ? '' : 'on') + '">PT</span><span> / </span><span class="' + (isEN ? 'on' : '') + '">EN</span>' +
+            '</button>' +
+            '<button class="tool-theme" type="button" aria-label="Toggle dark/light">' + SUN + MOON + '</button>';
+        menu.appendChild(li);
+        li.querySelector('.tool-lang').addEventListener('click', function () { location.href = otherLangHref; });
+        li.querySelector('.tool-theme').addEventListener('click', toggleTheme);
+    }
+
+    function run() {
+        var menu = document.querySelector('.s-header__menu-links');
+        if (menu) injectInto(menu);
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
+    else run();
+})();

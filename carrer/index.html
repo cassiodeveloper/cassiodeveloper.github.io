@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js" data-theme="auto">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============ SEO ============ -->
+    <title>Trajetória | Cássio Batista Pereira — Carreira em AppSec</title>
+    <meta name="description" content="A história de carreira de Cássio Batista Pereira em Segurança de Aplicações: da formação à liderança técnica em AppSec, passando por CVC, ABB, Backbase, Nova8 e StoneX, até o ensino e a comunidade." />
+    <meta name="keywords" content="Cássio Pereira, Cássio Batista Pereira, AppSec, DevSecOps, carreira, trajetória, Application Security, StoneX, timeline" />
+    <meta name="author" content="Cássio B. Pereira" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://cassiodeveloper.com.br/carrer/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://cassiodeveloper.com.br/carrer/" />
+    <link rel="alternate" hreflang="en" href="https://cassiodeveloper.com.br/en/carrer/" />
+    <link rel="alternate" hreflang="x-default" href="https://cassiodeveloper.com.br/carrer/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Trajetória | Cássio Batista Pereira" />
+    <meta property="og:description" content="Mais de duas décadas construindo software seguro, ensinando e formando comunidade em AppSec." />
+    <meta property="og:url" content="https://cassiodeveloper.com.br/carrer/" />
+    <meta property="og:image" content="https://cassiodeveloper.com.br/images/intro-bg.jpg" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Cássio Batista Pereira",
+        "alternateName": "@cassiodeveloper",
+        "jobTitle": "Application Security Evangelist",
+        "worksFor": { "@type": "Organization", "name": "StoneX" },
+        "url": "https://cassiodeveloper.com.br/",
+        "sameAs": [
+          "https://www.linkedin.com/in/cassiodeveloper/",
+          "https://x.com/cassiodeveloper",
+          "https://instagram.com/cassiodeveloper"
+        ],
+        "knowsAbout": ["Application Security", "DevSecOps", "Cloud Security", "SAST", "Threat Modeling"],
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "FIAP" },
+          { "@type": "CollegeOrUniversity", "name": "Universidade Presbiteriana Mackenzie" }
+        ]
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://cassiodeveloper.com.br/" },
+        { "@type": "ListItem", "position": 2, "name": "Trajetória", "item": "https://cassiodeveloper.com.br/carrer/" }
+      ]
+    }
+    </script>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS do site -->
+    <link rel="stylesheet" href="../css/vendor.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon.ico" />
+    <link rel="manifest" href="../site.webmanifest" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NL5R9VPGV9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NL5R9VPGV9');
+    </script>
+
+    <!-- ===== estilos próprios da página de trajetória ===== -->
+    <style>
+        /* vars da timeline — herdam a identidade do site (styles.css já
+           define --font-1/2 e --color-1). Dark/light só afeta esta página. */
+        :root, :root[data-theme="light"] {
+            --c-ink: #1a1a1a; --c-body: #474747; --c-muted: #8e8f8e;
+            --c-line: #e4e2df; --c-bg: #fbfaf8; --c-bg-alt: #f4f2ef;
+            --c-card: #ffffff;
+            --c-shadow: 0 24px 60px rgba(0,0,0,.14), 0 4px 12px rgba(0,0,0,.08);
+            --c-overlay: rgba(26,26,26,.55); --c-dot: #fbfaf8;
+        }
+        :root[data-theme="dark"] {
+            --c-ink: #f4f3f1; --c-body: #b8b6b2; --c-muted: #6f6f6d;
+            --c-line: #2c2b29; --c-bg: #141312; --c-bg-alt: #1c1b19;
+            --c-card: #201f1d;
+            --c-shadow: 0 24px 60px rgba(0,0,0,.6), 0 4px 12px rgba(0,0,0,.4);
+            --c-overlay: rgba(0,0,0,.72); --c-dot: #141312;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root[data-theme="auto"] {
+                --c-ink: #f4f3f1; --c-body: #b8b6b2; --c-muted: #6f6f6d;
+                --c-line: #2c2b29; --c-bg: #141312; --c-bg-alt: #1c1b19;
+                --c-card: #201f1d;
+                --c-shadow: 0 24px 60px rgba(0,0,0,.6), 0 4px 12px rgba(0,0,0,.4);
+                --c-overlay: rgba(0,0,0,.72); --c-dot: #141312;
+            }
+        }
+
+        .carrer-main { background: var(--c-bg); transition: background .4s cubic-bezier(.22,.61,.36,1); }
+        .carrer-wrap { width: min(92%, 1040px); margin: 0 auto; }
+
+        /* ---- header próprio (estático, autocontido, barra escura) ----
+           Substitui o header animado do site nesta página para garantir
+           que menu/logo/toggles apareçam sempre, em light e dark. */
+        .c-topbar {
+            position: sticky; top: 0; z-index: 500;
+            background: #1a1917; border-bottom: 1px solid rgba(255,255,255,.07);
+        }
+        .c-topbar__in {
+            width: min(92%, 1180px); margin: 0 auto; height: 68px;
+            display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+        }
+        .c-topbar__logo { display: inline-flex; align-items: center; }
+        .c-topbar__logo img { height: 3.4rem; width: auto; max-height: 4rem; display: block; }
+        .c-nav { display: flex; align-items: center; gap: .3rem; flex-wrap: wrap; }
+        .c-nav a {
+            font-family: var(--font-1); font-weight: 400; font-size: 1.5rem;
+            color: rgba(255,255,255,.72); padding: .6rem 1.1rem; border-radius: 4px;
+            transition: color .2s ease;
+        }
+        .c-nav a:hover { color: #fff; }
+        .c-nav a.current { color: #fff; font-weight: 500; }
+        .c-nav .flag { padding: .6rem .8rem; display: inline-flex; align-items: center; }
+        .c-nav .flag img { display: block; }
+        .c-tools { display: inline-flex; align-items: center; gap: 1rem; margin-left: .4rem; }
+        .c-tools button {
+            display: inline-flex; align-items: center; justify-content: center;
+            background: none; border: 1px solid rgba(255,255,255,.22); cursor: pointer;
+            color: rgba(255,255,255,.82); font-family: var(--font-1); border-radius: 50px;
+            transition: all .2s ease; padding: 0; line-height: 1;
+        }
+        .c-tools button:hover { border-color: var(--color-1); color: #fff; }
+        .c-tools .tool-lang { font-size: 1.1rem; font-weight: 600; letter-spacing: .06em; padding: .6rem 1.1rem; }
+        .c-tools .tool-lang .on { color: var(--color-1); }
+        .c-tools .tool-theme { width: 3.4rem; height: 3.4rem; }
+        .c-tools .tool-theme svg { width: 1.6rem; height: 1.6rem; }
+        .c-tools .tool-theme .moon { display: none; }
+        :root[data-theme="dark"] .c-tools .tool-theme .sun { display: none; }
+        :root[data-theme="dark"] .c-tools .tool-theme .moon { display: block; }
+        @media (prefers-color-scheme: dark) {
+            :root[data-theme="auto"] .c-tools .tool-theme .sun { display: none; }
+            :root[data-theme="auto"] .c-tools .tool-theme .moon { display: block; }
+        }
+        /* menu hambúrguer no mobile */
+        .c-burger { display: none; background: none; border: 0; cursor: pointer; padding: 1rem; }
+        .c-burger span { display: block; width: 22px; height: 2px; background: #fff; margin: 4px 0; transition: .25s; }
+        @media screen and (max-width: 860px) {
+            .c-burger { display: block; order: 3; }
+            .c-nav {
+                order: 4; width: 100%; flex-direction: column; align-items: flex-start;
+                gap: 0; max-height: 0; overflow: hidden; transition: max-height .3s ease;
+            }
+            .c-nav.open { max-height: 60rem; padding-bottom: 1.4rem; }
+            .c-nav a { width: 100%; padding: 1.1rem 0; font-size: 1.7rem; }
+            .c-topbar__in { flex-wrap: wrap; height: auto; padding: 1.2rem 0; }
+            .c-tools { order: 2; }
+        }
+
+        /* ---- controles no header (idioma + tema) ---- */
+        .s-header__tools { display: inline-flex; align-items: center; gap: 1rem; margin-left: .6rem; }
+        .s-header__tools button {
+            display: inline-flex !important; align-items: center; justify-content: center;
+            background: none !important; border: 1px solid rgba(255,255,255,.22) !important; cursor: pointer;
+            color: rgba(255,255,255,.8) !important; font-family: var(--font-1); border-radius: 50px;
+            transition: all .25s ease; padding: 0; margin: 0;
+            text-transform: none !important; height: auto !important; line-height: 1 !important;
+        }
+        .s-header__tools button:hover { border-color: var(--color-1) !important; color: #fff !important; }
+        .tool-lang { font-size: 1.1rem; font-weight: 600; letter-spacing: .08em !important; padding: .6rem 1.2rem !important; }
+        .tool-lang .on { color: var(--color-1); }
+        .tool-theme { width: 3.4rem !important; padding: 0 !important; }
+        .tool-theme svg { width: 1.6rem; height: 1.6rem; }
+        .tool-theme .moon { display: none; }
+        :root[data-theme="dark"] .tool-theme .sun { display: none; }
+        :root[data-theme="dark"] .tool-theme .moon { display: block; }
+        @media (prefers-color-scheme: dark) {
+            :root[data-theme="auto"] .tool-theme .sun { display: none; }
+            :root[data-theme="auto"] .tool-theme .moon { display: block; }
+        }
+        @media screen and (max-width: 900px) {
+            .s-header__tools { margin: 1.6rem 0 0; }
+            .s-header__tools button { border-color: rgba(255,255,255,.22); }
+        }
+
+        /* ---- hero ---- */
+        .c-hero { padding: clamp(7rem, 12vh, 11rem) 0 7rem; background: var(--c-bg); }
+        .c-hero__pretitle {
+            font-family: var(--font-1); font-weight: 600; font-size: 1.3rem;
+            text-transform: uppercase; letter-spacing: .28em; color: var(--color-1);
+            margin-bottom: 2.4rem;
+        }
+        .c-hero h1 {
+            font-family: var(--font-2); font-weight: 400; margin: 0 0 3.2rem;
+            font-size: clamp(4rem, 7vw, 7.2rem); line-height: 1.04;
+            letter-spacing: -0.02em; color: var(--c-ink);
+        }
+        .c-hero__lead { font-size: 2.1rem; max-width: 62rem; color: var(--c-body); line-height: 1.6; font-weight: 300; }
+        .c-hero__lead em { font-family: var(--font-2); font-style: italic; color: var(--c-ink); }
+
+        /* ---- timeline (trilha larga: ano à esquerda) ---- */
+        .ctl { padding: 1rem 0 9rem; background: var(--c-bg); }
+
+        /* barra de filtros */
+        .c-filters {
+            display: flex; flex-wrap: wrap; gap: .8rem;
+            margin: 0 0 4rem; padding-left: calc(160px + 3.6rem);
+        }
+        .c-chip {
+            display: inline-flex; align-items: center; gap: .6rem;
+            font-family: var(--font-1); font-size: 1.3rem; font-weight: 500;
+            color: var(--c-body); background: none; cursor: pointer;
+            border: 1px solid var(--c-line); border-radius: 50px;
+            padding: .7rem 1.5rem; transition: all .2s ease;
+            text-transform: none; letter-spacing: normal; height: auto; line-height: 1.2;
+        }
+        .c-chip i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+        .c-chip:hover { border-color: var(--c-muted); color: var(--c-ink); }
+        .c-chip.on { background: var(--c-ink); border-color: var(--c-ink); color: var(--c-bg); }
+        @media screen and (max-width: 720px) { .c-filters { padding-left: 0; } }
+
+        .ctl-era {
+            font-family: var(--font-1); font-weight: 600; font-size: 1.2rem;
+            text-transform: uppercase; letter-spacing: .25em; color: var(--c-muted);
+            margin: 7rem 0 1.4rem; padding-left: calc(160px + 3.6rem);
+            display: flex; align-items: center; gap: 1rem;
+        }
+        .ctl-era::before {
+            content: ""; width: 10px; height: 10px; border-radius: 50%;
+            background: var(--dot, var(--c-muted)); flex: none;
+        }
+        .ctl-era:first-child { margin-top: 0; }
+
+        /* itens: NÃO usar <button> (o site força height/uppercase/letter-spacing
+           em todo button); usamos <div role=button> e blindamos o texto. */
+        .ctl-item {
+            display: grid; grid-template-columns: 160px 1fr; align-items: start;
+            width: 100%; text-align: left; background: none; border: none;
+            cursor: pointer; color: inherit;
+            font-family: var(--font-1); font-weight: 300;
+            text-transform: none; letter-spacing: normal; white-space: normal;
+            height: auto; line-height: 1.6; padding: 0; margin: 0;
+            transition: background .25s ease;
+        }
+        .ctl-item * { text-transform: none; letter-spacing: normal; white-space: normal; }
+        .ctl-item:hover { background: var(--c-bg-alt); }
+        .ctl-item:focus-visible { outline: 2px solid var(--color-1); outline-offset: 2px; border-radius: 5px; }
+
+        .ctl-rail {
+            text-align: right; padding: 3.2rem 3.2rem 3.2rem 0;
+            font-family: var(--font-1); font-weight: 700; font-size: 1.6rem;
+            letter-spacing: .03em !important; color: var(--color-1);
+            white-space: nowrap !important; text-transform: none !important; line-height: 1.3;
+        }
+        .ctl-body {
+            position: relative; border-left: 1px solid var(--c-line);
+            padding: 3.2rem 4rem 3.2rem 3.6rem;
+        }
+        .ctl-body::before {
+            content: ""; position: absolute; left: -5px; top: 3.9rem;
+            width: 10px; height: 10px; border-radius: 50%;
+            background: var(--c-dot); border: 2px solid var(--dot, var(--c-line));
+            transition: all .25s ease;
+        }
+        .ctl-item:hover .ctl-body::before { background: var(--dot); transform: scale(1.35); }
+        .ctl-item.is-now .ctl-body::before { background: var(--dot); box-shadow: 0 0 0 4px color-mix(in srgb, var(--dot) 22%, transparent); }
+        /* pílula de categoria (modo "Tudo") */
+        .ctl-cat {
+            display: inline-flex; align-items: center; gap: .5rem;
+            font-family: var(--font-1); font-size: 1.05rem; font-weight: 600;
+            letter-spacing: .08em; text-transform: uppercase;
+            color: var(--dot); margin-bottom: .8rem;
+        }
+        .ctl-cat::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--dot); }
+
+        .ctl-body h3 { font-family: var(--font-2); font-weight: 400; font-size: 2.8rem; line-height: 1.2; color: var(--c-ink); margin: 0 0 .4rem; text-transform: none !important; letter-spacing: -0.01em !important; }
+        .ctl-role { font-family: var(--font-1); font-weight: 500; font-size: 1.55rem; color: var(--c-body); margin: 0 0 1.2rem; }
+        .ctl-body p { font-size: 1.75rem; color: var(--c-body); max-width: 60rem; margin: 0; line-height: 1.6; font-weight: 300; text-transform: none !important; letter-spacing: normal !important; }
+        .ctl-more {
+            display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.4rem;
+            font-family: var(--font-1); font-size: 1.2rem; font-weight: 600;
+            letter-spacing: .12em !important; text-transform: uppercase; color: var(--color-1);
+            opacity: 0; transform: translateX(-4px); transition: all .25s ease;
+        }
+        .ctl-item:hover .ctl-more, .ctl-item:focus-visible .ctl-more { opacity: 1; transform: translateX(0); }
+        .placeholder { color: var(--color-1-dark); background: hsla(12,75%,45%,.1); padding: 0 .5rem; border-radius: 3px; font-weight: 600; font-size: .85em; }
+
+        @media screen and (max-width: 720px) {
+            .ctl-item { grid-template-columns: 1fr; }
+            .ctl-rail { text-align: left; padding: 2.6rem 0 0 3.6rem; }
+            .ctl-body { padding-top: .4rem; }
+            .ctl-body::before { top: .8rem; }
+            .ctl-era { padding-left: 3.6rem; margin-top: 5.5rem; }
+            .c-hero__lead { font-size: 1.9rem; }
+        }
+
+        /* ---- modal ---- */
+        .cmodal-ov {
+            position: fixed; inset: 0; background: var(--c-overlay);
+            display: flex; align-items: center; justify-content: center; padding: 2.4rem;
+            z-index: 2000; opacity: 0; visibility: hidden; backdrop-filter: blur(3px);
+            transition: opacity .3s ease, visibility .3s;
+        }
+        .cmodal-ov.open { opacity: 1; visibility: visible; }
+        .cmodal {
+            background: var(--c-card); max-width: 60rem; width: 100%; max-height: 86vh;
+            overflow-y: auto; border-radius: 10px; box-shadow: var(--c-shadow);
+            padding: 4.6rem 4.2rem 4rem; position: relative;
+            transform: translateY(16px) scale(.98); transition: transform .35s cubic-bezier(.22,.61,.36,1);
+        }
+        .cmodal-ov.open .cmodal { transform: translateY(0) scale(1); }
+        .cmodal .cmodal-x {
+            position: absolute; top: 1rem; right: 1rem;
+            display: grid; place-items: center; width: 44px; height: 44px;
+            min-width: 0; padding: 0; margin: 0; border: 0; border-radius: 0;
+            background: transparent; box-shadow: none; color: #000;
+            line-height: 1; cursor: pointer; transform: none; transition: none;
+        }
+        .cmodal .cmodal-x:hover, .cmodal .cmodal-x:focus {
+            background: transparent; color: #000; transform: none; box-shadow: none;
+        }
+        .cmodal .cmodal-x:focus-visible { outline: 2px solid var(--color-1); outline-offset: 2px; }
+        .cmodal .cmodal-x svg { width: 24px; height: 24px; transition: transform .2s ease; }
+        .cmodal .cmodal-x:hover svg { transform: rotate(90deg); }
+        [data-theme="dark"] .cmodal .cmodal-x { color: #fff; }
+        @media (prefers-color-scheme: dark) { [data-theme="auto"] .cmodal .cmodal-x { color: #fff; } }
+        .m-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin: 2rem 0; }
+        .m-links a { text-decoration: underline; text-underline-offset: .3em; }
+
+        .cmodal .m-year { display: inline-flex; align-items: center; gap: .7rem; font-family: var(--font-1); font-weight: 700; font-size: 1.4rem; letter-spacing: .04em; color: var(--color-1); margin-bottom: .8rem; }
+        .cmodal .m-cat { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: none; }
+        .cmodal .m-title { font-family: var(--font-2); font-weight: 400; font-size: 3.4rem; line-height: 1.15; color: var(--c-ink); margin: 0 0 .4rem; }
+        .cmodal .m-role { font-family: var(--font-1); font-weight: 500; font-size: 1.6rem; color: var(--c-body); margin-bottom: 2.4rem; padding-bottom: 2.4rem; border-bottom: 1px solid var(--c-line); }
+        .cmodal .m-body { font-size: 1.75rem; color: var(--c-body); line-height: 1.65; font-weight: 300; }
+        .cmodal .m-body p { margin: 0 0 1.6rem; }
+        .cmodal .m-body p:last-child { margin-bottom: 0; }
+        .cmodal .m-body em { font-family: var(--font-2); font-style: italic; color: var(--c-ink); }
+        .cmodal .m-tags { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2.6rem; }
+        .cmodal .m-tag { font-family: var(--font-1); font-size: 1.2rem; font-weight: 500; letter-spacing: .04em; color: var(--color-1); background: hsla(12,75%,45%,.1); padding: .5rem 1.2rem; border-radius: 50px; }
+
+        @media (prefers-reduced-motion: reduce) { *, *::before { transition: none !important; } }
+    </style>
+<!-- services-assets:start --><link rel="stylesheet" href="../assets/services-menu.css"><script src="../assets/services-menu.js" defer></script><!-- services-assets:end --></head>
+
+<body id="top">
+
+    <div id="preloader"><div id="loader" class="dots-fade"><div></div><div></div><div></div></div></div>
+
+    <div id="page" class="s-pagewrap">
+
+        <!-- ===== HEADER (estático, casado com o site) ===== -->
+        <header class="c-topbar">
+            <div class="c-topbar__in">
+                <a class="c-topbar__logo" href="../index.html"><img src="../images/Logo.png" alt="Cássio Batista Pereira" /></a>
+
+                <button class="c-burger" id="burger" type="button" aria-label="Menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav class="c-nav" id="cnav"><!-- services-menu:start --><details class="services-menu"><summary><span data-service-pt="Serviços" data-service-en="Services">Serviços</span></summary><div class="services-panel"><a href="https://cassiodeveloper.com.br/appsec-nightmare/" data-service-pt="AppSec Nightmare" data-service-en="AppSec Nightmare">AppSec Nightmare</a><a href="https://cassiodeveloper.com.br/yass" data-service-pt="YASS — Assessment AppSec" data-service-en="YASS — AppSec Assessment">YASS — Assessment AppSec</a><a href="https://cassiodeveloper.com.br/IronSoftware" data-service-pt="Software de Ferro — Treinamento" data-service-en="Software de Ferro — Training">Software de Ferro — Treinamento</a><a href="https://cassiodeveloper.com.br/AppSec-On-Fire/" data-service-pt="AppSec On Fire" data-service-en="AppSec On Fire">AppSec On Fire</a><a href="https://cassiodeveloper.com.br/cybersecgames/?lang=pt-BR" data-service-pt="CyberSec Games — Workshops" data-service-en="CyberSec Games — Workshops">CyberSec Games — Workshops</a></div></details><!-- services-menu:end -->
+                    <a href="/#intro" data-i18n="navIntro">Intro</a>
+                    <a href="/#works" data-i18n="navWorks">Projetos</a>
+                    <a href="/blog/" data-i18n="navBlog">Blog</a>
+                    <a href="/#about" data-i18n="navAbout">Sobre mim</a>
+                    <a href="/talks" data-i18n="navTalks">Talks</a>
+                    <a href="/carrer/" class="current" data-i18n="navCareer">Trajetória</a>
+                    <a href="/#footer" data-i18n="navContact">Contato</a>
+                </nav>
+
+                <div class="c-tools">
+                    <button class="tool-lang" id="langToggle" type="button" aria-label="Switch language">
+                        <span class="on" data-lang-pt>PT</span><span> / </span><span data-lang-en>EN</span>
+                    </button>
+                    <button class="tool-theme" id="themeToggle" type="button" aria-label="Alternar tema claro/escuro">
+                        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                        <svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===== CONTEÚDO ===== -->
+        <div class="carrer-main">
+
+            <section id="intro" class="c-hero">
+                <div class="carrer-wrap">
+                    <div class="c-hero__pretitle" data-i18n="pretitle">Trajetória</div>
+                    <h1 data-i18n="heroTitle" data-i18n-html>Duas décadas<br />construindo software<br />que não cede.</h1>
+                    <p class="c-hero__lead" data-i18n="heroLead" data-i18n-html>Da primeira linha de código à liderança técnica em AppSec — uma carreira na interseção entre <em>engenharia, arquitetura e segurança</em>. Aqui está o caminho, em ordem.</p>
+                </div>
+            </section>
+
+            <section class="ctl">
+                <div class="carrer-wrap">
+                    <div class="c-filters" id="filters"><!-- chips via JS --></div>
+                    <div id="timeline"><!-- render via JS --></div>
+                </div>
+            </section>
+
+        </div><!-- /carrer-main -->
+
+        <!-- ===== FOOTER DO SITE (é a seção de contato) ===== -->
+        <footer id="footer" class="s-footer target-section">
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="section-header light-on-dark" data-num="03">
+                        <h2 class="text-display-title" data-i18n="footerTitle">Entre em contato.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row s-footer__content">
+                <div class="column xl-6 md-12 s-footer__block s-footer__about">
+                    <p class="attention-getter" data-i18n="footerLead">Vamos criar software seguro juntos. Entre em contato e vamos conversar. Deixe-me ajudar você a criar um software seguro.</p>
+                </div>
+                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                    <div class="row">
+                        <div class="column xl-4 lg-5 md-6 tab-12">
+                            <h5 data-i18n="followMe">Follow Me</h5>
+                            <ul class="link-list">
+                                <li><a target="_blank" href="https://www.facebook.com/cassiodeveloperpagina">Facebook</a></li>
+                                <li><a target="_blank" href="https://x.com/cassiodeveloper">Twitter</a></li>
+                                <li><a target="_blank" href="https://instagram.com/cassiodeveloper">Instagram</a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/cassiodeveloper/">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                        <div class="column xl-6 md-6 tab-12">
+                            <h5 data-i18n="contactMe">Contact Me</h5>
+                            <ul class="link-list">
+                                <li><a href="mailto:cassio@cassiobp.com.br">cassio@cassiobp.com.br</a></li>
+                                <li><a href="tel:+5511999430820">+55 11 999 430 820</a></li>
+                                <li><a target="_blank" href="https://cassiodeveloper.com.br/en" title="English version"><img width="20px" height="15px" src="../images/icons/en-us.svg" alt="English version" title="English version" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row s-footer__buttons">
+                <div class="column xl-6 tab-12">
+                    <a href="mailto:cassio@cassiobp.com.br" class="btn btn--primary btn--large u-fullwidth" data-i18n="footerBtnMail">Me mande um email</a>
+                </div>
+                <div class="column xl-6 tab-12">
+                    <a href="/assets/downloads/CassioBatistaPereira.pdf" class="btn btn--stroke btn--large u-fullwidth" data-i18n="footerBtnCv">Meu CV</a>
+                </div>
+            </div>
+            <div class="row s-footer__bottom">
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li><a target="_blank" href="https://www.facebook.com/cassiodeveloperpagina"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg><span class="u-screen-reader-text">Facebook</span></a></li>
+                        <li><a target="_blank" href="https://x.com/cassiodeveloper"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg><span class="u-screen-reader-text">Twitter</span></a></li>
+                        <li><a target="_blank" href="https://instagram.com/cassiodeveloper"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg><span class="u-screen-reader-text">Instagram</span></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/cassiodeveloper/"><svg fill="#000000" height="200px" width="200px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.959 45.959"><g><g><path d="M5.392,0.492C2.268,0.492,0,2.647,0,5.614c0,2.966,2.223,5.119,5.284,5.119c1.588,0,2.956-0.515,3.957-1.489 c0.96-0.935,1.489-2.224,1.488-3.653C10.659,2.589,8.464,0.492,5.392,0.492z M7.847,7.811C7.227,8.414,6.34,8.733,5.284,8.733 C3.351,8.733,2,7.451,2,5.614c0-1.867,1.363-3.122,3.392-3.122c1.983,0,3.293,1.235,3.338,3.123 C8.729,6.477,8.416,7.256,7.847,7.811z"></path><path d="M0.959,45.467h8.988V12.422H0.959V45.467z M2.959,14.422h4.988v29.044H2.959V14.422z"></path><path d="M33.648,12.422c-4.168,0-6.72,1.439-8.198,2.792l-0.281-2.792H15v33.044h9.959V28.099c0-0.748,0.303-2.301,0.493-2.711 c1.203-2.591,2.826-2.591,5.284-2.591c2.831,0,5.223,2.655,5.223,5.797v16.874h10v-18.67 C45.959,16.92,39.577,12.422,33.648,12.422z M43.959,43.467h-6V28.593c0-4.227-3.308-7.797-7.223-7.797 c-2.512,0-5.358,0-7.099,3.75c-0.359,0.775-0.679,2.632-0.679,3.553v15.368H17V14.422h6.36l0.408,4.044h1.639l0.293-0.473 c0.667-1.074,2.776-3.572,7.948-3.572c4.966,0,10.311,3.872,10.311,12.374V43.467z"></path></g></g></svg><span class="u-screen-reader-text">LinkedIn</span></a></li>
+                    </ul>
+                </div>
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright"><span>© Copyright Cássio B. Pereira 2026</span></p>
+                </div>
+            </div>
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg></a>
+                <span data-i18n="backTop">Voltar ao topo</span>
+            </div>
+        </footer>
+
+    </div><!-- /page -->
+
+    <!-- modal -->
+    <div class="cmodal-ov" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <div class="cmodal" role="document">
+            <button class="cmodal-x" id="modalClose" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+            <div class="m-year" id="modalYear"></div>
+            <h2 class="m-title" id="modalTitle"></h2>
+            <div class="m-role" id="modalRole"></div>
+            <div class="m-body" id="modalBody"></div>
+            <nav class="m-links" id="modalLinks" aria-label="Links oficiais"></nav>
+            <div class="m-tags" id="modalTags"></div>
+        </div>
+    </div>
+
+    <!-- JS do site (menu, sticky header, smoothscroll, back-to-top) -->
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- dados + lógica da trajetória -->
+    <script>
+    const UI = {
+        pt: {
+            pretitle: "Trajetória",
+            heroTitle: "Duas décadas<br />construindo software<br />que não cede.",
+            heroLead: "Da primeira linha de código à liderança técnica em AppSec — uma carreira na interseção entre <em>engenharia, arquitetura e segurança</em>. Aqui está o caminho, em ordem.",
+            more: "Ler mais", now: "Hoje",
+            fAll: "Tudo", fGrouped: "Por categoria", filterLabel: "Filtrar:",
+            navIntro: "Intro", navWorks: "Projetos", navBlog: "Blog", navAbout: "Sobre mim",
+            navTalks: "Talks", navCareer: "Carreira", navContact: "Contato",
+            footerTitle: "Entre em contato.",
+            footerLead: "Vamos criar software seguro juntos. Entre em contato e vamos conversar. Deixe-me ajudar você a criar um software seguro.",
+            followMe: "Me siga", contactMe: "Fale comigo",
+            footerBtnMail: "Me mande um email", footerBtnCv: "Meu CV", backTop: "Voltar ao topo"
+        },
+        en: {
+            pretitle: "Career",
+            heroTitle: "Two decades<br />building software<br />that doesn't break.",
+            heroLead: "From the first line of code to technical leadership in AppSec — a career at the intersection of <em>engineering, architecture and security</em>. Here's the path, in order.",
+            more: "Read more", now: "Now",
+            fAll: "All", fGrouped: "By category", filterLabel: "Filter:",
+            navIntro: "Intro", navWorks: "Projects", navBlog: "Blog", navAbout: "About",
+            navTalks: "Talks", navCareer: "Career", navContact: "Contact",
+            footerTitle: "Get in touch.",
+            footerLead: "Let's build secure software together. Reach out and let's talk. Let me help you build software that's secure.",
+            followMe: "Follow Me", contactMe: "Contact Me",
+            footerBtnMail: "Send me an email", footerBtnCv: "My CV", backTop: "Back to top"
+        }
+    };
+
+    const CATS = {"edu": {"pt": "Formação", "en": "Education", "color": "hsl(36, 65%, 46%)"}, "work": {"pt": "Profissional", "en": "Professional", "color": "hsl(12, 72%, 47%)"}, "teach": {"pt": "Docência", "en": "Teaching", "color": "hsl(172, 33%, 40%)"}, "comm": {"pt": "Comunidade", "en": "Community", "color": "hsl(344, 45%, 52%)"}};
+    const TIMELINE = [
+        {"id": "tecnico", "cat": "edu", "start": 200601, "year": "2006", "now": false, "pt": {"t": "Técnico em Informática", "r": "Colégio Barão de Mauá", "s": "Onde a curiosidade por computador virou formação técnica.", "body": "<p>O primeiro contato formal com tecnologia — e, no mesmo ano, o primeiro emprego da área.</p>", "tags": ["Formação técnica"]}, "en": {"t": "Computer Technician", "r": "Barão de Mauá High School", "s": "Where curiosity about computers became formal training.", "body": "<p>The first formal contact with technology — and, in the same year, the first job in the field.</p>", "tags": ["Technical education"]}},
+        {"id": "prescon", "cat": "work", "start": 200609, "year": "2006", "now": false, "pt": {"t": "Estágio de desenvolvimento", "r": "Prescon", "s": "A primeira linha de código profissional, aos 18.", "body": "<p>Manutenção de sistemas, levantamento de requisitos e entrega de versões. O começo de tudo.</p>", "tags": ["Início", "Estágio"]}, "en": {"t": "Developer internship", "r": "Prescon", "s": "The first professional line of code, at 18.", "body": "<p>Systems maintenance, requirements gathering and version delivery. Where it all began.</p>", "tags": ["Beginning", "Internship"]}},
+        {"id": "logmark", "cat": "work", "start": 200706, "year": "2007–2008", "now": false, "pt": {"t": "Analista de Sistemas", "r": "Logmark Marketing Logistics", "s": "Estruturar um departamento de TI do zero.", "body": "<p>Estruturação do departamento de TI, melhorias em portais e novos projetos com integração SOA.</p>", "tags": ["TI", "SOA"]}, "en": {"t": "Systems Analyst", "r": "Logmark Marketing Logistics", "s": "Structuring an IT department from scratch.", "body": "<p>Built the IT department, improved portals and delivered new projects with SOA integration.</p>", "tags": ["IT", "SOA"]}},
+        {"id": "worldplus", "cat": "work", "start": 200809, "year": "2008–2009", "now": false, "pt": {"t": "Analista de Sistemas", "r": "World Plus Travel Assurance", "s": "Reestruturar a TI e levar a empresa ao e-commerce.", "body": "<p>Reestruturação do departamento de TI, revisão de processos com as áreas de negócio e desenvolvimento de novos projetos de e-commerce.</p>", "tags": ["TI", "E-commerce"]}, "en": {"t": "Systems Analyst", "r": "World Plus Travel Assurance", "s": "Restructuring IT and bringing the company to e-commerce.", "body": "<p>IT department restructuring, process review with business areas and new e-commerce projects.</p>", "tags": ["IT", "E-commerce"]}},
+        {"id": "mimetica", "cat": "work", "start": 200907, "year": "2009–2010", "now": false, "pt": {"t": "Analista de Sistemas Sênior", "r": "Mimética Marketing", "s": "Migração de plataforma e padronização de desenvolvimento.", "body": "<p>Migração do catálogo de produtos de ASP 3.0 para ASP.NET, definição de padrões de desenvolvimento e coordenação de time.</p>", "tags": ["Migração", ".NET"]}, "en": {"t": "Senior Systems Analyst", "r": "Mimética Marketing", "s": "Platform migration and development standards.", "body": "<p>Migrated the product catalog from ASP 3.0 to ASP.NET, set development standards and coordinated the team.</p>", "tags": ["Migration", ".NET"]}},
+        {"id": "tads", "cat": "edu", "start": 200903, "year": "2009", "now": false, "pt": {"t": "Graduação: Análise e Desenvolvimento de Sistemas", "r": "FIAP", "s": "A lógica de construir software deixou de ser intuição e virou método.", "body": "<p>Graduação em TADS pela FIAP, cursada enquanto já atuava profissionalmente. Teoria e prática crescendo juntas.</p>", "tags": ["Desenvolvimento", "Sistemas"]}, "en": {"t": "Degree: Systems Analysis & Development", "r": "FIAP", "s": "Building software stopped being intuition and became method.", "body": "<p>TADS degree at FIAP, taken while already working. Theory and practice growing together.</p>", "tags": ["Development", "Systems"]}},
+        {"id": "garage", "cat": "work", "start": 201004, "year": "2010", "now": false, "pt": {"t": "Analista de Sistemas Sênior", "r": "Garage Interactive Marketing", "s": "Arquitetura de portais e integração Web 2.0.", "body": "<p>Arquitetura de portais, manutenção e novos projetos com integração SOA e ferramentas da Web 2.0.</p>", "tags": ["Portais", "SOA"]}, "en": {"t": "Senior Systems Analyst", "r": "Garage Interactive Marketing", "s": "Portal architecture and Web 2.0 integration.", "body": "<p>Portal architecture, maintenance and new projects with SOA and Web 2.0 integrations.</p>", "tags": ["Portals", "SOA"]}},
+        {"id": "ithink", "cat": "work", "start": 201007, "year": "2010", "now": false, "pt": {"t": "Analista de Sistemas Sênior", "r": "iThink — Online Driven Agency", "s": "Portais e hot sites para campanhas publicitárias.", "body": "<p>Arquitetura e desenvolvimento de portais e hot sites para campanhas, com integração SOA e ferramentas Web 2.0.</p>", "tags": ["Portais", "Campanhas"]}, "en": {"t": "Senior Systems Analyst", "r": "iThink — Online Driven Agency", "s": "Portals and hot sites for ad campaigns.", "body": "<p>Architecture and development of portals and campaign hot sites, with SOA and Web 2.0 integrations.</p>", "tags": ["Portals", "Campaigns"]}},
+        {"id": "spread", "cat": "work", "start": 201009, "year": "2010–2011", "now": false, "pt": {"t": "Analista Sênior (Consultor) · Brasilprev", "r": "Spread Systems", "s": "Consultoria dentro de uma grande seguradora de previdência.", "body": "<p>Alocado na Brasilprev: arquitetura e desenvolvimento de projetos internos, melhorias em sistemas legados e redução de tempo de processamento.</p>", "tags": ["Consultoria", "Previdência"]}, "en": {"t": "Senior Analyst (Consultant) · Brasilprev", "r": "Spread Systems", "s": "Consulting inside a large pension insurer.", "body": "<p>Allocated at Brasilprev: architecture and development of internal projects, legacy improvements and shorter processing times.</p>", "tags": ["Consulting", "Pension"]}},
+        {"id": "psm", "cat": "work", "start": 201105, "year": "2011", "now": false, "pt": {"t": "Analista Sênior (Consultor) · Mercedes Benz Bank", "r": "PSM Company", "s": "Modernização de tecnologias em um banco.", "body": "<p>Alocado no Mercedes Benz Bank: arquitetura e desenvolvimento de projetos internos, migração de tecnologias antigas para .NET e melhorias em legados.</p>", "tags": ["Consultoria", "Banca", ".NET"]}, "en": {"t": "Senior Analyst (Consultant) · Mercedes Benz Bank", "r": "PSM Company", "s": "Technology modernization at a bank.", "body": "<p>Allocated at Mercedes Benz Bank: architecture and development of internal projects, migration of legacy tech to .NET and improvements.</p>", "tags": ["Consulting", "Banking", ".NET"]}},
+        {"id": "gommo", "cat": "work", "start": 201112, "year": "2011–2012", "now": false, "pt": {"t": "Arquiteto de Software", "r": "Gommo Agency", "s": "Liderar time e arquitetar projetos de clientes.", "body": "<p>Arquitetura e desenvolvimento de projetos de clientes, liderança de time, novos projetos e levantamento de requisitos.</p>", "tags": ["Arquitetura", "Liderança"]}, "en": {"t": "Software Architect", "r": "Gommo Agency", "s": "Leading a team and architecting client projects.", "body": "<p>Architecture and development of client projects, team leadership, new projects and requirements gathering.</p>", "tags": ["Architecture", "Leadership"]}},
+        {"id": "mba", "cat": "edu", "start": 201206, "year": "2012", "now": false, "pt": {"t": "MBA: Arquitetura de Software", "r": "FIAP", "s": "Parar de pensar em código isolado e começar a pensar em sistema.", "body": "<p>A virada de perspectiva: de funções para sistemas inteiros. Pensar em arquitetura é pensar em consequência — a mentalidade que AppSec exige.</p>", "tags": ["Arquitetura", "Sistemas"]}, "en": {"t": "MBA: Software Architecture", "r": "FIAP", "s": "Stop thinking in isolated code, start thinking in systems.", "body": "<p>The perspective shift: from functions to whole systems. Thinking in architecture is thinking in consequence — the mindset AppSec demands.</p>", "tags": ["Architecture", "Systems"]}},
+        {"id": "capitani", "cat": "work", "start": 201207, "year": "2012–2013", "now": false, "pt": {"t": "Analista Sênior (Consultor) · Serasa Experian", "r": "Capitani IT Solutions", "s": "Integração SOA em uma das maiores bureaus de crédito.", "body": "<p>Alocado na Serasa Experian: arquitetura e desenvolvimento de integrações SOA, componentes de integração e melhorias em legados.</p>", "tags": ["Consultoria", "SOA"]}, "en": {"t": "Senior Analyst (Consultant) · Serasa Experian", "r": "Capitani IT Solutions", "s": "SOA integration at a major credit bureau.", "body": "<p>Allocated at Serasa Experian: architecture and development of SOA integrations, integration components and legacy improvements.</p>", "tags": ["Consulting", "SOA"]}},
+        {"id": "anhanguera1", "cat": "teach", "start": 201302, "year": "2013–2014", "now": false, "pt": {"t": "Professor de Graduação", "r": "Universidade Anhanguera", "s": "Começar a ensinar o que vinha aprendendo na prática.", "body": "<p>Planejamento de aulas, apoio em exercícios e projetos, e condução de discussões em sala.</p>", "tags": ["Ensino", "Graduação"]}, "en": {"t": "Undergraduate Lecturer", "r": "Anhanguera University", "s": "Starting to teach what I was learning in practice.", "body": "<p>Lesson planning, support with exercises and projects, and leading classroom discussions.</p>", "tags": ["Teaching", "Undergrad"]}},
+        {"id": "serasa", "cat": "work", "start": 201309, "year": "2013–2014", "now": false, "pt": {"t": "Analista de Sistemas Sênior", "r": "Serasa Experian", "s": "O primeiro contato real com Application Security.", "body": "<p>Application Security com S-SDLC, SAST e DAST na plataforma Veracode. Arquitetura e desenvolvimento de projetos internos, com foco em sistema de imagem. A semente da virada para segurança.</p>", "tags": ["AppSec", "Veracode", "SAST/DAST"]}, "en": {"t": "Senior Systems Analyst", "r": "Serasa Experian", "s": "The first real contact with Application Security.", "body": "<p>Application Security with S-SDLC, SAST and DAST on the Veracode platform. Architecture and development of internal projects. The seed of the pivot to security.</p>", "tags": ["AppSec", "Veracode", "SAST/DAST"]}},
+        {"id": "touchpizza", "cat": "work", "start": 201404, "year": "2014–2015", "now": false, "pt": {"t": "Fundador, CIO & CTO", "r": "Touch Pizza", "s": "Empreender: tocar um negócio do zero e liderar a engenharia.", "body": "<p>Direção de tecnologia e negócio, tomada de decisão e liderança técnica do time de desenvolvimento — já aplicando S-SDLC, DevSecOps, Threat Modeling e SAST.</p>", "tags": ["Founder/CTO", "AppSec"]}, "en": {"t": "Founder, CIO & CTO", "r": "Touch Pizza", "s": "Entrepreneurship: running a business from scratch and leading engineering.", "body": "<p>Technology and business direction, decision-making and technical leadership of the dev team — already applying S-SDLC, DevSecOps, Threat Modeling and SAST.</p>", "tags": ["Founder/CTO", "AppSec"]}},
+        {"id": "inspira", "cat": "work", "start": 201507, "year": "2015", "now": false, "pt": {"t": "Arquiteto de Software", "r": "Inspira Technology", "s": "Arquitetura com segurança desde o design.", "body": "<p>Arquitetura e desenvolvimento de projetos internos com práticas de Application Security (S-SDLC, DevSecOps, Threat Modeling) e responsabilidade pelo sistema de imagem da empresa.</p>", "tags": ["Arquitetura", "AppSec"]}, "en": {"t": "Software Architect", "r": "Inspira Technology", "s": "Architecture with security from design.", "body": "<p>Architecture and development of internal projects with Application Security practices (S-SDLC, DevSecOps, Threat Modeling).</p>", "tags": ["Architecture", "AppSec"]}},
+        {"id": "forense", "cat": "edu", "start": 201509, "year": "2015", "now": false, "pt": {"t": "Especialização: Computação Forense", "r": "Universidade Presbiteriana Mackenzie", "s": "Investigar o que já deu errado ensina a prever o que vai dar.", "body": "<p>Forense é segurança olhando para trás: reconstruir o incidente, entender o vetor, achar a raiz. Uma disciplina que virou instinto defensivo.</p>", "tags": ["Forense", "Investigação"]}, "en": {"t": "Specialization: Computer Forensics", "r": "Mackenzie Presbyterian University", "s": "Investigating what went wrong teaches you to predict what will.", "body": "<p>Forensics is security looking backward: reconstruct the incident, understand the vector, find the root. A discipline that became a defensive instinct.</p>", "tags": ["Forensics", "Investigation"]}},
+        {"id": "bnp", "cat": "work", "start": 201512, "year": "2015–2016", "now": false, "pt": {"t": "Arquiteto de Software", "r": "BNP Paribas", "s": "Levar o processo de SDL para dentro de um grande banco.", "body": "<p>Application Security (S-SDLC, DevSecOps, Threat Modeling), arquitetura e desenvolvimento de Internet Banking e início do processo de SDL com os times.</p>", "tags": ["Banca", "SDL", "AppSec"]}, "en": {"t": "Software Architect", "r": "BNP Paribas", "s": "Bringing the SDL process into a major bank.", "body": "<p>Application Security (S-SDLC, DevSecOps, Threat Modeling), architecture and development of Internet Banking, and starting the SDL process with the teams.</p>", "tags": ["Banking", "SDL", "AppSec"]}},
+        {"id": "anhanguera2", "cat": "teach", "start": 201602, "year": "2016", "now": false, "pt": {"t": "Professor de Graduação", "r": "Universidade Anhanguera", "s": "De volta à sala, agora com bagagem de segurança.", "body": "<p>Planejamento de aulas, apoio em exercícios e projetos e condução de discussões em sala.</p>", "tags": ["Ensino", "Graduação"]}, "en": {"t": "Undergraduate Lecturer", "r": "Anhanguera University", "s": "Back to the classroom, now with a security background.", "body": "<p>Lesson planning, support with exercises and projects and leading classroom discussions.</p>", "tags": ["Teaching", "Undergrad"]}},
+        {"id": "cvc", "cat": "work", "start": 201604, "year": "2016–2020", "now": false, "pt": {"t": "Application Security Engineer", "r": "CVC Corp", "s": "AppSec de ponta a ponta, em escala real.", "body": "<p>Implementação completa de S-SDLC e DevSecOps — SAST, DAST, IAST e SCA integrados a Jenkins, Azure DevOps, CircleCI, GitLab e GitHub Actions. Liderança técnica, +20 squads e 250 devs. WAF do zero ao monitoramento, SIEM em stack ELK e desenvolvimento de SOAR.</p>", "tags": ["S-SDLC", "DevSecOps", "WAF/SIEM"]}, "en": {"t": "Application Security Engineer", "r": "CVC Corp", "s": "End-to-end AppSec, at real scale.", "body": "<p>Full S-SDLC and DevSecOps — SAST, DAST, IAST and SCA integrated with Jenkins, Azure DevOps, CircleCI, GitLab and GitHub Actions. Technical leadership, 20+ squads and 250 devs. WAF from zero to monitoring, SIEM on ELK and SOAR development.</p>", "tags": ["S-SDLC", "DevSecOps", "WAF/SIEM"]}},
+        {"id": "amazoninst", "cat": "teach", "start": 201607, "year": "2016", "now": false, "pt": {"t": "Professor de Pós-Graduação", "r": "Instituto de Especialização da Amazônia", "s": "Ensino de pós no Norte do país.", "body": "<p>Planejamento de aulas, apoio em exercícios e projetos e sugestão de temas de discussão.</p>", "tags": ["Ensino", "Pós"]}, "en": {"t": "Postgraduate Lecturer", "r": "Amazon Specialization Institute", "s": "Postgraduate teaching in northern Brazil.", "body": "<p>Lesson planning, support with exercises and projects and suggesting discussion topics.</p>", "tags": ["Teaching", "Postgrad"]}},
+        {"id": "sbtec", "cat": "teach", "start": 201802, "year": "2018–2019", "now": false, "pt": {"t": "Professor de Graduação", "r": "SBTec", "s": "Mais uma turma formada em desenvolvimento.", "body": "<p>Planejamento de aulas, apoio em exercícios e projetos e condução de discussões em sala.</p>", "tags": ["Ensino", "Graduação"]}, "en": {"t": "Undergraduate Lecturer", "r": "SBTec", "s": "Another cohort trained in development.", "body": "<p>Lesson planning, support with exercises and projects and leading classroom discussions.</p>", "tags": ["Teaching", "Undergrad"]}},
+        {"id": "uninove", "cat": "teach", "start": 202003, "year": "2020", "now": false, "pt": {"t": "Professor de Graduação", "r": "UNINOVE", "s": "Ensino em uma das maiores universidades do país.", "body": "<p>Planejamento de aulas com os alunos, apoio em exercícios e projetos e condução de discussões em sala.</p>", "tags": ["Ensino", "Graduação"]}, "en": {"t": "Undergraduate Lecturer", "r": "UNINOVE", "s": "Teaching at one of Brazil's largest universities.", "body": "<p>Lesson planning with students, support with exercises and projects and leading classroom discussions.</p>", "tags": ["Teaching", "Undergrad"]}},
+        {"id": "nova8", "cat": "work", "start": 202004, "year": "2020 →", "now": false, "pt": {"t": "CTO (part-time)", "r": "Nova8", "s": "AppSec ponta a ponta para dezenas de clientes enterprise.", "body": "<p>Implementação completa de Application Security (S-SDLC, DevSecOps, Threat Modeling, *AST) da concepção à entrega. +30 clientes enterprise e +5.000 profissionais treinados. Liderança técnica de um time de 30 no Brasil, com Security Champions Programs.</p>", "tags": ["CTO", "Threat Modeling", "Treinamento"]}, "en": {"t": "CTO (part-time)", "r": "Nova8", "s": "End-to-end AppSec for dozens of enterprise clients.", "body": "<p>Full Application Security (S-SDLC, DevSecOps, Threat Modeling, *AST) from concept to delivery. 30+ enterprise clients and 5,000+ trained professionals. Technical leadership of a 30-person team in Brazil, with Security Champions Programs.</p>", "tags": ["CTO", "Threat Modeling", "Training"]}},
+        {"id": "cecyber", "cat": "teach", "start": 202008, "year": "2020–2021", "now": false, "pt": {"t": "Instrutor Online", "r": "CECyber", "s": "Levar segurança para quem está começando, online.", "body": "<p>Produção de conteúdo e material técnico, apoio em exercícios, atividades e projetos e sugestão de temas de discussão.</p>", "tags": ["Ensino", "Online"]}, "en": {"t": "Online Trainer", "r": "CECyber", "s": "Bringing security to beginners, online.", "body": "<p>Content and technical material production, support with exercises and projects and suggesting discussion topics.</p>", "tags": ["Teaching", "Online"]}},
+        {"id": "content", "cat": "comm", "start": 202010, "year": "2020 →", "now": false, "pt": {"t": "Conteúdo, Podcast & YouTube", "r": "Criador", "s": "Disseminar desenvolvimento seguro em português.", "body": "<p>Canal no YouTube, conteúdo digital e o DevSecOps Podcast — discussões sobre desenvolvimento seguro sem papo de vendedor.</p>", "tags": ["Podcast", "YouTube", "Conteúdo"]}, "en": {"t": "Content, Podcast & YouTube", "r": "Creator", "s": "Spreading secure development in Portuguese.", "body": "<p>A YouTube channel, digital content and the DevSecOps Podcast — secure development with no sales pitch.</p>", "tags": ["Podcast", "YouTube", "Content"]}},
+        {"id": "abb", "cat": "work", "start": 202201, "year": "2022–2024", "now": false, "pt": {"t": "Principal Cyber Security Engineer", "r": "ABB · Cracóvia, Polônia", "s": "A mudança para a Europa e a liderança de segurança em escala global.", "body": "<p>Líder direto do time de AppSec / DevSecOps e Arquitetura de Segurança de um produto da divisão de Process Automation. ~500 devs em 7 países. Evangelização, KPIs, Security Champions Program e code review (C# e JS).</p>", "tags": ["Liderança", "Security Architecture", "Global"]}, "en": {"t": "Principal Cyber Security Engineer", "r": "ABB · Kraków, Poland", "s": "The move to Europe and security leadership at global scale.", "body": "<p>Direct leader of the AppSec / DevSecOps and Security Architecture team for a Process Automation product. ~500 devs across 7 countries. Evangelism, KPIs, Security Champions Program and code review (C# and JS).</p>", "tags": ["Leadership", "Security Architecture", "Global"]}},
+        {"id": "backbase", "cat": "work", "start": 202402, "year": "2024", "now": false, "pt": {"t": "Principal Cyber Security Engineer", "r": "Backbase · Cracóvia, Polônia", "s": "AppSec no coração de um produto bancário global.", "body": "<p>Lead do time de AppSec / DevSecOps do produto de banca da Backbase para clientes de Managed Services. ~500 devs em 7 países. Responsável por todo o SSDLC do time e code review (Java).</p>", "tags": ["Fintech", "DevSecOps", "Java"]}, "en": {"t": "Principal Cyber Security Engineer", "r": "Backbase · Kraków, Poland", "s": "AppSec at the heart of a global banking product.", "body": "<p>Lead of the AppSec / DevSecOps team for Backbase's banking product for Managed Services customers. ~500 devs across 7 countries. Owner of the team's full SSDLC and code review (Java).</p>", "tags": ["Fintech", "DevSecOps", "Java"]}},
+        {"id": "stonex", "cat": "work", "start": 202411, "year": "nowLabel", "now": true, "pt": {"t": "Principal Cyber Security Engineer · AppSec Evangelist", "r": "StoneX · Cracóvia, Polônia", "s": "Evangelizar desenvolvimento seguro em escala global.", "body": "<p>Application Security Evangelist em uma das maiores instituições financeiras globais. Evangelização da cultura AppSec, KPIs e Security Champions Program. Time de ~1.000 devs globalmente, análise de vulnerabilidades e code review (C#).</p>", "tags": ["AppSec Evangelism", "Security Champions", "Global"]}, "en": {"t": "Principal Cyber Security Engineer · AppSec Evangelist", "r": "StoneX · Kraków, Poland", "s": "Evangelizing secure development at global scale.", "body": "<p>Application Security Evangelist at one of the largest global financial institutions. AppSec culture evangelism, KPIs and Security Champions Program. Team of ~1,000 devs globally, vulnerability analysis and code review (C#).</p>", "tags": ["AppSec Evangelism", "Security Champions", "Global"]}},
+        {"id": "books", "cat": "comm", "start": 202306, "year": "2023", "now": false, "pt": {"t": "Autor de livros de AppSec", "r": "Explicando AppSec · Homem de Ferro", "s": "Material de AppSec de verdade, em português.", "body": "<p>Autor de \"Explicando, Application Security\" (também em inglês) e \"AppSec — Homem de Ferro: segurança de aplicações pela mente do Homem de Ferro\".</p>", "tags": ["Livros", "Autor"]}, "en": {"t": "AppSec book author", "r": "Explaining AppSec · Iron Man", "s": "Real AppSec material, in Portuguese.", "body": "<p>Author of \"Application Security, Explained\" (also in English) and \"AppSec — Iron Man: application security through Iron Man's mind\".</p>", "tags": ["Books", "Author"]}},
+        {"id": "bsides", "cat": "comm", "start": 202401, "year": "2024 →", "now": false, "pt": {"t": "Fundador & Coordenador — BSides Kraków", "r": "BSides · DevSecCon", "s": "Construir comunidade de segurança na Europa.", "body": "<p>Fundador e coordenador do BSides Kraków e organizador de capítulos DevSecCon. Segurança se constrói junto, não isolado.</p>", "tags": ["BSides", "DevSecCon", "Comunidade"]}, "en": {"t": "Founder & Coordinator — BSides Kraków", "r": "BSides · DevSecCon", "s": "Building a security community in Europe.", "body": "<p>Founder and coordinator of BSides Kraków and organizer of DevSecCon chapters. Security is built together, not in isolation.</p>", "tags": ["BSides", "DevSecCon", "Community"]}},
+        {"id": "ecosystem", "cat": "comm", "start": 202601, "year": "nowLabel", "now": true, "pt": {"t": "Ecossistema AppSec", "r": "Pós-Graduação · C.A.S. · Codes & Consequences", "s": "O conhecimento de duas décadas, transformado em produto.", "body": "<p>Uma pós-graduação de 360h, a comunidade C.A.S. (+1.000 membros) e o jogo Codes & Consequences, que ensina DevSecOps na prática.</p>", "tags": ["Pós-Graduação", "Comunidade", "Produtos"]}, "en": {"t": "AppSec Ecosystem", "r": "Graduate Program · C.A.S. · Codes & Consequences", "s": "Two decades of knowledge, turned into product.", "body": "<p>A 360-hour graduate program, the C.A.S. community (1,000+ members) and the game Codes & Consequences, which teaches DevSecOps hands-on.</p>", "tags": ["Graduate Program", "Community", "Products"]}},
+    ];
+
+    const OFFICIAL_LINKS = {
+        tecnico: [["Colégio Barão de Mauá", "https://colegiobarao.com.br/"]],
+    "prescon": [
+        [
+            "Prescon",
+            "http://www.presconinformatica.com.br/index.html"
+        ]
+    ],
+    "tads": [
+        [
+            "FIAP",
+            "https://www.fiap.com.br/"
+        ]
+    ],
+    "mba": [
+        [
+            "FIAP",
+            "https://www.fiap.com.br/"
+        ]
+    ],
+    "spread": [
+        [
+            "Spread",
+            "https://spread.com.br/"
+        ],
+        [
+            "Brasilprev",
+            "https://www1.brasilprev.com.br/quem-somos.html"
+        ]
+    ],
+    "psm": [
+        [
+            "PSM Company",
+            "https://psmcompany.com.br/"
+        ],
+        [
+            "Banco Mercedes-Benz",
+            "https://www.bancomercedes-benz.com.br/"
+        ]
+    ],
+    "capitani": [
+        [
+            "Capitani",
+            "https://capitani.com.br/"
+        ],
+        [
+            "Serasa Experian",
+            "https://www.serasaexperian.com.br/"
+        ]
+    ],
+    "anhanguera1": [
+        [
+            "Anhanguera",
+            "https://www.anhanguera.com/"
+        ]
+    ],
+    "anhanguera2": [
+        [
+            "Anhanguera",
+            "https://www.anhanguera.com/"
+        ]
+    ],
+    "serasa": [
+        [
+            "Serasa Experian",
+            "https://www.serasaexperian.com.br/"
+        ]
+    ],
+    "forense": [
+        [
+            "Mackenzie",
+            "https://www.mackenzie.br/"
+        ]
+    ],
+    "bnp": [
+        [
+            "BNP Paribas",
+            "https://group.bnpparibas/"
+        ]
+    ],
+    "cvc": [
+        [
+            "CVC Corp",
+            "https://www.cvccorp.com.br/"
+        ]
+    ],
+    "uninove": [
+        [
+            "UNINOVE",
+            "https://www.uninove.br/"
+        ]
+    ],
+    "nova8": [
+        [
+            "Nova8",
+            "https://nova8.com.br/"
+        ]
+    ],
+    "cecyber": [
+        [
+            "CECyber — AppSec / DevSecOps",
+            "https://ava.cecyber.com/loja/appsec-devsecops/"
+        ]
+    ],
+    "abb": [
+        [
+            "ABB",
+            "https://www.abb.com/"
+        ]
+    ],
+    "backbase": [
+        [
+            "Backbase",
+            "https://www.backbase.com/"
+        ]
+    ],
+    "stonex": [
+        [
+            "StoneX",
+            "https://www.stonex.com/"
+        ]
+    ],
+    "content": [
+        [
+            "DevSecOps Podcast",
+            "https://devsecopspodcast.com.br/"
+        ]
+    ],
+    "books": [
+        [
+            "Explicando, Application Security",
+            "https://cassiodeveloper.com.br/livro"
+        ],
+        [
+            "AppSec — Homem de Ferro (PDF)",
+            "https://cassiodeveloper.com.br/assets/downloads/AppSec%20-%20Homem%20de%20Ferro.pdf"
+        ]
+    ],
+    "bsides": [
+        [
+            "BSides Kraków",
+            "https://bsideskrakow.pl/"
+        ]
+    ],
+    "ecosystem": [
+        [
+            "Pós-Graduação AppSec",
+            "https://posappsec.com.br/course.html"
+        ],
+        [
+            "C.A.S.",
+            "https://cas.seg.br"
+        ],
+        [
+            "Codes & Consequences",
+            "https://codesandconsequences.com"
+        ]
+    ]
+};
+
+    OFFICIAL_LINKS.content.push(['YouTube — Cássio Batista Pereira', 'https://youtube.com/c/CassioBatistaPereira']);
+    OFFICIAL_LINKS.bsides.push(['DevSecCon Poland', 'https://www.meetup.com/pt-BR/devseccon-poland/']);
+    let lang = localStorage.getItem('carrer-lang') ||
+               (navigator.language && navigator.language.startsWith('en') ? 'en' : 'pt');
+
+    const tlRoot = document.getElementById('timeline');
+
+    // ordem das categorias no modo "agrupado"
+    const CAT_ORDER = ['edu', 'work', 'teach', 'comm'];
+    let filter = localStorage.getItem('carrer-filter') || 'all';
+
+    function makeItem(node) {
+        const d = node[lang], t = UI[lang];
+        const yr = node.year === 'nowLabel' ? t.now : node.year;
+        const color = CATS[node.cat].color;
+        const it = document.createElement('div');
+        it.className = 'ctl-item' + (node.now ? ' is-now' : '');
+        it.style.setProperty('--dot', color);
+        it.setAttribute('role', 'button');
+        it.setAttribute('tabindex', '0');
+        it.setAttribute('aria-haspopup', 'dialog');
+        // tag de categoria só aparece no modo "Tudo" (onde há mistura)
+        const catTag = (filter === 'all')
+            ? '<span class="ctl-cat" style="--dot:' + color + '">' + CATS[node.cat][lang] + '</span>'
+            : '';
+        it.innerHTML =
+            '<div class="ctl-rail">' + yr + '</div>' +
+            '<div class="ctl-body">' +
+                catTag +
+                '<h3>' + d.t + '</h3>' +
+                '<div class="ctl-role">' + d.r + '</div>' +
+                '<p>' + d.s + '</p>' +
+                '<span class="ctl-more">' + t.more + ' →</span>' +
+            '</div>';
+        it.addEventListener('click', () => openModal(node));
+        it.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(node); }
+        });
+        return it;
+    }
+
+    function renderTimeline() {
+        tlRoot.innerHTML = '';
+        if (filter === 'grouped') {
+            CAT_ORDER.forEach(cat => {
+                const items = TIMELINE.filter(n => n.cat === cat).sort((a,b) => a.start - b.start);
+                if (!items.length) return;
+                const h = document.createElement('div');
+                h.className = 'ctl-era';
+                h.style.setProperty('--dot', CATS[cat].color);
+                h.textContent = CATS[cat][lang];
+                tlRoot.appendChild(h);
+                items.forEach(n => tlRoot.appendChild(makeItem(n)));
+            });
+        } else {
+            let items = TIMELINE.slice();
+            if (filter !== 'all') items = items.filter(n => n.cat === filter);
+            items.sort((a,b) => a.start - b.start);
+            items.forEach(n => tlRoot.appendChild(makeItem(n)));
+        }
+    }
+
+    // barra de filtros
+    const FILTERS = ['all','grouped','edu','work','teach','comm'];
+    function renderFilters() {
+        const t = UI[lang];
+        const bar = document.getElementById('filters');
+        bar.innerHTML = FILTERS.map(f => {
+            const label = (f === 'all') ? t.fAll : (f === 'grouped') ? t.fGrouped : CATS[f][lang];
+            const dot = (f === 'all' || f === 'grouped') ? '' : '<i style="background:' + CATS[f].color + '"></i>';
+            return '<button class="c-chip' + (f === filter ? ' on' : '') + '" data-f="' + f + '">' + dot + label + '</button>';
+        }).join('');
+        bar.querySelectorAll('.c-chip').forEach(b => {
+            b.addEventListener('click', () => {
+                filter = b.dataset.f;
+                localStorage.setItem('carrer-filter', filter);
+                renderFilters(); renderTimeline();
+            });
+        });
+    }
+
+    function applyStaticI18n() {
+        const t = UI[lang];
+        document.documentElement.lang = (lang === 'en') ? 'en' : 'pt-BR';
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (t[key] === undefined) return;
+            if (el.hasAttribute('data-i18n-html')) el.innerHTML = t[key];
+            else el.textContent = t[key];
+        });
+        document.querySelector('[data-lang-pt]').classList.toggle('on', lang === 'pt');
+        document.querySelector('[data-lang-en]').classList.toggle('on', lang === 'en');
+    }
+
+    const overlay = document.getElementById('modalOverlay');
+    let lastFocus = null;
+    function openModal(node) {
+        const d = node[lang], t = UI[lang];
+        const color = CATS[node.cat].color;
+        const yrTxt = node.year === 'nowLabel' ? t.now : node.year;
+        document.getElementById('modalYear').innerHTML =
+            '<span class="m-cat" style="background:' + color + '"></span>' +
+            CATS[node.cat][lang] + ' · ' + yrTxt;
+        document.getElementById('modalYear').style.color = color;
+        document.getElementById('modalTitle').textContent = d.t;
+        document.getElementById('modalRole').textContent = d.r;
+        document.getElementById('modalBody').innerHTML = d.body;
+        document.getElementById('modalTags').innerHTML = (d.tags||[]).map(x => '<span class="m-tag">'+x+'</span>').join('');
+        const links = document.getElementById('modalLinks');
+        links.replaceChildren();
+        links.setAttribute('aria-label', lang === 'pt' ? 'Links oficiais' : 'Official links');
+        for (const [label, url] of OFFICIAL_LINKS[node.id] || []) {
+            const a = document.createElement('a');
+            a.href = url; a.textContent = label + ' ↗'; a.target = '_blank'; a.rel = 'noopener noreferrer';
+            a.setAttribute('aria-label', label + (lang === 'pt' ? ' (abre em nova aba)' : ' (opens in a new tab)'));
+            links.appendChild(a);
+        }
+        links.hidden = !links.childElementCount;
+        document.getElementById('modalClose').setAttribute('aria-label', lang === 'pt' ? 'Fechar' : 'Close');
+        lastFocus = document.activeElement;
+        overlay.hidden = false;
+        requestAnimationFrame(() => overlay.classList.add('open'));
+        document.body.style.overflow = 'hidden';
+        document.getElementById('modalClose').focus();
+    }
+    function closeModal() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+        setTimeout(() => { overlay.hidden = true; if (lastFocus) lastFocus.focus(); }, 300);
+    }
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', e => {
+        if (overlay.hidden) return;
+        if (e.key === 'Escape') closeModal();
+        if (e.key === 'Tab') {
+            const items = [...overlay.querySelectorAll('button, a[href]')];
+            const first = items[0], last = items[items.length - 1];
+            if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+            else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
+    });
+
+    document.getElementById('langToggle').addEventListener('click', () => {
+        lang = (lang === 'pt') ? 'en' : 'pt';
+        localStorage.setItem('carrer-lang', lang);
+        applyStaticI18n(); renderFilters(); renderTimeline();
+    });
+
+    const root = document.documentElement;
+    const savedTheme = localStorage.getItem('site-theme');
+    if (savedTheme) root.setAttribute('data-theme', savedTheme);
+    document.getElementById('themeToggle').addEventListener('click', () => {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const cur = root.getAttribute('data-theme');
+        const eff = cur === 'auto' ? (prefersDark ? 'dark' : 'light') : cur;
+        const next = eff === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('site-theme', next);
+    });
+
+    // menu hambúrguer (mobile)
+    const burger = document.getElementById('burger');
+    const cnav = document.getElementById('cnav');
+    burger.addEventListener('click', () => {
+        const open = cnav.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    applyStaticI18n();
+    renderFilters();
+    renderTimeline();
+    </script>
+</body>
+</html>

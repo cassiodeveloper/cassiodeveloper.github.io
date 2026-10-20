@@ -1,0 +1,19 @@
+/* Shared navigation: native disclosure works with mouse, keyboard and touch. */
+.services-menu { position: relative; font-family: inherit; text-align: left; }
+.services-menu > summary { display: flex; align-items: center; gap: 6px; padding: 10px 12px; cursor: pointer; list-style: none; font-size: 15px; font-weight: 500; line-height: 24px; color: inherit; white-space: nowrap; }
+.services-menu > summary::-webkit-details-marker { display: none; }
+.services-menu > summary:focus-visible { outline: 2px solid #d56531; outline-offset: 2px; }
+.services-chevron { display: inline-block; transition: transform .18s ease; }
+.services-menu[open] .services-chevron { transform: rotate(180deg); }
+.services-menu .services-panel { position: absolute; top: 100%; left: 0; z-index: 1000; width: 300px; max-width: calc(100vw - 40px); padding: 8px; border: 1px solid #ddd; border-radius: 8px; background: #fff; box-shadow: 0 12px 32px #0002; }
+.services-menu .services-panel a { display: block; padding: 12px; margin: 0; font: 500 14px/1.5 sans-serif; text-transform: none; letter-spacing: normal; color: #171717; text-decoration: none; white-space: normal; border: 0; border-radius: 4px; }
+.services-menu .services-panel a:hover, .services-menu .services-panel a:focus-visible { color: #171717; background: #f6ece5; outline: 2px solid #c46132; outline-offset: -2px; }
+.s-header__menu-links .services-item { display: block; }
+.s-header__menu-links .services-menu > summary { padding: 0 12px; line-height: var(--vspace-1,32px); }
+@media(max-width: 800px) {
+ .services-menu .services-panel { position: static; width: 100%; min-width: 220px; box-shadow: none; margin-bottom: 8px; }
+ .services-menu { max-width: 100%; }
+}
+@media(prefers-reduced-motion: reduce) { .services-chevron { transition: none; } }
+.s-header__menu-links .services-menu > summary { color: #bcbcbc; }
+.s-header__menu-links .services-menu > summary:hover, .s-header__menu-links .services-menu[open] > summary { color: #fff; }

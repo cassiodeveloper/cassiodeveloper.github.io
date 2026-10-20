@@ -8,6 +8,7 @@
       menu: 'Menu',
       navLabel: 'Navegação principal',
       languageLabel: 'Idioma',
+      navDiscover: 'Encontre seu jogo',
       navHow: 'Como funciona',
       navBenefits: 'Benefícios',
       navFormats: 'Formatos',
@@ -200,7 +201,7 @@
       experienceTrain: 'Formação de Facilitadores',
       other: 'Outro',
       messagePlaceholder: 'Qual desafio você gostaria de explorar na sessão?',
-      privacyNote: 'Seus dados serão usados apenas para responder a esta solicitação. Sem trackers ou listas de marketing.',
+      privacyNote: 'Os dados da solicitação são usados para responder ao seu contato. Esta página usa Google Analytics para medir navegação e filtros; nossos eventos personalizados não incluem sua mensagem nem o texto da busca.',
       formSubmit: 'Enviar solicitação',
       formInvalid: 'Revise os campos destacados antes de enviar.',
       formRateLimit: 'Aguarde um minuto antes de enviar outra solicitação.',
@@ -228,14 +229,14 @@
 
   const metadata = {
     en: {
-      title: 'CyberSec Games Facilitator | Cássio B. Pereira',
-      description: 'Facilitated cybersecurity game sessions for engineering, security, product and leadership teams. Learn threat modeling, privacy, incident response and secure design through play.',
+      title: 'Cybersecurity Games & Workshops | Cássio B. Pereira',
+      description: 'Find cybersecurity games and facilitated workshops for threat modeling, AI security, privacy and incident response. Explore use cases with Cássio B. Pereira.',
       social: 'Facilitated cybersecurity game sessions that turn complex security conversations into memorable, practical learning.',
       locale: 'en_US'
     },
     'pt-BR': {
-      title: 'Facilitador CyberSec Games | Cássio B. Pereira',
-      description: 'Sessões facilitadas com jogos de cibersegurança para times de engenharia, segurança, produto e liderança. Aprenda por meio do jogo.',
+      title: 'Jogos e Workshops de Cibersegurança | Cássio B. Pereira',
+      description: 'Explore jogos e workshops de cibersegurança para modelagem de ameaças, IA, privacidade e resposta a incidentes, com facilitação de Cássio B. Pereira.',
       social: 'Sessões facilitadas que transformam conversas complexas sobre segurança em aprendizado prático e memorável.',
       locale: 'pt_BR'
     }
@@ -273,6 +274,10 @@
     });
 
     const meta = metadata[activeLanguage];
+    const canonical = 'https://cassiodeveloper.com.br/cybersecgames/' + (activeLanguage === 'pt-BR' ? '?lang=pt-BR' : '');
+    document.querySelector('link[rel="canonical"]').href = canonical;
+    setMeta('meta[property="og:url"]', canonical);
+    setMeta('meta[property="og:locale:alternate"]', activeLanguage === 'pt-BR' ? 'en_US' : 'pt_BR');
     document.documentElement.lang = activeLanguage;
     document.title = meta.title;
     setMeta('meta[name="description"]', meta.description);
@@ -294,6 +299,10 @@
     }
   }
 
+  window.addEventListener('popstate', () => {
+    const lang = new URLSearchParams(location.search).get('lang');
+    applyLanguage(lang === 'pt' || lang === 'pt-BR' ? 'pt-BR' : 'en', false);
+  });
   const languageParam = new URLSearchParams(window.location.search).get('lang');
   applyLanguage(languageParam === 'pt' || languageParam === 'pt-BR' ? 'pt-BR' : 'en', false);
   document.querySelectorAll('[data-language]').forEach((button) => {

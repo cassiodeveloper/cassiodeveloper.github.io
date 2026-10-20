@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-blog.mjs",
+    "build": "node scripts/build-blog.mjs && node scripts/build-discovery.mjs && node scripts/build-navigation.mjs",
     "test": "node --test",
     "lint": "node --check scripts/blog-core.mjs && node --check scripts/build-blog.mjs && node --check blog/assets/blog.js",
     "check:links": "node scripts/check-links.mjs",

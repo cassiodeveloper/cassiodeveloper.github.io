@@ -4594,3 +4594,63 @@ td:last-child {
 #about   { order: 3; }
 #numbers { order: 4; }
 #footer  { order: 5; }
+
+/* ====================================================================
+ * TEMA ESCURO + TOGGLES (dark/light e idioma) — adicionado p/ o site
+ * Dark = inversão da escala de cinzas: cada superfície clara vira escura
+ * e cada texto escuro vira claro, de forma coerente em todos os componentes.
+ * ==================================================================== */
+:root[data-theme="dark"] {
+    --color-white  : #1c1b19;
+    --color-black  : #f4f3f1;
+    --color-gray-1 : #181818;
+    --color-gray-2 : #1e1d1b;
+    --color-gray-3 : #232220;
+    --color-gray-4 : #272624;
+    --color-gray-5 : #2b2a27;
+    --color-gray-6 : #2f2e2b;
+    --color-gray-7 : #343330;
+    --color-gray-8 : #3a3935;
+    --color-gray-9 : #45443f;
+    --color-gray-10: #51504a;
+    --color-gray-11: #6b6a64;
+    --color-gray-12: #85847d;
+    --color-gray-13: #a5a7a5;
+    --color-gray-14: #b7b8b5;
+    --color-gray-15: #c7c8c5;
+    --color-gray-16: #d6d7d4;
+    --color-gray-17: #e3e4e1;
+    --color-gray-18: #eef0ec;
+    --color-gray-19: #f4f3f1;
+
+    --color-body-bg    : #141312;
+    --color-text       : #f1f0ee;
+    --color-text-dark  : #ffffff;
+    --color-text-light : #a5a7a5;
+    --color-placeholder: #6b6a64;
+    --color-border     : rgba(255, 255, 255, .12);
+
+    --color-btn        : #2a2927;
+    --color-btn-text   : #f1f0ee;
+}
+/* a seção de "numbers" e o footer já são escuros no site: garantir legibilidade */
+:root[data-theme="dark"] .s-header__inner { background-color: #201f1d; border-color: rgba(255,255,255,.06); }
+
+/* ---- controles no header principal (home) ---- */
+.s-header__tools { display: inline-flex; align-items: center; gap: 1rem; margin-left: 1.2rem; }
+.s-header__tools button {
+    display: inline-flex !important; align-items: center; justify-content: center;
+    background: none !important; border: 1px solid var(--color-border) !important;
+    color: var(--color-text-light) !important; font-family: var(--font-1);
+    border-radius: 50px; cursor: pointer; padding: 0; margin: 0;
+    text-transform: none !important; letter-spacing: normal !important;
+    height: auto !important; line-height: 1 !important; transition: all .2s ease;
+}
+.s-header__tools button:hover { border-color: var(--color-1) !important; color: var(--color-1) !important; }
+.s-header__tools .tool-lang { font-size: 1.2rem; font-weight: 600; letter-spacing: .06em !important; padding: .6rem 1.2rem !important; }
+.s-header__tools .tool-lang .on { color: var(--color-1); }
+.s-header__tools .tool-theme { width: 3.4rem !important; height: 3.4rem !important; }
+.s-header__tools .tool-theme svg { width: 1.6rem; height: 1.6rem; }
+.s-header__tools .tool-theme .moon { display: none; }
+:root[data-theme="dark"] .s-header__tools .tool-theme .sun { display: none; }
+:root[data-theme="dark"] .s-header__tools .tool-theme .moon { display: block; }
