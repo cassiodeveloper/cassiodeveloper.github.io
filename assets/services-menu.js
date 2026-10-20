@@ -18,3 +18,13 @@
   menus.forEach(menu => { if(menu.open) { menu.open=false; menu.querySelector('summary').focus(); } });
  });
 })();
+
+
+/* hover-to-open (desktop), mantendo clique/teclado/toque */
+(() => {
+  if (!matchMedia("(hover: hover) and (min-width: 801px)").matches) return;
+  document.querySelectorAll(".services-menu").forEach(menu => {
+    menu.addEventListener("mouseenter", () => { menu.open = true; });
+    menu.addEventListener("mouseleave", () => { menu.open = false; });
+  });
+})();
